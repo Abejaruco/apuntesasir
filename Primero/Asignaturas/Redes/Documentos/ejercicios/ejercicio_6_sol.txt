@@ -1,0 +1,6 @@
+Necesito 17 bits para tener 120000IP.
+11111111.11111110.00000000.00000000 Esta es la máscara que necesito.
+255.254.0.0
+Como el segund octeto termina en 0 me vale cualquier ip que sea par.
+La ip puede ser:
+190.0.0.0 Esto es una ip, no una máscara.

@@ -1,0 +1,3 @@
+Vt = 200bps
+Señal de 8 niveles de amplitud
+¿Vm?

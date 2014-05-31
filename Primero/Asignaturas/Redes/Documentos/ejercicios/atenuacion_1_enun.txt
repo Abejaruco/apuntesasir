@@ -1,0 +1,2 @@
+Queremos ver una película de 640x480 de resolución y 16 bits color a 24 fps.
+¿Que conexión mínima necesitamos para verlo con continuidad?

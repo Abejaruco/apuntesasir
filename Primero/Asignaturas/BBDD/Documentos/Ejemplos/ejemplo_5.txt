@@ -1,0 +1,9 @@
+Ejemplo:
+	select ename,job,sal from scott.emp where sal < 1000 or job='CLERK';
+Devuelve:
+	ENAME      JOB              SAL
+---------- --------- ----------
+SMITH      CLERK            800
+ADAMS      CLERK           1100
+JAMES      CLERK            950
+MILLER     CLERK           1300

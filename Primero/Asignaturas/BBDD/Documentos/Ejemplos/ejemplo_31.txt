@@ -1,0 +1,18 @@
+select nullif('a','a') as valor from dual;
+select nullif('a','b') as valor from dual;
+
+Devuelve:
+
+
+V
+-
+
+
+1 fila seleccionada.
+
+
+V
+-
+a
+
+1 fila seleccionada.

@@ -1,0 +1,7 @@
+Ejemplo:
+	select ename from scott.emp where ename like 'S%';
+Devuelve:
+	ENAME
+----------
+SMITH
+SCOTT

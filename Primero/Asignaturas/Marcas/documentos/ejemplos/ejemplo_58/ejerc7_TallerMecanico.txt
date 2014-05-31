@@ -1,0 +1,21 @@
+
+Ejercicio 7 (21/03/2013) – tallerMecánico
+
+Realizar xml y xsd sobre un taller mecánico. Validarlo.
+El taller quiere recoger los datos concernientes a cada coche que le lleven al taller
+(podría darse el caso de que no le llevaran ninguno).
+
+Los datos de cada coche serían: marca, modelo, carrocería ,matricula, persona de contacto,
+combustible y diagnostico (un detalle de las averias).
+
+Ten en cuenta que:
+	- Carrocería se refiere al nº de plazas y sólo puede guardar los siguientes
+	  datos: 2-4-5-7. 
+	  Este dato es obligatorio que se detalle.
+
+	- Combustible sólo puede ser del tipo: gasolina, diesel o híbrido 
+	  (por defecto diesel).
+
+	- Las personas de contacto pueden ser varias.
+
+	- Diagnostico, tendrá una al menos, aunque pueden contener varias averias.

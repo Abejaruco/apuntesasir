@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Ejercicio 3 (14/03/2013)
+
+Realizar un xml y un dtd (por separado) que incluya los datos de los tickets de un bar. Cada ticket debe incluir:
+
+-Nºticket, fecha, hora (opcional), producto y precio total.
+
+A su vez cada elemento productocontendría el "nombre del producto" y "precio".
+
+El precio total podría contener un atributo que fuera pagado (si/no), siendo su valor por defecto "si".
+
+Validarlo y hacer diferentes pruebas que muestren su estructura correcta.
+-->
+<!DOCTYPE tikets SYSTEM "ejemplo.dtd">
+<tikets>
+	<tiket>
+		<numero>1</numero>
+		<fecha>hoy</fecha>
+		<hora>ahora</hora>
+		<producto>
+			<nombre>caña</nombre>
+			<precio>2</precio>
+		</producto>
+		<producto>
+			<nombre>cocacola</nombre>
+			<precio>2.5</precio>
+		</producto>
+		<producto>
+			<nombre>cafe</nombre>
+			<precio>1.5</precio>
+		</producto>
+		<importe pagado="si">6</importe>
+	</tiket>
+	<tiket>
+		<numero>2</numero>
+		<fecha>mañana</fecha>
+		<hora>luego</hora>
+		<producto>
+			<nombre>vino</nombre>
+			<precio>1.5</precio>
+		</producto>
+		<producto>
+			<nombre>cubata</nombre>
+			<precio>5</precio>
+		</producto>
+		<producto>
+			<nombre>caldo</nombre>
+			<precio>1.5</precio>
+		</producto>
+		<importe pagado="no">8</importe>
+	</tiket>
+		<tiket>
+		<numero>3</numero>
+		<fecha>pasado mañana</fecha>
+		<hora>alguna hora</hora>
+		<producto>
+			<nombre>kalimotxo</nombre>
+			<precio>1.5</precio>
+		</producto>
+		<producto>
+			<nombre>cubata</nombre>
+			<precio>5</precio>
+		</producto>
+		<producto>
+			<nombre>caldo</nombre>
+			<precio>1.5</precio>
+		</producto>
+		<importe>8</importe>
+	</tiket>
+</tikets>

@@ -1,0 +1,47 @@
+<?php include ("../../php/scripts.php");?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+<head>
+	<title>ASIR: PRIMERO: INFORMACIÓN</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 0.21" />
+	<LINK REL=StyleSheet HREF="../../estilos/menu_principal.css" TYPE="text/css">
+	<LINK REL=StyleSheet HREF="../ajustes/estilos.css" TYPE="text/css">
+</head>
+
+<body>
+	<div class="menus">
+		<div class="menu_principal">
+			<ul class="menu">
+				<li><a href="../">ASIR</a></li>
+				<li>PRIMERO</li>
+				<?=paypal()?>
+			</ul>
+		</div>
+		<div class="menu_asignatura">
+			<ul class="menu">
+				<li><a href="../">Volver</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="contenido">
+		<div class="tema">
+			<h1>Calendario de exámenes</h1>
+			<h2>Primera evaluación</h2>
+			<table>
+				<tr>
+					<th>Hora</th><th>Lunes 19</th><th>Martes 20</th><th>Miércoles 21</th><th>Jueves 22</th><th>Viernes 23</th>
+				</tr>
+				<tr>
+					<th>15:30</th><td></td><td></td><td>FOL</td><td></td><td>Redes</td>
+				</tr>
+				<tr>
+					<th>18:00</th><td>Sistemas</td><td>Hardware</td><td>Lenguaje de marcas</td><td>BB.DD</td><td></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+
+</html>

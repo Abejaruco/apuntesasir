@@ -1,0 +1,17 @@
+IP: 25.10.157.29/22
+La red es la 25.10.0.0/22
+Se usan 6 bits para la subred:
+Mascara:
+	255.255.11111100.0
+	255.255.252.0
+
+Para saber en que subred está hay que hacer un AND de la IP con la máscara.
+Hay que poner en binario el 157 de la ip:
+
+ 25. 10.10011101.00011101 --> IP
+255.255.11111100.00000000 --> Máscara
+-------------------------
+ 25. 10.10011100.00000000 --> Subred: 25.10.156.0 --> Esta es en realidad la subred número 39 ya que de los 8 bits del octeto solo 6 son de la subred por lo que 10111 es el valor 39.
+ 
+ El host es los dos últimos bits del tercer octeto más el último octeto:
+ 25.10.100111 01.29 --> El host sería el 1.29

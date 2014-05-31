@@ -1,0 +1,10 @@
+SELECT * FROM SCOTT.EMP WHERE LOWER(ENAME) = LOWER('King');
+
+devuelve:
+
+
+     EMPNO ENAME      JOB              MGR HIREDATE        SAL       COMM     DEPTNO
+---------- ---------- --------- ---------- -------- ---------- ---------- ----------
+      7839 KING       PRESIDENT            17/11/81       5000                    10
+
+1 fila seleccionada.

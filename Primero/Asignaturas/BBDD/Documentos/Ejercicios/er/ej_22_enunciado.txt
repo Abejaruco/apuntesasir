@@ -1,0 +1,7 @@
+Una empresa desea diseñar una base de datos para almacenar en ella toda la información generada en cada uno de los proyectos que ésta realiza.
+
+“De cada uno de los proyectos realizados interesa almacenar el código, descripción, cuantía del proyecto, fecha de inicio y fecha de fin. Los proyectos son realizados por clientes de los que se desea guardar el código, teléfono, domicilio y razón social. Un cliente puede realizar varios proyectos, pero un solo proyecto es realizado por un único cliente.
+
+En los proyectos participan colaboradores de los que se dispone la siguiente información: nif, nombre, domicilio, teléfono, banco y número de cuenta. Un colaborador puede participar en varios proyectos. Los proyectos son realizados por uno o más colaboradores.
+
+Los colaboradores de los proyectos reciben pagos. De los pagos realizados se quiere guardar el número de pago, concepto, cantidad y fecha de pago. También interesa almacenar los diferentes tipos de pagos que puede realizar la empresa. De cada uno de los tipos de pagos se desea guardar el código y descripción. Un tipo de pago puede pertenecer a varios pagos”.

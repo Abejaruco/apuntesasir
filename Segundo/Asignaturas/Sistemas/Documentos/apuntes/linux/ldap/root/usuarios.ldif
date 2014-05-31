@@ -1,0 +1,18 @@
+dn: cn=asir1,ou=Group,dc=almi4,dc=com 
+objectClass: top
+objectClass: posixGroup
+cn: asir1
+gidNumber: 20001
+
+dn: uid=asir1,ou=People,dc=almi4,dc=com 
+objectClass: top
+objectClass: person
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: asir1
+uidNumber: 20001
+gidNumber: 20001
+cn: asir1
+sn: asir1
+loginShell: /bin/bash
+homeDirectory: /home/asir1

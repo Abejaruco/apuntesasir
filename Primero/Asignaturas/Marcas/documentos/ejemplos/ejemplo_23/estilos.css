@@ -1,0 +1,9 @@
+
+a:hover{
+	letter-spacing: 10px;
+	font-size: 150%;
+	color: red;
+}
+a:visited{
+	color: green;
+}

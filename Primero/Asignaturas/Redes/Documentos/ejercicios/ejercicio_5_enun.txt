@@ -1,0 +1,3 @@
+La IP 25.10.157.29/22
+¿En que red está?
+¿Cual es su host?

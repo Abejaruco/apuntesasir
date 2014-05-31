@@ -1,0 +1,6 @@
+Necesito 18 bits para tener 220.000 IP.
+11111111.11111100.00000000.00000000 Esta es la máscara que necesito.
+255.252.0.0
+Como el segundo octeto termina en 0 me vale cualquier ip que sea par.
+La ip puede ser:
+Valdría cualquier ip cuyo segundo octeto tenga los dos últimos bits 00.

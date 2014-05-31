@@ -1,0 +1,70 @@
+<!--Comienzo del formulario -->
+<form name="prueba" action="procesar.php" method=GET autocomplete="on" target="_blank">
+<!--Ejemplos de entradas de texto -->
+	Nombre: <input type=text name="nombre" placeholder="Tu nombre" size=10 maxlength=9 autocomplete="on"><br>
+<!-- Con el atributo size cambiamos el tamaño del recuadro y con el maxlength la cantidad
+másima de caracteres -->
+	Apellidos: <input type=text name="apellidos" placeholder="Tus apellidos" autocomplete="on"><br>
+	Dirección: <input type=text name="dirección" placeholder="Tu dirección" autocomplete="on"><br>
+	E-mail: <input type=text name="email" placeholder="tu@email.com"><br>
+	E-mail: (html5) <input type=email name="email2" placeholder="tu@email.com" autocomplete="on"><br>
+	Fecha de nacimiento: (html5) <input type=date name="fechanac" min="2000-01-01" max="2012-12-31">
+	Pedido (Cantidad de botellas): <input type=number name="pedido" min="2" max="10" placeholder="2">
+	Volumen: <input type=range name="volumen" min=3 max=25>
+	<br>
+<!--placeholder es un atributo de html5. Es para poner un valor dentro de
+la caja de texto pero que desaparezca al pinchar dentro. La alternativa para
+versiones anteriores es value, que pone un valor dentro pero hay que borrarlo
+manualmente -->
+<!-- Ejemplo de entrada de contraseñas -->
+	Contraseña: <input type=password name="clave" placeholder="********"><br>
+<!-- Ejemplo de Radio Buttons -->
+	<p>
+	<input type=radio name=sexo value="Hombre">Hombre
+	<input type=radio name=sexo value="Mujer">Mujer</p>
+<!-- Ejemplo de CheckBoxes -->
+	<p>
+	<input type=checkbox name=deporte[] value="ciclismo">Bici
+	<input type=checkbox name=deporte[] value="Motocicleta">Moto
+	<input type=checkbox name=deporte[] value="Automovilismo">Coche
+	<input type=checkbox name=deporte[] value="Deportes de fronton">Fronton</p>
+<!-- Despues del nombre se añaden los corchetes para que mande los datos
+en forma de array no como una sola variable, ya que se pisarian los datos
+y solo quedaría el valor de la última variable seleccionada -->
+<!-- Ejemplo de una lista en la que solo se puede selecciónar una opción -->
+	<P>¿Tienes Permiso de conducir?
+	<select name="permiso">
+		<option value="Si">Sí</option>
+		<option value="No" selected>No</option>
+	</select></p>
+<!-- Ejemplo de una lista en la que se pueden saleccionar más de una opción.
+En este caso hay que poner los corchetes despues del nombre para mandarlo como
+un array. El atributo size nos va a definir el número de opciones que van a estar
+a la vista sin necesidad de mover la lista con la barra de desplazamiento. El 
+atributo multiple es el que indica que se pueden seleccionar más de una opción
+pulsando la tecla control -->
+	<p>¿Que permisos tienees
+	<select name="permisos[]" size=7 multiple>
+		<option value="A" selected>A</option>
+		<option value="B">B</option>
+		<option value="C1" selected>C1</option>
+		<option value="C">C</option>
+		<option value="D1" selected>D1</option>
+		<option value="D">D</option>
+		<option value="E">E</option>
+	</select></p>
+<!-- Ejemplo de una lista múltiple agrupada -->
+	<p>
+	<select name="Estudios[]" multiple>
+		<optgroup label="Ciclos formativos">
+			<option value="Asir">Asir</option>
+			<option value="Dam">Dam</option>
+		</optgroup>
+		<optgroup label="Licenciaturas">
+			<option value="DAE">Dirección y administración de empresas</option>
+			<option value="Eco">Economicas</option>
+		</optgroup>
+	</select></p>
+<p><input type=submit value="Enviar"><input type=reset value="Limpiar"></p>
+</form>
+<!-- Fin del formulario -->

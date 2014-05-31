@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<tikets>
+	<tiket>
+		<numero>1</numero>
+		<fecha>hoy</fecha>
+		<hora>ahora</hora>
+		<producto>
+			<nombre>caña</nombre>
+			<precio>2</precio>
+		</producto>
+		<producto>
+			<nombre>cocacola</nombre>
+			<precio>2.5</precio>
+		</producto>
+		<producto>
+			<nombre>cafe</nombre>
+			<precio>1.5</precio>
+		</producto>
+		<iporte>6</iporte>
+	</tiket>
+	<tiket>
+		<numero>2</numero>
+		<fecha>mañana</fecha>
+		<hora>luego</hora>
+		<producto>
+			<nombre>vino</nombre>
+			<precio>1.5</precio>
+		</producto>
+		<producto>
+			<nombre>cubata</nombre>
+			<precio>5</precio>
+		</producto>
+		<producto>
+			<nombre>caldo</nombre>
+			<precio>1.5</precio>
+		</producto>
+		<iporte>8</iporte>
+	</tiket>
+</tikets>

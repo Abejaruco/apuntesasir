@@ -1,0 +1,7 @@
+1. Queremos saber el apellido (ename) y la fecha de ingreso de aquellos empleados que ingresaron en la empresa en 1981.
+2. Queremos saber el apellido (ename) , el puesto de trabajo y salario de los empleados que ganan mas de 2500.
+3. Queremos saber el apellido (ename) , el puesto de trabajo y salario de los empleados que ganan mas de 2500 y son 'MANAGER'.
+4. Queremos saber el apellido (ename) , el departamento de los empleados de los departamentos 30 y 20.
+5. Queremos saber el apellido (ename) de aquellos empleados cuyo apallido empiece por 'T'.
+6. Queremos saber el apellido (ename) de aquellos empleados cuyo apellido no empiece por 'T'.
+7. Queremos saber los distintos trabajos(job) que hay en la tabla emp.

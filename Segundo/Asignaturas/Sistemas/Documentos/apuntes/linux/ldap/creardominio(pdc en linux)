@@ -1,0 +1,78 @@
+#poner ip fija primero
+apt-get install slapd ldap-utils migrationtools
+dpkg-reconfigure slapd 
+#service slapd start
+
+############################# 
+#cd /usr/share/migrationtools/ 
+############################# 
+
+#We need to edit the default migrationtools’ config file #migrate_common.ph and replace the following parameters with:
+#nano /etc/migrationtools/migrate_common.ph
+#$DEFAULT_MAIL_DOMAIN = “almi4.com”;
+#$DEFAULT_BASE = “dc=almi4,dc=com”;
+
+#Iniciamos el servicio
+service slapd start
+
+#luego exportaremos los valores 
+cd /usr/share/migrationtools/ 
+./migrate_group.pl /etc/group ~/group.ldif 
+./migrate_passwd.pl /etc/passwd ~/passwd.ldif 
+
+#creamos el archivo people_group.ldif
+cat >  ~/people_group.ldif <<EOF
+dn: ou=People,dc=luis,dc=com 
+objectclass: organizationalUnit
+ou: People 
+
+dn: ou=Group,dc=luis,dc=com 
+objectclass: organizationalUnit
+ou: Group 
+EOF
+
+#creamos el archivo usuarios.ldif
+cat > ~/usuarios.ldif << EOF
+dn: cn=asir1,ou=Group,dc=luis,dc=com 
+objectClass: top
+objectClass: posixGroup
+cn: asir1
+gidNumber: 20001
+
+dn: uid=asir1,ou=People,dc=luis,dc=com 
+objectClass: top
+objectClass: person
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: asir1
+uidNumber: 20001
+gidNumber: 20001
+cn: asir1
+sn: asir1
+loginShell: /bin/bash
+homeDirectory: /home/asir1
+EOF
+
+
+
+ldapadd -x -W -D "cn=admin,dc=luis,dc=com" -f ~/people_group.ldif
+ldapadd -x -W -D "cn=admin,dc=luis,dc=com" -f ~/group.ldif 
+ldapadd -x -W -D "cn=admin,dc=luis,dc=com" -f ~/passwd.ldif 
+
+##
+##
+##
+##
+##
+##
+##
+
+
+# echo agregando usuarios al dominio
+
+#agregamos el usuario creado en usuarios.ldif
+ldapadd -c -x -D cn=admin,dc=almi4,dc=com -W -f usuarios.ldif 
+
+echo estableciendo password al usuario 
+# ponemos password al usuario
+ldappasswd -x -D cn=admin,dc=almi4,dc=com -W -S uid=asir,ou=People,dc=almi4,dc=com 

@@ -1,0 +1,11 @@
+Imagina que una agencia de seguros de tu municipio te ha solicitado una base de datos mediante la cual llevar un control de los accidentes y las multas. Tras una serie de entrevistas, has tomado las siguientes notas:
+
+“Se desean registrar todas las personas que tienen un vehículo. Es necesario guardar los datos personales de cada persona (nombre, apellidos, dirección, población, teléfono y DNI).
+
+De cada vehículo se desea almacenar la matrícula, la marca y el modelo. Una persona puede tener varios vehículos, y puede darse el caso de un vehículo pertenezca a varias personas a la vez.
+
+También se desea incorporar la información destinada a gestionar los accidentes del municipio. Cada accidente posee un número de referencia correlativo según orden de entrada a la base de datos. Se desea conocer la fecha, lugar y hora en que ha tenido lugar cada accidente. Se debe tener en cuenta que un accidente puede involucrar a varias personas y varios vehículos.
+
+Se desea llevar también un registro de las multas que se aplican. Cada multa tendrá asignado un número de referencia correlativo. Además, deberá registrarse la fecha, hora, lugar de infracción e importe de la misma. Una multa solo se aplicará a un conductor e involucra a un solo vehículo.”
+
+Realiza el modelo E-R y pásalo al modelo relacional. Diseña después las tablas en Access, realiza las relaciones oportunas entre ellas e inserta cinco registros en cada una de las tablas.

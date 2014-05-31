@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!-- Ejemplo: RecetasBlog -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<xsd:simpleType name="clasificacionMENU">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="recetas de reposteria" />
+			<xsd:enumeration value="recetas de carne" />
+			<xsd:enumeration value="recetas de pescado" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="numeros">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="1" />
+			<xsd:maxInclusive value="10" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:element name="blog">
+		<!-- Cuando un elemento tiene mas elementos dentro se ponene las siguientes dos lineas-->
+		<xsd:complexType>
+			<xsd:sequence>
+			<!-- -->
+                <xsd:element name="articulo" minOccurs="1" maxOccurs="unbounded">
+				   <xsd:complexType>
+						<xsd:sequence>   
+							<xsd:element name="referencia" type="xsd:integer" />
+							<xsd:element name="titulo" type="xsd:string" />
+							<xsd:element name="fecha" type="xsd:date" />
+							<xsd:element name="publicado" type="xsd:boolean" />
+							<xsd:element name="clasificacion">
+								<xsd:complexType>
+									<xsd:attribute name="categoria" type="clasificacionMENU"  default="recetas de reposteria"/>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="critica" >
+								<xsd:complexType>
+									<xsd:simpleContent>
+										<xsd:extension base="xsd:string">
+											<xsd:attribute name="nota" type="numeros"/>
+										</xsd:extension>
+									</xsd:simpleContent>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="autor" type="xsd:string" />
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,102 @@
+<!--
+   sin título.html
+   
+   Copyright 2013 smr1-hodei <ALMI4\smr1-hodei@hodei-system-product-name>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>JQUERY -1</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 0.21" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		//Comienzo del jquery del cebollero//
+	
+		$(document).ready(function(){
+		function mostrar(){
+			$("#foto1").fadeOut(0);//Foto 1 desaparece
+			$("#foto2").fadeOut(0);//Foto 1 desaparece
+			$("#foto3").fadeOut(0);//Foto 1 desaparece
+			$("#foto4").fadeOut(0);//Foto 1 desaparece
+			setTimeout(function() {
+				$("#foto1").fadeIn(2000);//Foto 1 aparece
+				$("#foto1").fadeOut(2000);//Foto 1 desaparece
+			}, 1000);
+			setTimeout(function() {
+				$("#foto2").fadeIn(2000);//Foto 1 aparece
+				$("#foto2").fadeOut(2000);//Foto 1 desaparece
+			}, 6000);
+			setTimeout(function() {
+				$("#foto3").fadeIn(2000);//Foto 1 aparece
+				$("#foto3").fadeOut(2000);//Foto 1 desaparece
+			}, 11000);
+			setTimeout(function() {
+				$("#foto4").fadeIn(2000);//Foto 1 aparece
+				$("#foto4").fadeOut(2000);//Foto 1 desaparece
+			}, 16000);
+			setTimeout(function() {
+				mostrar();
+			}, 20000);
+		}
+		mostrar();
+		//Fin del jquery//	
+		});
+		
+	</script>
+	<style type="text/css">
+	#foto1{
+		width: 300px;
+		height: 300px;
+	}
+	#foto2{
+		width: 300px;
+		height: 300px;
+	}
+	#foto3{
+		width: 300px;
+		height: 300px;
+	}
+	#foto4{
+		width: 300px;
+		height: 300px;
+	}	
+	
+	
+	</style>
+	
+	
+	
+</head>
+
+<body>
+	<div id="fotos">
+		<image id="foto1" src="foto1.jpg"></image>
+		<image id="foto2" src="foto2.jpg"></image>
+		<image id="foto3" src="foto3.jpg"></image>
+		<image id="foto4" src="foto4.jpg"></image>
+	</div>
+	
+</body>
+
+</html>

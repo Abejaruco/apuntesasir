@@ -1,0 +1,17 @@
+Ejemplo:
+	select ename,job,comm from scott.emp where comm is null;
+Devuelve:
+ENAME      JOB             COMM
+---------- --------- ----------
+SMITH      CLERK
+JONES      MANAGER
+BLAKE      MANAGER
+CLARK      MANAGER
+SCOTT      ANALYST
+KING       PRESIDENT
+ADAMS      CLERK
+JAMES      CLERK
+FORD       ANALYST
+MILLER     CLERK
+
+10 filas seleccionadas.

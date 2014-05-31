@@ -1,0 +1,46 @@
+body{
+	margin:0px;
+	background:#DEE2E4;
+	padding:0px;
+}
+ #animacion{
+	position:relative;
+	top: 0px;
+	left:0px;
+	width: 800px;
+	height: 500px;
+	background-color: blue;
+	/*z-index: 1;*/
+ }
+#barra_izquierda{
+	float: left;
+	position:relative;
+	top:190px;
+	left: 10px;
+	width: 20px;
+	height: 100px;
+	background-color: white;
+ }
+ #pelota{
+	float: left;
+	position:relative;
+	top:230px;
+	left: 370px;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+ }
+ #barra_derecha{
+	float: left;
+ 	position:relative;
+	top: 190px;
+	left:730px;
+	width: 20px;
+	height: 100px;
+	background-color: white;
+ }
+
+ 
+ 
+ 
+ 

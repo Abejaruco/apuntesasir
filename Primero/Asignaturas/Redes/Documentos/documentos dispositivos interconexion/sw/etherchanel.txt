@@ -1,0 +1,15 @@
+interface port-channel 3
+sw mode trunk
+sw native vlan id
+exit
+int fastethernet 0/4
+channel-group 3 mode desirable
+exit
+int fastethernet 0/5
+channel-group 3 mode desirable
+exit
+
+
+
+en algunos swith los puertos para trunk son 1,2.. 9,10,.. 17,18,.. 25,26,..
+en otros como el 2950-24 cualquier puerto se puede configurar no importa el orden 

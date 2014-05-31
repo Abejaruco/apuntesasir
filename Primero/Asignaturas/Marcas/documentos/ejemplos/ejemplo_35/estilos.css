@@ -1,0 +1,36 @@
+#box1{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 400px;
+	background-color: red;
+	height: 300px;
+	border: 1px solid black;
+}
+#box2{
+	position: relative;
+	top: -300px;
+	left: 700px;
+	width: 400px;
+	background-color: red;
+	height: 300px;
+	border: 1px solid black;
+}
+#box3{
+	position: relative;
+	top: -200px;
+	left: 0px;
+	width: 400px;
+	background-color: red;
+	height: 300px;
+	border: 1px solid black;
+}
+#box4{
+	position: relative;
+	top: -500px;
+	left: 700px;
+	width: 400px;
+	background-color: red;
+	height: 300px;
+	border: 1px solid black;
+}

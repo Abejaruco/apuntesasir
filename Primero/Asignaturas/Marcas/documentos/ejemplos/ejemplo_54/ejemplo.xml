@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalogo 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="esquemaGaleria.xsd">
+	<producto>
+		<nombre>mesa</nombre>
+		<referencia>10023</referencia>
+		<marca>ikea</marca>
+		<estado estado="usado"/>
+		<precio>10.20</precio>
+	</producto>
+	<producto>
+		<nombre>silla</nombre>
+		...
+	</producto>
+</catalogo>

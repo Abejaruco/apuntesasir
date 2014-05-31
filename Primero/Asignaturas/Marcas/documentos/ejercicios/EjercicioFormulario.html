@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="es">
+
+<head>
+	<title>Ejercico</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 0.21" />
+</head>
+
+<body>
+	<p>Ejemplo de un formulario incorporado en una tabla</p>
+	<form name=formulario action="procesar.php" method=post>
+	<table>
+		<tr>
+			<th align="right">Nombre</th><td><input type=text size=40 name="nombre" placeholder="Tu nombre completo"</td>
+		</tr>
+		<tr>
+			<th align="right">DNI</th><td><input type=text size=40 name="dni" placeholder="Ej:123456789a"	maxlength="10"></td>
+		</tr>
+		<tr>
+			<th align="right">Provincia</th>
+			<td><select name="provincia">
+					<option value="Alava" checked>Alava</option>
+					<option value="Bizkaia">Bizkaia</option>
+					<option value="Guipuzkoa">Guipuzkoa</option>
+				</input>
+			</td>
+		</tr>
+		<tr>
+			<th align="right">Sexo</th><td><input type=radio name="sexo" value="Hombre" checked>Hombre
+							<input type=radio name="sexo" value="Mujer">Mujer</td>
+		</tr>
+		<tr>
+			<th align="right">E-mail</th><td><input type=text size=40 name="email" placeholder="almi@almi.com"></td>
+		</tr>
+		<tr><td><br></td></tr>
+		<tr>
+			<th align="right">Usuario</th><td><input type=text size=40 name="usuario" placeholder="Tu nombre de usuario"></td>
+		</tr>
+		<tr>
+			<th align="right">Contraseña</th><td><input type=password size=40 maxlength=4 name="contrasena" placeholder="Máximo 4 caracteres"></td>
+		</tr>
+		<tr><td><br></td></tr>
+		<tr>
+			<td colspan=2 align=center>
+				<table>
+					<tr>
+						<th>Matrícula</th>
+						<td><select name="matricula[]" multiple size=4>
+								<option value="DAM">DAM</option>
+								<option value="ASIR" selected>ASIR</option>
+								<option value="SMR">SMR</option>
+								<option value="DAI">DAI</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr><td><br></td></tr>
+		<tr>
+			<th>Observaciones</th><td><textarea name="observaciones" placeholder="Escribe aquí lo que quiereas" cols=60 rows=6></textarea></td>
+		</tr>
+		<tr><td colspan=2 align=right><input type=submit value="Enviar"><input type=reset value="Limpiar"></td></tr>
+	</table>
+	</form>
+</body>
+
+</html>

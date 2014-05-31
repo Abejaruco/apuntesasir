@@ -1,0 +1,43 @@
+h1{
+	color: #008080;
+}
+h2{
+	color: #0000FF;
+}
+a{
+	color: #FF0000;
+}
+a em{
+	color: #0000FF;
+}
+p strong{
+	color: #FF0000;
+}
+table caption{
+	color: #0000FF;
+}
+table,tr,th,td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.destacado, th.especial, td strong{
+	color: #FFA500;
+}
+span.especial{
+	color: #800080;
+}
+#especial{
+	color: #FF00FF;
+}
+td{
+	color: #008000;
+}
+#adicional{
+	color: #808000;
+}
+th{
+	color: red;
+}
+#adicional p a{
+	color: #008000;
+}

@@ -1,0 +1,35 @@
+#contenedor{
+	width: 90%;
+	background-color: grey;
+	margin: auto;
+}
+#cabecera{
+	padding: 1em;
+	width: 96%;
+	background-color: yellow;
+	margin: 0px;
+	padding: 0px;
+}
+#logo{
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+#buscador{
+	float: right;
+	margin-top: 2%;
+}
+#menu{
+	padding: 0.5em;
+	margin-bottom: 0.5;
+}
+#noticias,#publicidad,#principal,#secundario{
+	padding: 0.5em;
+}
+#pie{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.clear{
+	clear: both;
+}

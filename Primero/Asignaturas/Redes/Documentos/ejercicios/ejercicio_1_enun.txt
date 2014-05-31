@@ -1,0 +1,5 @@
+T = 0,05
+Vm = f = 1/T = 20 baudios = ciclos/seg = Hz
+La señal que envío puede tener 16 estados distintos.
+
+¿Cual será la velocidad de transmisión? ¿Vt?

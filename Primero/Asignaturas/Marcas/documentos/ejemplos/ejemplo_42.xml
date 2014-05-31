@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogo>
+	<camiseta>
+		<color>blanco</color>
+		<talla>M</talla>
+		<marca>micamiseta</marca>
+		<referencia>173</referencia>
+		<precio>10</precio>
+	</camiseta>
+	<camiseta>
+		<color>azul</color>
+		<talla>L</talla>
+		<marca>micamiseta</marca>
+		<referencia>185</referencia>
+		<precio>12</precio>
+	</camiseta>
+</catalogo>

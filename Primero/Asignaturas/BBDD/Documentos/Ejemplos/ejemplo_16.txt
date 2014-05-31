@@ -1,0 +1,9 @@
+Ejemplo:
+	select ename,job,comm from scott.emp where comm is not null;
+Devuelve:
+ENAME      JOB             COMM
+---------- --------- ----------
+ALLEN      SALESMAN         300
+WARD       SALESMAN         500
+MARTIN     SALESMAN        1400
+TURNER     SALESMAN           0

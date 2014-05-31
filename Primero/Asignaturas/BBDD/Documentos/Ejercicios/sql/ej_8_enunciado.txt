@@ -1,0 +1,5 @@
+Crear una tabla alumunos con los campos:
+cod_alumno numero(5)
+nombre varchar2(20)
+apellidos varchar2(50)
+Nos hemos confundido al crear el nombre de la tabla. Para cambiarlo hay que usar rename to junto con alter table.

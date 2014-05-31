@@ -1,0 +1,126 @@
+
+Creamos una base de datos.
+CREATE DATABASE DBPersonas TEMPLATE template0;
+
+
+Creamos una secuencia
+CREATE SCHEMA Persona;
+
+
+Creamos una secuencia
+CREATE SEQUENCE Persona.seq_idcontacto START 1; --empieza desde 1
+
+create table persona.contacto
+(
+idcontacto int default nextval('persona.seq_idcontacto'),
+nombres varchar(30) not null,
+padre varchar(30) not null,
+madre varchar(30) not null,
+genero char(1) default('0') not null,
+dni varchar(10) null,
+fechanac date null,
+fechacreacion date not null default now()
+)
+;
+//RESTRICCIONES
+alter table persona.contacto
+add constraint ck_genero
+check (genero in ('0','1'))
+;
+//CLAVE UNICA
+alter table persona.contacto
+add constraint uq_dni
+unique(dni)
+;
+//CLAVES PRIMARIAS
+alter table persona.contacto
+add constraint pk_dni
+primary key(dni)
+;
+//BORRAR LOS DATOS DE LA TABLA
+
+TRUNCATE TABLE persona.contacto;
+
+
+//creamos el schema para las particiones
+create schema particion;
+
+//creamos las particiones para los dni 111111111 y 222222222
+create table particion.contacto_111111111(check (dni='111111111'))
+inherits (persona.contacto); 
+create table particion.contacto_222222222(check (dni='222222222'))
+inherits (persona.contacto); 
+
+//creamos las reglas
+create or replace rule insertar_contacto_111111111 as
+on insert to persona.contacto
+where (dni='111111111')
+do instead insert into particion.contacto_111111111 values(new.*);
+
+create or replace rule insertar_contacto_222222222 as
+on insert to persona.contacto
+where (dni='222222222')
+do instead insert into particion.contacto_222222222 values(new.*);
+
+//ahora insertamos un valor para pobrar las reglas
+
+
+insert into persona.contacto(
+nombres,
+padre,
+madre,
+genero,
+dni,
+fechanac)
+values(
+'asir2',
+'asir2',
+'asir2',
+'0',
+'111111111',
+'nov 14 2014 12:00AM');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

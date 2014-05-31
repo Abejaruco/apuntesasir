@@ -1,0 +1,9 @@
+Para conseguir 60 subredes necesitamos 6 bits por tanto la máscara tendrá que ser:
+IP: 25.10.0.0/16
+Red: 25.10.0.0/22
+255.255.11111100.0
+255.255.252.0
+Con 6 bits realmente tenemos 64 subredes.
+IPs disponibles por cada subred:
+Tenemos los 8 bits del último octeto más los dos bits que sobran del octeto anterior.
+10 bits --> 1024 hosts.

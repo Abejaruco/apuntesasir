@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>Problema</title>
+<link rel="StyleSheet" href="estilos.css" type="text/css">
+</head>
+<body>
+<h1 class="resaltado">Titulo de nivel 1</h1>
+<p>
+Este parrafo muestra el resultado de aplicar la clase .resaltado en la última <span class="resaltado">palabra.</span>
+</p>
+</body>
+</html>

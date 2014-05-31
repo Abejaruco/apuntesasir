@@ -1,0 +1,195 @@
+body{
+	margin:0px;
+	background:blue;
+	padding:0px;
+}
+#contenido{
+	width:900px;
+	height:700px;
+	background:grey;
+	min-width:700px;
+}
+#marco{
+	position: relative;
+	top: 10px;
+	width: 600px;
+	height: 200px;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 28px 28px 28px 28px;
+	-moz-border-radius: 28px 28px 28px 28px;
+	-webkit-border-radius: 28px 28px 28px 28px;
+	text-align:center;/*Alineación horizontal. Posibilidades:left,center,right y justify*/
+	line-height:200px;
+	font-family:Purisa;
+	font-size:60px;
+	font-weight:100;
+}
+	ul{
+		position: relative
+		top: 100px;
+		left: 100px;
+		width: 800px;
+		height: 70px;
+		/*Realizamos degradado lineal*/
+		background: linear-gradient(#000000, #7f7f7f);/*comun*/
+		background: -moz-linear-gradient(#000000, #7f7f7f);/*firefox*/
+		background: -webkit-linear-gradient(#000000, #7f7f7f);/*firefox*/
+		/*redondear bordes*/
+		border-radius: 28px 0px;
+		-moz-border-radius: 28px 0px;
+		-webkit-border-radius: 28px 0px;
+	}
+	ul li{
+		position: relative;
+		width: 140px;
+		height: 60px;
+		background: white;
+		text-align: center;
+		line-height: 60px;
+		list-style: none;
+		float: left;
+		top: 5px;
+		margin-left: 10px;
+		border-radius: 28px 28px 28px 28px;
+		-moz-border-radius: 28px 28px 28px 28px;
+		-webkit-border-radius: 28px 28px 28px 28px;
+		
+	}
+	ul li:hover{
+		/*
+		transform: rotate(10deg);
+		-moz-transform: rotate(10deg);
+		-webkit-transform: rotate(10deg);
+		* */
+		color: white;
+		background: black;
+	}
+	/*colocamos y ocultamos el sub-menu*/
+	ul li ul{
+		position: relative;
+		top: 0px;
+		left: 0px;
+		width: 160px;
+		height: 300px;
+		background: transparent;
+		padding: 0px;
+		display: none;/*ocultamos el menu*/
+	}
+	/*al pasar por el menu mostramos el submenu*/
+	ul li:hover ul{
+		display: block;
+	}
+	
+	ul li ul li{
+		/*ahora le damos estilo a los elementos del submenu*/
+		border: 1px solid black;
+		margin: 0px;
+		color: black;
+	}
+	ul li ul #opcion11{
+		color: red;
+		font-size: 20px;
+	}
+	
+	
+	/*ahora colocamos el submenu 2*/
+	ul li ul li ul{
+		position: relative;
+		top: -60px;
+		left: 140px;
+		width: 160px;
+		height: 300px;
+		display: none;
+	}
+	ul li:hover ul li ul{
+		display: none;
+	}
+	ul li ul li:hover ul{
+		display: block;
+	}
+	ul li ul li ul li{
+		font-size: 8px;
+	}
+	
+	ul li ul li ul #opcion222{
+		font-size: 48px;
+	}
+#fondo_rojo{
+	background: red;
+}
+#fondo_verde{
+	background: green;
+}
+#fondo_azul{
+	background: blue;
+}
+#fondo_blanco{
+	background: white;
+	color:black;
+}
+#letra_rojo{
+	color:red;
+}
+#letra_negro{
+	color:black;
+}
+#letra_verde{
+	color:green;
+}
+#letra_azul{
+	color:blue;
+}
+#bordes_4_redondos{
+	border-radius: 28px 28px 28px 28px;
+	-moz-border-radius: 28px 28px 28px 28px
+	-webkit-border-radius: 28px 28px 28px 28px
+}
+#bordes_2_redondos{
+	border-radius: 28px 0px 28px 0px;
+	-moz-border-radius: 28px 0px 28px 0px
+	-webkit-border-radius: 28px 0px 28px 0px
+}
+#bordes_1_redondo{
+	border-radius: 28px 0px 0px 0px;
+	-moz-border-radius: 28px 0px 0px 0px
+	-webkit-border-radius: 28px 0px 0px 0px
+}
+#bordes_3_redondos{
+	border-radius: 0px 28px 28px 28px;
+	-moz-border-radius: 0px 28px 28px 28px
+	-webkit-border-radius: 0px 28px 28px 28px
+}
+#posicion_derecha{
+	text-align:right;/*Alineación horizontal. Posibilidades:left,center,right y justify*/
+	line-height:60px;
+	}
+#posicion_izquierda{
+	text-align:left;/*Alineación horizontal. Posibilidades:left,center,right y justify*/
+	line-height:60px;
+	}
+#posicion_arriba{
+	text-align:center;/*Alineación horizontal. Posibilidades:left,center,right y justify*/
+	line-height:20px;
+	}
+#posicion_abajo{
+	text-align:center;/*Alineación horizontal. Posibilidades:left,center,right y justify*/
+	line-height:100px;
+	}
+#posicion_centro{
+	text-align:center;/*Alineación horizontal. Posibilidades:left,center,right y justify*/
+	line-height:60px;
+	}
+#borde_blanco{
+	color:white;
+}
+#borde_negro{
+	color:black;
+}
+#borde_rojo{
+	color:red;
+}
+#borde_azul{
+	color:blue;
+}	
+	

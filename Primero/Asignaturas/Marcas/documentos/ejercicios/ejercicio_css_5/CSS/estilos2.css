@@ -1,0 +1,48 @@
+body{
+	background-image: url("../imagenes/cielo.jpg");
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-position: 10% 0%;
+	margin:0px;
+	padding: 0px;
+}
+.trama{
+	background-image: url("../imagenes/tramas.png");
+	background-attachment: fixed;
+	background-repeat: repeat-y;
+	background-position: 10% 0%;
+}
+/*
+.enlaces{
+	position: absolute;
+	top: 75%;
+	width: 100%;
+	text-align: center;
+	font-size: 300%;
+	font-variant: small-caps;
+	text-transform: capitalize;
+}
+.nombre{
+	position: absolute;
+	bottom: 1%;
+	width: 100%;
+	text-align: center;
+	font-size: 150%;
+	text-transform: uppercase;
+	font-family: ubuntu, sans-serif;
+	color: #7F7F7F;
+	letter-spacing: 10px;
+}
+a{
+	font-family: Purisa, Tahoma, sans-serif;
+}
+img{
+	position: absolute;
+	left: 25%;
+}
+.trama{
+	background-image: url("../imagenes/tramas.png");
+	background-repeat: repeat-y;
+	background-position: 20% 10%;
+}
+*/

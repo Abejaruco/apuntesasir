@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalogo>
+	<producto>
+		<nombre>mesa</nombre>
+		<referencia>10023</referencia>
+		<marca>ikea</marca>
+		<estado tipo="usado"/>
+		<precio>10.20</precio>
+	</producto>
+	<producto>
+		<nombre>silla</nombre>
+		...
+	</producto>
+</catalogo>

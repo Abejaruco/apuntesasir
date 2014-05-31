@@ -1,0 +1,9 @@
+select TRUNC(sqrt(5),2) from dual;
+
+devuelve:
+
+TRUNC(SQRT(5),2)
+----------------
+            2,23
+
+1 fila seleccionada.

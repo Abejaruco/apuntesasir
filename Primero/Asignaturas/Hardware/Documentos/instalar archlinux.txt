@@ -1,0 +1,99 @@
+
+http://redactalo.com/27/guia-de-arch-linux-(tutorial-de-instalacion-configuracion-etc)-(2013)/
+
+
+
+
+-  loadkeys es
+-  cfdisk o fdisk
+    sda1:boot 
+    sda2:swap 
+    sda3:/ 
+    sda4:home 
+    una vez particionado el disco pasamos a formatear particiones 
+	mkfs -t ext4 /dev/sda3
+	mkfs -t ext4 /dev/sda4
+	mkswap /dev/sda2
+	y activamos la swap 
+	swapon /dev/sda2
+
+-Ahora montamos las particiones 
+	primero la particion root 
+	mount /dev/sda3 /mnt
+
+	creamos los directorios para otras particiones dentro de /mnt 
+	mkdir /mnt/boot
+
+	mkdir /mnt/home
+
+	y montamos las respectivas particiones 
+	mount /dev/sda1 /mnt/boot
+
+	mount /dev/sda4 /mnt/home
+
+- Ahora instalamos el sistema base 	
+	pacstrap /mnt base base-devel
+
+-  instalamos el gestor de arranque  el grub o el syslinux
+       pacstrap /mnt grub-bios
+       pacstrap /mnt pacman -S syslinux
+
+-   generamos el archivo fstab 
+	genfstab -p /mnt >> /mnt/etc/fstab
+- haremos un chroot 
+        arch-chroot /mnt
+- estableceremos el nombre de nuestro hostname en el archivo /etc/hostname
+- ln - s /usr/share/zoneinfo/Europe/Madrid /etc/localtime
+- establecemos las preferencias de localizacion editando el archivo /etc/locale.conf 
+     ejemplo:para España (lo creamos pues no existe)
+      LANG=es_ES.UTF-8
+- asi mismo en el archivo /etc/locale.gen debemos descomentar (eliminar el "#"al iniciode la linea)de tu localizacion 
+nano /etc/locale.gen
+	 LANG=es_ES.UTF-8
+- ya podemos generar la localizacion 
+     locale-gen
+- ahora crearemos el archivo /etc/vconsole.conf que es el que establecera el keymap 
+nano /etc/vconsole.conf
+
+    KEYMAP=es  
+
+**************************************************
+-  ahora configuramos el bootloader osea el grub 
+	grub-install /dev/sda
+
+-  creamos el archvo grub.cfg 
+	grub-mkconfig -o /boot/grub/grub.cfg
+---------------------------------------------------
+-si hemos escogido syslinux 
+     syslinux-install_update -iam
+     nano /boot/syslinux/syslinux.cfg
+***************************************************
+
+- creamos el disco ram inicial con : 
+	mkinitcpio -p linux
+
+- establecemos nuestra contraseña para root con : 
+passwd 
+- salimos del entorno chroot con: 
+	exit
+
+- desmontamos las particiones previamente montadas en /mnt con. 
+	umount /mnt/{boot,home,}
+- finalmente reiniciamos el sistema con: 
+	reboot
+-------------------------------------------------------------------------------
+
+- activar la red 
+  	systemctl enable dhcpcd.service
+	systemctl start dhcpcd.service
+	ping -c 3 www.google.com
+-actualizar el sistema
+     pacman -Syu
+
+
+
+-  Instalación de x11 y los controladores de vídeo
+
+pacman -S xorg-server xorg-xinit xorg-utils xorg-server-utils --noconfirm
+
+pacman -S mesa mesa-demos --noconfirm

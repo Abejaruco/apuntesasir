@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+<head>
+	<title>Administración de Sistemas Informáticos en Red</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 0.21" />
+	<LINK REL=StyleSheet HREF="../estilos/menu_principal.css" TYPE="text/css">
+</head>
+<body>
+	<h1>Configuración para que los usuarios de dominio pertenezcan a unos grupos locales:</h1>
+	<ul>
+	<li>Añadir la siguiente línea en <b>/etc/security/group.conf</b>:
+		<pre>*;*;*;Al0000-2400;floppy,video,audio,cdrom,plugdev,users,scanner,vboxusers</pre>
+	</li>
+	<li>Añadir la siguiente línea en <b>/etc/pam.d/common-auth</b>, debajo de la linea<b>"auth	required			pam_permit.so"</b>:
+		<pre>auth required pam_group.so use_first_pass</pre>
+	</li>
+	</ul>
+	<h1>Hacer que lightdm ofrezca una entrada para iniciar sesión con otro usuario, para poder iniciar sesión con un usuario de dominio</h1>
+	<ul>
+		<li>Añadir la siguiente línea en <b>/etc/lightdm/lightdm.conf</b>:
+			<pre>greeter-show-manual-login=true</pre>
+		</li>
+	</ul>
+</body>
+
+</html>

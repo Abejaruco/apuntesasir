@@ -1,0 +1,24 @@
+Ejemplos de consultas simples con operadores aritméticos y relacionales.
+
+1.- Selecionar los empleados con salario superior a 2000
+
+2.- Selecionar los empleados con salario superior a 2000 y con el trabajo de manager
+
+4.- Selecionar todos los empleados del departamento nº 20 y ademas debe de estar ordenado por el apellido y tienen que aparecer en la consulta el nº del empleado, el apellido, el oficio y el nº de departamento.
+
+5.- Empleados cuyo oficio sea analista, ordenado por el numero del empleado.
+select ename from emple where job like 'analista' order by empno;
+6.- Seleccionar las filas del departamento 10 cuyo oficio sea analista. La consulta debe de estar ordenada descendentemente por el apellido y tambien descendentemente por el nº empleado.
+
+7. Seleccionar la suma de todas las comisiones de los empleados y que aparezcan en una columna llamada TOTAL_COMISION
+8. Seleccionar la media de todas las comisiones de los empleados y que aparezcan en una columna llamada MEDIA_COMISION
+9.Obtener el apellido de todos los empleados en minúsculas
+10. Obtener el apellido de todos los empleados, cuyo apellido empieze por K, con la primera letra en mayúsculas y el resto en minúsculas
+11.Obtener el apellido del que tiene la mayor comisión
+12. Obtener el apellido del que tiene la mayor comisión
+13. obtener el número de registros de la tabla Bonus
+14.- Para la tabla emple, visualizar cuantos apellidos de los empleados empiezan por la letra A
+
+15.- Dada la tabla emp, obtener el sueldo medio,  el máximo sueldo y el minimo sueldo de los empleados del departamento 30.Emplear el formato adecuado para la salida y las cantidades adecuadas.
+16.obtener todos loa apellidos de la table emp, sin espacios en blanco.
+17.Mostrar las 3 primeras letras de todos los apellidos 

@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+	<head>
+		<title>XHTML Anboto</title>
+		<link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<div id="titulo">
+			<ul>
+				<a href="http://www.academiaalmi.com/index.html" target="_blank"><li>Academia Almi</li></a>
+				<a href="http://www.terra.es" target="_blank"><li>Terra</li></a>
+				<a href="http://www.google.es" target="_blank"><li>Google</li></a>
+			</ul>
+		</div>
+		<div id="contenido">
+			<img src="files/11_anboto.jpg" alt="Foto Anboto"/>
+			<p><span class="anboto">Anboto</span> es un monte de Bizkaia, de 1.331 msnm. Es uno de los montes más relevantes de Euskal Herria, no solo por su importancia geográfica, sino también por su importancia cultural. En el la mitología vasca fija la morada principal de la Dama de Amboto, Mari, convirtiéndolo en un monte casi sagrado. Es la mayor altitud de la Sierra de Amboto o Montes del Duranguesado, conocidos también como La "pequeña Suiza", que forman parte del Parque Natural de Urkiola. Es una inmensa mole de caliza arrecifal muy compacta y de color gris claro, que contiene restos de corales coloniales masivos y grandes conchas de rudicos y ostreicos. La sierra, situada al Este del parque, recorre este en dirección noroeste-sureste, situándose la cumbre del Amboto en su extremo oriental.</p>
+		</div>
+		<div class="clear"/>
+		<h1>¿Has subido? Cuéntanos...</h1>
+		<div id="formularios">
+			<form name="formulario" action="../../procesar.php" method="post">
+				<fieldset>
+					<legend>Datos personales</legend>
+						<p>Nombre<br/>
+						<input type="text" name="nombre" id="nombre" class="nombre" placeholder="Escribe aquí tu nombre"/></p>
+						<p>Datos ascensión<br/>
+						<textarea name="ascension" id="ascension" placeholder="Escribe aquí todos los datos de interes de la ascensión"/></p>
+				</fieldset>
+				<fieldset>
+					<legend>Datos ruta/ascensión</legend>
+						<p>¿Quieres subir una foto? <input type="file" name="archivo" id="archivo" /></p>
+						<p>Fecha <input type="date" name="fecha" id="fecha" /> Calificación <select name="calificacion" id="calificacion">
+								<option value="1">Fácil</option>
+								<option value="2">Medio</option>
+								<option value="2">Dificil</option>
+							</select></p>
+						<p>¿Volverías a subir Anboto?</p>
+						<p><input type="radio" name="volver" id="volver" value="si" class="margen"/>Sí, me encantó!</p>
+						<p><input type="radio" name="volver" id="volver" value="no" class="margen"/>No, nunca más!</p>
+						<p><input type="checkbox" name="aceptar" id="aceptar" />Acepto recibir publicidad sobre esta página en mi correo.</p>
+						<input type="submit" value="Enviar"/>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>

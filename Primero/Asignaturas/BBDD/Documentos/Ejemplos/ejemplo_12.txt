@@ -1,0 +1,4 @@
+Ejemplo:
+	select ename from scott.emp where ename like '%s';
+Devuelve:
+	ninguna fila seleccionada

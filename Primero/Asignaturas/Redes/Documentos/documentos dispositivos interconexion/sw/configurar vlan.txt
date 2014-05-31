@@ -1,0 +1,11 @@
+-- por cada vlan que quiera crear----
+conf term
+vlan 20
+name almacen
+end
+--- por cada boca que una a la vlan ---
+conf term
+inter fastEthernet 0/1
+sw mode access
+sw access vlan 10
+end

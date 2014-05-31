@@ -1,0 +1,648 @@
+<HTML>
+	<!-- ------------------------------------------------ C   A   B   E   C   E   R   A -------------------------------------------------------------- -->
+	<HEAD>
+		<TITLE>Teoria HTML</TITLE> <!-- Establece el título de mi web -->
+		<!-- Diferentes opciones del tag META <META HTTP-EQUIV= 
+		"Refresh" CONTENT="10"> --><!-- Establece que mi web se 
+		actualice cada 10 segundos -->
+		<META NAME="keywords" CONTENT="HTML, internet "> <!-- Palabras clave para que los grandes 
+		buscadores como Google, puedan identificar mi web --> <META 
+		NAME="description" CONTENT="Manual para escribir HTML."> 
+		<!-- Una breve descripción que los buscadores mostrarán -->
+		<LINK REL=StyleSheet HREF="../../../../estilos/menu_principal.css" TYPE="text/css">
+		<LINK REL=StyleSheet HREF="../Ajustes/estilos.css" TYPE="text/css">
+		<script type="text/javascript" src="../Ajustes/scripts.js"></script>
+		<script type="text/javascript" src="../../../../estilos/scripts.js"></script>
+		<?php include('../Ajustes/funciones.php');?>
+		<?php $ejemplo_numero = 1;?>
+</HEAD>
+<!----------------------------------------------------------------------
+CUERPO
+----------------------------------------------------------------------->
+<BODY onload="resolucion()">
+<!----------------------------------------------------------------------
+MENUS
+----------------------------------------------------------------------->
+<div class="menus">
+	<ul class="menu">
+		<li><a href="../../../../">ASIR</a></li>
+		<li><a href="../../../">PRIMERO</a></li>
+		<li><a href="../../">ASIGNATURAS</a></li>
+		<li>LENGUAJE DE MARCAS</li>
+	</ul>
+	<ul class="menu">
+		<li><a href="../index.html">Índice</a></li>
+		<li><a href="contacto.html">Contacto</a></li>
+	</ul>
+</div>
+<!----------------------------------------------------------------------
+FIN MENUS
+----------------------------------------------------------------------->
+<div class="contenido">
+<!----------------------------------------------------------------------
+TEMA N
+-----------------------------------------------------------------------
+<a name="teman"></a>
+<div class="tema">
+<H1>N. Título</H1>
+
+</DIV>
+----------------------------------------------------------------------
+FIN TEMA N
+----------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------
+TEMA 1
+----------------------------------------------------------------------->
+<a name="tema1"></a>
+<div class="tema">
+<H1>1. Introducción</H1>
+<p>"El lenguaje de marcas es un lenguaje que consiste en meter el contenido entre etiquetas o tags que definen el tipo de contenido y las características de este. El nombre de las etiquetas debe ir entre los símbolos "&#60;" y "&#62;". El contenido de una etiqueta se coloca entre la etiqueta de apertura o inicio &#60;nombre_etiqueta&#62; y la de cierre &#60;/nombre_etiqueta&#62;.</p>
+<p>Las característcas del contenido se definen dentro de la etiqueta de inicio mediante atributos. Los atributos se definen mediante su nombre seguido de un "=" y el valor del atributo. Dependiendo del tipo de atributo el valor del atributo deberá ir o no encerrado entre comillas simples o dobles."</p>
+
+</DIV>
+<!----------------------------------------------------------------------
+FIN TEMA 1
+----------------------------------------------------------------------->
+<!----------------------------------------------------------------------
+TEMA 2
+----------------------------------------------------------------------->
+<a name="tema2"></a>
+<div class="tema">
+<H1>2. Páginas Web</H1>
+<p>Las páginas web se crean utilizando el lenguaje de marcas, utilizando una serie de etiquetas y atributos predefinidas que se interpretan de una manera determinada. Este lenguaje de marcas con etiquetas y tag predefinidas se llama HTML.</p>
+<h2>Estructura</h2>
+<h3>&#60;!DOCTYPE&#62;</h3>
+<p>Para que un explorador entienda bien el código de una página web, esta debe tener al principio del documento la declaración del tipo de documento, que se indica mediante la etiqueta especial &#60;!DOCTYPE&#62;</p>
+<p>Esta etiqueta debe tener una serie de atributos que varían en función de la versión de HTML a usar:</p>
+<ul>
+	<li>HTML 5:<br><textarea rows=1 style="width: 100%"><!DOCTYPE html></textarea></li>
+	<li>HTML 4.01:<BR><textarea rows=1 style="width: 100%"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"></textarea></li>
+	<LI>HTML 1-0<BR><textarea rows=1 style="width: 100%"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"></textarea></LI>
+</ul>
+<h3>&#60;HTML&#62;</h3>
+<p>El contenido de toda página web debe estar entre una etiqueta o tag de inicio de archivo &#60;html&#62; y una etiqueta de fin de archivo &#60;/html&#62;</p>
+
+</DIV>
+<!----------------------------------------------------------------------
+FIN TEMA N
+----------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------
+TEMA 1
+----------------------------------------------------------------------->
+<a name="tema1"></a>
+<div class="tema">
+<H1>1.PÁRRAFOS</H1>
+		<p>Para crear un párrafo hay que meter el texto entre los tags &#60;P&#62;&#60;/P&#62;</p>
+		<p>Este tag admite el atributo "Align" para alinear el texto, y los valores que se 
+		le puede dar son: "Left", "Right", "Center" y "Justify"</p><!-- Alineado a la izquierda -->
+		<h2>Ejemplos:</h2>
+		<!------------------------ALINEADO A LA IZQUIERDA--------------------------------->
+		
+		<h3>Alineado a la izquierda</h3>
+			<?php echo incluir_ejemplo();?>
+		<h3>Alineado a la derecha</h3>
+			<?php echo incluir_ejemplo();?>
+		<h3>Centrado</h3>
+			<?php echo incluir_ejemplo();?>
+		<h3>Justificado</h3>
+			<?php echo incluir_ejemplo();?>
+	</div>
+<!----------------------------------------------------------------------
+FIN TEMA 1
+----------------------------------------------------------------------->
+<!----------------------------------------------------------------------
+TEMA 2
+----------------------------------------------------------------------->
+<a name="tema2"></a>
+<div class="tema">
+<H1>2.SALTO DE LÍNEA - BR</H1>
+	<p>El tag BR hace el efecto de pulsar la tecla ENTER cuando estamos escribiendo por ejemplo en Microsoft WORD</p>
+	<?php echo incluir_ejemplo();?>
+
+</div>
+<!----------------------------------------------------------------------
+FIN TEMA 2
+----------------------------------------------------------------------->
+<!----------------------------------------------------------------------
+TEMA 3
+----------------------------------------------------------------------->
+<a name="tema3"></a>
+<div class="tema">
+<H1>3.LÍNEAS - HR</H1>
+<p>Saca por pantalla líneas divisorias, tiene diferentes atributos.</p>
+	<ul>
+		<li><b>NOSHADE</b>: Elimina la sombra de la línea.</li>
+		<li><b>WIDTH</b>: Define el largo de la línea.</li>
+		<li><b>SIZE</b>: Define el ancho de la línea.</li>
+	</ul>
+	<?php echo incluir_ejemplo();?>
+</div>
+<!----------------------------------------------------------------------
+FIN TEMA 3
+----------------------------------------------------------------------->
+<!----------------------------------------------------------------------
+TEMA 4
+----------------------------------------------------------------------->
+<a name="tema4"></a>
+<div class="tema">
+<H1>4.CABECERAS - H1...H6</H1>
+<p>Estos tags se utilizan prara establecer una jerarquía de encabezados.</p>
+	<?php echo incluir_ejemplo();?>
+</div>
+<!----------------------------------------------------------------------
+FIN TEMA 4
+----------------------------------------------------------------------->
+<!----------------------------------------------------------------------
+TEMA 5
+----------------------------------------------------------------------->
+<a name="tema5"></a>
+<div class="tema">
+<H1>5. FUENTES - FONT</H1>
+	<p>Define el tamaño y estilo del texto. Tiene diferentes atributos:</p>
+	<ul>
+		<li><b>SIZE</b>: Define el tamaño del texto. Puede varirar del 1 al 7, siendo el valor por defecto 3.</li>
+		<li><b>COLOR</b>: Define el color del texto. Se pueden poner con el nombre del color en inglés o definiendo el color mediante números en formato hexadecimal con el símbolo # delante. Estos números definen la mezcla RGB (Red, Green, Blue).</li>
+	</ul>
+<?php echo incluir_ejemplo();?>
+</div>
+<!----------------------------------------------------------------------
+FIN TEMA 5
+----------------------------------------------------------------------->
+<!----------------------------------------------------------------------
+TEMA 6
+----------------------------------------------------------------------->
+<a name="tema6"></a>
+<div class="tema">
+<H1>6. LINKS - A</H1>
+<p>Permiten "navegar" de un documento a otro mediante enlaces. Tiene diferentes atributos:</p>
+<ul>
+	<li><b>Href</b>: Define el destino del enlace. Si el destino está en internet hay que poner el protocolo http o https.Si el destino es en nuestro servidor, se pone la ruta al archivo. Esta ruta puede ser absoluta o relativa. Es recomendable usar relativas para una mejor portabilidad.</li>
+	<li><b>Target</b>: Define donde se cargará el enlace. Se utilizaba con marcos (frames) para cargar un enlace en un marco distinto al que se encuentra el enlace, pero en la misma página. Ahora se utiliza sobre todo para abrir enlaces en páginas o pestañas nuevas.</li>
+</ul>
+<?php echo incluir_ejemplo();?>
+</div>
+<!----------------------------------------------------------------------
+FIN TEMA 6
+----------------------------------------------------------------------->
+<!----------------------------------------------------------------------
+TEMA 7
+----------------------------------------------------------------------->
+<a name="tema7"></a>
+<div class="tema">
+<H1>7. Listas</H1>
+<BLOCKQUOTE>
+<a name="tema7.1"></a>
+<H2>7.1 Listas Desordenadas - UL</H2>
+			
+			<UL>
+				<LI>Introducción
+					<UL TYPE="SQUARE"> <!-- El tipo puede ser DISC (por defecto), SQUARE o CIRCLE -->
+						<LI>Agradecimientos
+						<LI>Prólogo
+					</UL>
+				<LI>Temas
+				<LI>Bibliografía				
+			</UL>
+			<a name="tema7.2"></a>
+			<H2>7.2 Listas Ordenadas - OL</H2>
+			
+			<OL TYPE="i">
+				<LI>Introducción
+					<OL TYPE="A"> <!-- El tipo puede ser "A", "a", "I" o "i" -->
+						<LI>Agradecimientos
+						<LI>Prólogo
+					</OL>
+				<LI>Temas
+				<LI>Bibliografía				
+			</OL>
+		
+			<H3>EJERCICIO LISTAS MÁS ETIQUETAS DIFERENTES</H3>
+			<OL>
+				<LI>PUNTO 1
+					<OL TYPE="A">
+						<LI><A HREF="http://www.google.com/">IR A GOOGLE</A>
+						<LI><A HREF="http://www.marca.com/"><FONT SIZE="5"><B><I>IR A MARCA</I></B></FONT></A>
+					</OL>
+				<LI>PUNTO 2
+					<UL TYPE="SQUARE">
+						<LI><FONT SIZE="7" FACE="TAHOMA" COLOR="RED">PUNTO 2.1</FONT>
+							<OL TYPE="i">
+								<LI>PUNTO 2.1.1
+								<LI>PUNTO 2.1.2							
+							</OL>
+					</UL>
+				
+				<LI>PUNTO 3
+			</OL>
+		
+		</BLOCKQUOTE>
+
+	</div>
+	<div class="tema">
+<a name="tema8"></a>
+<hr>
+<a href="../index.html">Índice</a>
+<HR>
+	<H1>8. Imágenes</H1>
+	<A href="http://www.surfistamag.com/" target="_blank"><IMG src="../imagenes/surfista.jpg" ALT="falta la imagen del surfista" height="200" width="200"/></a>
+
+	</div>
+	<div class="tema">
+<a name="tema9"></a><hr><a href="../index.html">Índice</a><HR>
+		<h1>9. Tablas</h1>
+		<h4>Hay tres atributos principales que se pueden usar con la etiqueta table:</h4>
+		<ul>
+			<li>border --> Define el borde de la tabla.</li>
+			<li>cellpadding --> Relleno de las celdas</li>
+			<li>cellspacing --> Relleno entre celdas (es como si anchase los bordes).</li>
+		</ul>
+		<h4>Otros atributos</h4>
+		<ul>
+			<li>bordercolor --> Define el color del borde</li>
+			<li>whidth y height --> Define el tamaño de la tabla. Podemos usar pixeles o porcentaje de pantalla.</li>
+			
+		</ul>
+		<h4>Atributos de las celdas:</h4>
+		<ul>
+			<li>VALIGN: Alinea el contenido de la tabla de forma vertical. Tiene como valores "top", "middle" y "bottom".</li>
+			<li>ALIGN: Alinea el contenido de la tabla de forma horizontal. Tiene como valores "right", "left" y "center".</li>
+			<li>COLSPAN: Combina el número de celdas que le indiques hacia la derecha.</li>
+			<li>ROWSPAN: Combina el número de celdas que le indiques hacia abajo.</li>
+		</ul>
+		<p>Estos dos atributos se pueden usar dentro de &lsaquo;tr&rsaquo; o de &lsaquo;th&rsaquo; o &lsaquo;td&rsaquo;</p>
+		<table class="zoom" border="10" cellpadding="10" cellspacing="10" bordercolor="green"> <!-- Indica que se va a construir una tabla -->
+			<tr>
+				<th valign="center" align="center">Fecha</th>
+				<th colspan=2 valign="middle" align="center">Fotos</th>
+			</tr>
+			<tr>
+				<th valign="bottom" align="left">2000</td>
+				<td valign="middle" align="center">Foto 1</td>
+				<td valign="top" align="right">Foto2</td>
+			</tr>
+			<tr>
+				<th valign="top" align="left">2001</td>
+				<td valign="middle" align="center">Foto 3</td>
+				<td valign="bottom" align="right">Foto 4</td>
+			</tr>
+			<tr>
+				<td colspan=3 align="center" valign="middle">No hay más fotos</td>
+			</tr>
+		</table>
+		<h4>Tabla de ejercicio con "colspan":</h4>
+		<table border="1" width="100%">
+			<tr align="center" valign="middle">
+				<td>1</td><td colspan=2>2</td><td>3</td></tr>
+			<tr align="center" valign="middle">
+				<td colspan=2>4</td><td colspan=2>5</td></tr>
+			<tr align="center" valign="middle">
+				<td>6</td><td>7</td><td>8</td><td>9</td></tr>
+			<tr align="center" valign="middle">
+				<td colspan=4>10</td></tr>
+		</table>
+		
+<h4>Tabla de ejercicio con "rowspan":</h4>
+		<table border="1" width="100%">
+			<tr align="center" valign="middle">
+				<td rowspan="2">1</td><td>2</td><td>3</td>
+			</tr>
+			<tr align="center" valign="middle">
+				<td>4</td><td>5</td>
+			</tr>
+		</table>
+		
+	</div>
+	<div class="tema">
+<a name="tema10"></a><hr><a href="../index.html">Índice</a><HR>
+	<h1>10. Formularios</h1>
+	<P>Para crear un formulario hay que usar la etiqueta &#60;FORM&#62;&#60;/FORM&#62; Que tiene diferentes atributos:</P>
+	<ul>
+		<li>autocomplete: puede tener los valores de "on" u "off".</li>
+	</ul>
+	<P>Entre estas dos etiquetas se pueden poner diferentes campos que veremos a continuación:</P>
+	<ul>
+		<li>Input: Con esta etiqueta se pueden poner los campos de texto, radios, checkboxes
+		 y submit. Para decir que tipo de campo quieres poner hay que usar el atributo
+		 "type" que admite los siguientes valores:
+			<ul>
+				<li>text. Es un campo donde se mete un texto corto. Atributos:</li><ul>
+					<li>Size: Indica el tamaño de la caja.</li>
+					<li>MaxLength: Indica el número máximo de caracteres que se pueden escribir.</li>
+					<li>PlaceHolder: Es para poner un valor por defecto dentro y que desaparezca cuando pinchemos dentro. Es un atributo de HTML5</li>
+					</ul>
+				<li>radio. Son unos círculos que se pueden seleccionar. Si se les pone el mismo nombre solo se puede seleccionar uno de ellos. Atributos:</li><ul>
+					<li>Checked: Indica que tiene que estar seleccionado por defecto cuando se carga la página.</li>
+				</ul>
+				<li>checkbox. Son unos cuadrados que se pueden seleccionar. Se pueden seleccionar más de uno a la vez.</li>
+				<li>Reset. Es un boton que limpia el formulario.</li>
+				<li>submit</li>
+				<li>email: Es un imput de HTML5. Tiene la ventaja de que comprueba automáticamente que se ha introducido un e-mail sin necesidad de javascript.</li>
+				<li>date: Es un imput de HTML5. Abre un calendario para elegir la fecha. Se puede restringir el rango de fechas a meter mediante min="año-mes-dia" y max="año-mes-dia".</li>
+				<li>number: Es un imput HTML5. Limita la entrada a números. Se puede limitar el rango de números a introducir mediante min="mínimo" y max="máximo"</li>
+				<li>range: Es un imput HTML5. Crea una barra de desplazamiento con un rango de valores.</li>
+			</ul>
+		</li>
+		<li>Select: Se utiliza para crear listas deplegables. Dentro hay que meter otros tags:
+			<ul>
+				<li>Option. Hay dos tipos de listas, las listas en las que solo se puede seleccionar un elemento y las listas e las que se puede seleccionar más de 
+			un elemento. Las segundas se crean igual, pero hay que ponerle el atributo size (hace que no sea desplegable) y el atributo multiple para 
+			decirle que se pueden elejir más de uno.</li>
+				<li>OptGroup. Sirve para agrupar diferentes options.</li>
+			</ul>
+
+		</li>
+			Los campos tienen que identificarse para que cuando posteriormente sean
+			procesados o validados se sepa a que campo corresponde cada valor. Para 
+			eso se utilizan los atributos "name" y "value".
+	</ul>
+
+<h4>Ejemplo</h4>
+<p><b>Código:</b></p>
+<!---------------------CODIGO DE EJEMPLO-------------------------------------->
+<textarea id="FormularioCodigo1">
+<!--Comienzo del formulario -->
+<form name="prueba" action="procesar.php" method=GET autocomplete="on">
+<!--Ejemplos de entradas de texto -->
+Nombre: <input type=text name="nombre" placeholder="Tu nombre" size=10 maxlength=9 autocomplete="on"><br>
+<!-- Con el atributo size cambiamos el tamaño del recuadro y con el maxlength la cantidad
+másima de caracteres -->
+Apellidos: <input type=text name="apellidos" placeholder="Tus apellidos" autocomplete="on"><br>
+Dirección: <input type=text name="dirección" placeholder="Tu dirección" autocomplete="on"><br>
+E-mail: <input type=text name="email" placeholder="tu@email.com"><br>
+E-mail: (html5) <input type=email name="email2" placeholder="tu@email.com" autocomplete="on"><br>
+Fecha de nacimiento: (html5) <input type=date name="fechanac" min="2000-01-01" max="2012-12-31">
+Pedido (Cantidad de botellas): <input type=number name="pedido" min="2" max="10" placeholder="2">
+Volumen: <input type=range name="volumen" min=3 max=25>
+<br>
+<!--placeholder es un atributo de html5. Es para poner un valor dentro de
+la caja de texto pero que desaparezca al pinchar dentro. La alternativa para
+versiones anteriores es value, que pone un valor dentro pero hay que borrarlo
+manualmente -->
+<!-- Ejemplo de entrada de contraseñas -->
+Contraseña: <input type=password name="clave" placeholder="********"><br>
+<!-- Ejemplo de Radio Buttons -->
+<p>
+<input type=radio name=sexo value="Hombre">Hombre
+<input type=radio name=sexo value="Mujer">Mujer</p>
+<!-- Ejemplo de CheckBoxes -->
+<p>
+<input type=checkbox name=deporte[] value="ciclismo">Bici
+<input type=checkbox name=deporte[] value="Motocicleta">Moto
+<input type=checkbox name=deporte[] value="Automovilismo">Coche
+<input type=checkbox name=deporte[] value="Deportes de fronton">Fronton</p>
+<!-- Despues del nombre se añaden los corchetes para que mande los datos
+en forma de array no como una sola variable, ya que se pisarian los datos
+y solo quedaría el valor de la última variable seleccionada -->
+<!-- Ejemplo de una lista en la que solo se puede selecciónar una opción -->
+	<P>¿Tienes Permiso de conducir?
+	<select name="permiso">
+		<option value="Si">Sí</option>
+		<option value="No" selected>No</option>
+	</select></p>
+<!-- Ejemplo de una lista en la que se pueden saleccionar más de una opción.
+En este caso hay que poner los corchetes despues del nombre para mandarlo como
+un array. El atributo size nos va a definir el número de opciones que van a estar
+a la vista sin necesidad de mover la lista con la barra de desplazamiento. El 
+atributo multiple es el que indica que se pueden seleccionar más de una opción
+pulsando la tecla control -->
+	<p>¿Que permisos tienees
+	<select name="permisos[]" size=7 multiple>
+		<option value="A" selected>A</option>
+		<option value="B">B</option>
+		<option value="C1" selected>C1</option>
+		<option value="C">C</option>
+		<option value="D1" selected>D1</option>
+		<option value="D">D</option>
+		<option value="E">E</option>
+	</select></p>
+<!-- Ejemplo de una lista múltiple agrupada -->
+	<p>
+	<select name="Estudios[]" multiple>
+		<optgroup label="Ciclos formativos">
+			<option value="Asir">Asir</option>
+			<option value="Dam">Dam</option>
+		</optgroup>
+		<optgroup label="Licenciaturas">
+			<option value="DAE">Dirección y administración de empresas</option>
+			<option value="Eco">Economicas</option>
+		</optgroup>
+	</select></p>
+<p><input type=submit value="Enviar"><input type=reset value="Limpiar"></p>
+</form>
+<!-- Fin del formulario -->
+</textarea><br>
+<!-------------------------------------------------------------------------------->
+<button onClick="cambiar('FormularioCodigo1','FormularioArea1')">Ver resultado</button>
+
+
+<p></p><b>Resultado:</b></p>
+<div id="FormularioArea1" class="resultado">
+</div>
+<p>Para que quede bién organizado el formulario es mejor meterlo dentro
+de una tabla:</p>
+<p><a href="Ejercicio_11_-_Formularios_2.html" target="_blank">Ejercicio hecho por el profesor</p></a>
+<p>Ejercicio propuesto por el profesor: Hacer un formulario como el que sale en la foto.<br>
+Para ver el resultado pincha en la foto.</p>
+<a href="EjercicioFormulario.html" target="_blank"><image src="../imagenes/EjercicioFormulario2.png" width=100%></image></a>
+<p>Ejercicio mio:</p>
+
+<textarea id="FormularioCodigo2">
+<form name="prueba" action="procesar.php" method=GET>
+<table width=80%>
+	<tr>
+		<th width=20% align=right>Nombre:</th>
+		<td width=60%><input type=text name="nombre" placeholder="Tu nombre" size=60% maxlength=9></td>
+	</tr>
+	<tr>
+		<th align=right>Apellidos:</th>
+		<td><input type=text name="apellidos" placeholder="Tus apellidos" size=60%></td>
+	</tr>
+	<tr>
+		<th align=right>Dirección:</th>
+		<td><input type=text name="dirección" placeholder="Tu dirección" size=60%></td>
+	</tr>
+	<tr>
+		<th align=right>E-mail:</th>
+		<td><input type=text name="email" placeholder="tu@email.com" size=60%></td>
+	</tr>
+	<tr>
+		<th align=right>Contraseña:</th>
+		<td><input type=password name="clave" placeholder="********"  size=60%></td>
+	</tr>
+	<tr>
+		<th align=right>Sexo:</th>
+		<td><input type=radio name=sexo value="Hombre">Hombre
+			<input type=radio name=sexo value="Mujer">Mujer
+		</td>
+	</tr>
+	<tr>
+		<th align=right>Aficiones:</th>
+		<td><input type=checkbox name=deporte[] value="ciclismo">Bici
+			<input type=checkbox name=deporte[] value="Motocicleta">Moto
+			<input type=checkbox name=deporte[] value="Automovilismo">Coche
+			<input type=checkbox name=deporte[] value="Deportes de fronton">Fronton
+		</td>
+	</tr>
+	<tr><th colspan=2 align=center>Permiso de conducir</th></tr>
+	<tr><th align=right>¿Tienes Permiso de conducir?</th>
+		<td><select name="permiso">
+				<option value="Si">Sí</option>
+				<option value="No" selected>No</option>
+			</select>
+		</td>
+	</tr>
+	<tr><th align=right>¿Que permisos tienees</th>
+		<td><select name="permisos[]" size=7 multiple>
+				<option value="A" selected>A</option>
+				<option value="B">B</option>
+				<option value="C1" selected>C1</option>
+				<option value="C">C</option>
+				<option value="D1" selected>D1</option>
+				<option value="D">D</option>
+				<option value="E">E</option>
+			</select>
+		</td>
+	</tr>
+	<tr><th colspan=2 align=center>Formación</th></tr>
+	<tr>
+		<td align=right>Selecciona toda la formación que tengas manteniendo pulsado el botón
+		control al seleccionar</td>
+		<td>
+			<select name="Estudios[]" size=6 multiple>
+				<optgroup label="Ciclos formativos">
+					<option value="Asir">Asir</option>
+					<option value="Dam">Dam</option>
+				</optgroup>
+				<optgroup label="Licenciaturas">
+					<option value="DAE">Dirección y administración de empresas</option>
+					<option value="Eco">Economicas</option>
+				</optgroup>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 align=center>
+			<input type=submit value="Enviar"><input type=reset value="Limpiar">
+		</td>
+	</tr>
+</table>
+</form>
+</textarea><br>
+<!-------------------------------------------------------------------------------->
+<button onClick="cambiar('FormularioCodigo2','FormularioArea2')">Ver resultado</button>
+<p></p><b>Resultado:</b></p>
+<div id="FormularioArea2" class="resultado">
+</div>
+<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+
+	</div>
+	<div class="tema">
+<a name="tema11"></a>
+<HR><!-- Inserta una línea recta -->
+<a href="../index.html">Índice</a>
+<HR>
+<H1>Cajas</H1>
+<p>Las cajas o div son contenedores en los que se pueden meter cualquier cosa y se
+suelen usar para tener todo bien organizado, ya que a esa caja se le puede dar
+atributos de muchos tipos (posición, color, etc) que afecta a todo lo que hay dentro</p>
+<p>Para usarlo hay que usar la etiqueta &#60;DIV&#62;...&#60;/DIV&#62;</p>
+<p>Los atributos que se suelen usar para personalizar la caja generlamente se usan con CSS.
+El codigo CSS se suele poner en un archivo a parte y se hace referencia a én en la cabecera
+de la página, o directamente se pone el código en la cabecera de la página, pero para no
+liarnos por ahora, ya que todavía no hemos visto CSS, vamos a ver unas pocas características
+cd CSS pero puestas directamente en la etiqueta &#60;DIV&#62;</p>
+<p>Esto se hace escribiendo &#60;DIV style="atributo1CSS: valor1CSS; atributo2CSS: valor2CSS"&#62;</p>
+<p>Algunos atributos CSS:</p>
+
+	<ul>
+		<li>Position: Define el tipo de posición (absolute o relative)</li>
+		<li>Height: Define el alto. Puede ser en cm, %, px, o em.</li>
+		<li>Width: Define el ancho. Puede ser en cm, %, px, o em.</li>
+		<li>Background-color: Define el color de fondo. Se puede usar el nombre del color en 
+		inglés o el número del color RGB en hexadecimal con el símbolo # delante.</li>
+		<li>Color: Define el color del contenido. Se puede usar el nombre del color en 
+		inglés o el número del color RGB en hexadecimal con el símbolo # delante.</li>
+	</ul>
+<a href="ejercicio1.html" target="_blank">Ejemplo del profesor hecho por nosotros</a>
+
+	</div>
+	<div class="tema">
+<a name="tema12"></a>
+<HR><!-- Inserta una línea recta -->
+<a href="../index.html">Índice</a>
+<HR>
+<h1>Multimedia: Audio y Vídeo</h1>
+<h2>HTML 4</h2>
+<p>Para insertart tanto audio como vídeo se usa la etiqueta &#60;EMBED SRC="archivo"&#62;</p>
+<p>Cada explorador reproduce un tipo de archivos distinto y no sabemos con que explorador va a reproducir el usuario el archivo, por lo que puede ser un problema.</p>
+<p>Atributos:</p>
+<ul>
+	<li>width</li>
+	<li>height</li>
+	<li>Autoestart:</li>
+		<ul>
+			<li>True</li>
+			<li>False (por defecto)</li>
+		</ul>
+	<li>Hidden:</li>
+		<ul>
+			<li>True</li>
+			<li>False</li>
+		</ul>
+</ul>
+<!----------------------------------------------------------------------
+<textarea id="FormularioCodigo2">
+
+</textarea><br>
+<button onClick="cambiar('FormularioCodigo2','FormularioArea2')">Ver resultado</button>
+<p></p><b>Resultado:</b></p>
+<div id="FormularioArea2" class="resultado">
+</div>
+----------------------------------------------------------------------->
+<p>Ejemplo:</p>
+<textarea id="Audio1Codigo" rows=3 cols=100>
+	<embed src="../audio/Thank_You.mp3" width=400" height=100 autostart=false hidden=false></embed>
+	<embed src="../video/pixar.mp4" width=800px" height=600px autostart=true hidden=false></embed>
+</textarea><br>
+<button onClick="cambiar('Audio1Codigo','Audio1Area')">Ver resultado</button>
+<p></p><b>Resultado:</b></p>
+<div id="Audio1Area" class="resultado">
+</div>
+<h2>HTML 5</h2>
+<p>Para insertar audio se usa la etiqueta &#60;audio&#62;:</p>
+<p>Para evitar el problema del formato de archivo y de los exploradores, se usa el tag &#60;source&#62; y así, el explorador elige el formato que puede reproducir de la lista.</p>
+<p>Si el explorador no lee HTML5 habría que meter dentro de la etiqueta &#60;audio&#62; la etiqueta &#60;EMBED&#62;.</p>
+<a href="./ejercicioMultimedia.html" target="_blank">Ejemplo</a>
+<textarea id="Audio2Codigo" rows=6 cols=100>
+	<audio controls="controls">
+		<source src="horse.ogg" type="audio/ogg">
+		<source src="horse.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio> 
+</textarea><br>
+<button onClick="cambiar('Audio2Codigo','Audio2Area')">Ver resultado</button>
+<p></p><b>Resultado:</b></p>
+<div id="Audio2Area" class="resultado">
+</div>
+<h5>Insertar video de YouTube.</h5>
+Youtube permite copiar el código que necesitamos pegar en la página web al ver el vídeo en su página.
+<p>Ejemplo</p>
+<textarea id="Youtube1Codigo" rows=6 cols=100>
+<?php include('./ejemplos/ejemplo_2.html');?>
+</textarea><br>
+<button onClick="cambiar('Youtube1Codigo','Youtube1Area')">Ver resultado</button>
+<p></p><b>Resultado:</b></p>
+<div id="Youtube1Area" class="resultado">
+</div>
+<a href="ejercicios/ejercicio1_multimedia.html" target="_blank">Ejercicio.</a>
+
+
+
+
+
+</div>
+</div>
+	</BODY>
+</HTML>

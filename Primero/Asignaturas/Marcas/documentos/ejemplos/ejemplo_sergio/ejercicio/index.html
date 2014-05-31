@@ -1,0 +1,153 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+<head>
+	<title>sin título</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 0.21" />
+	<link rel="stylesheet" type="text/css" href="estilo.css"/>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		//Comienzo del jquery del cebollero//
+	
+		$(document).ready(function(){
+			$("#fondo_rojo").click(function() {
+				$("#marco").css({"background":"red"});
+			});
+			$("#fondo_verde").click(function() {
+				$("#marco").css({"background":"green"});
+			});
+			$("#fondo_azul").click(function() {
+				$("#marco").css({"background":"blue"});
+			});
+			$("#fondo_blanco").click(function() {
+				$("#marco").css({"background":"white"});
+			});
+			
+			$("#letra_rojo").click(function() {
+				$("#marco").css({"color":"red"});
+			});
+			$("#letra_negro").click(function() {
+				$("#marco").css({"color":"black"});
+			});
+			$("#letra_verde").click(function() {
+				$("#marco").css({"color":"green"});
+			});
+			$("#letra_azul").click(function() {
+				$("#marco").css({"color":"blue"});
+			});
+			
+			$("#bordes_4_redondos").click(function() {
+				$("#marco").css({ 	"border-radius": "28px 28px 28px 28px",
+									"-moz-border-radius": "28px 28px 28px 28px",
+									"-webkit-border-radius": "28px 28px 28px 28px"});
+			});
+			$("#bordes_2_redondos").click(function() {
+				$("#marco").css({ 	"border-radius": "28px 0px 28px 0px",
+									"-moz-border-radius": "28px 0px 28px 0px",
+									"-webkit-border-radius": "28px 0px 28px 0px"});
+			});
+			$("#bordes_1_redondo").click(function() {
+				$("#marco").css({ 	"border-radius": "28px 0px 0px 0px",
+									"-moz-border-radius": "28px 0px 0px 0px",
+									"-webkit-border-radius": "28px 0px 0px 0px"});
+			});
+			$("#bordes_3_redondos").click(function() {
+				$("#marco").css({ 	"border-radius": "0px 28px 28px 28px",
+									"-moz-border-radius": "0px 28px 28px 28px",
+									"-webkit-border-radius": "0px 28px 28px 28px"});
+			});
+			
+			$("#posicion_derecha").click(function() {
+				$("#marco").css({"text-align":"right",
+								"line-height":"200px"});
+			});
+			$("#posicion_izquierda").click(function() {
+				$("#marco").css({"text-align":"left",
+								"line-height":"200px"});
+			});
+			$("#posicion_arriba").click(function() {
+				$("#marco").css({"text-align":"center",
+								"line-height":"100px"});
+			});
+			$("#posicion_abajo").click(function() {
+				$("#marco").css({"text-align":"center",
+								"line-height":"350px"});
+			});
+			$("#posicion_centro").click(function() {
+				$("#marco").css({"text-align":"center",
+								"line-height":"200px"});
+			});
+			$("#borde_blanco").click(function() {
+				$("#marco").css({"border-color":"white"});
+			});
+			$("#borde_negro").click(function() {
+				$("#marco").css({"border-color":"black"});
+			});
+			$("#borde_azul").click(function() {
+				$("#marco").css({"border-color":"blue"});
+			});
+			$("#borde_rojo").click(function() {
+				$("#marco").css({"border-color":"red"});
+			});
+		//Fin del jquery//	
+		});
+		
+	</script>
+</head>
+
+<body>
+	<center>
+		<div id="contenido">
+			<div id="marco">HOLA</div>
+			<ul>
+				<li id="fondo">FONDO
+					<ul>
+						<li id="fondo_rojo">Rojo</li>
+						<li id="fondo_verde">Verde</li>
+						<li id="fondo_azul">Azul</li>
+						<li id="fondo_blanco">Blanco</li>
+					</ul>
+				</li>
+				<li id="letra">LETRA
+					<ul>
+						<li id="letra_rojo">Rojo</li>
+						<li id="letra_negro">Negro</li>
+						<li id="letra_verde">Verde</li>
+						<li id="letra_azul">Azul</li>
+					</ul>
+				</li>
+				<li id="bordes">BORDES
+					<ul>
+						<li id="bordes_4_redondos">Redondeados</li>
+						<li id="bordes_2_redondos">2 redondos</li>
+						<li id="bordes_1_redondo">1 redondo</li>
+						<li id="bordes_3_redondos">3 redondos</li>
+					</ul>
+				</li>
+				
+				<li id="posicion">POSICION
+					<ul>
+						<li id="posicion_derecha">Derecha</li>
+						<li id="posicion_arriba">Arriba</li>
+						<li id="posicion_abajo">Abajo</li>
+						<li id="posicion_izquierda">Izquierda</li>
+						<li id="posicion_centro">Centro</li>
+					</ul>
+				</li>
+				<li id="color_borde">COLOR BORDE
+					<ul>
+						<li id="borde_blanco">Blanco</li>
+						<li id="borde_negro">Negro</li>
+						<li id="borde_azul">Azul</li>
+						<li id="borde_rojo">Rojo</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</center>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<equipo
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ejemplo.xsd">
+	<jugador puesto="base" dorsal="1">
+		<nombre>Pedro</nombre>
+		<equipo_anterior>barcelona</equipo_anterior>
+		<equipo_anterior>real madrid</equipo_anterior>
+		<origen>ni idea</origen>
+	</jugador>
+	<jugador puesto="escolta" dorsal="0">
+		<nombre>Pablo</nombre>
+		<equipo_anterior>Athletic</equipo_anterior>
+	</jugador>
+	<jugador puesto="ala" dorsal="5">
+		<nombre>Vilma</nombre>
+		<equipo_anterior>Real Sociedad</equipo_anterior>
+	</jugador>
+</equipo>

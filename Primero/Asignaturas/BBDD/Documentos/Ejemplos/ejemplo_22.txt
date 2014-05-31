@@ -1,0 +1,9 @@
+select sysdate from dual;
+
+devuelve:
+
+SYSDATE
+--------
+26/11/12
+
+1 fila seleccionada.

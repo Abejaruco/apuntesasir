@@ -1,0 +1,2 @@
+#apt-get install libnss-ldap libpam-ldap nscd 
+sudo apt-get install ldap-auth-config nscd

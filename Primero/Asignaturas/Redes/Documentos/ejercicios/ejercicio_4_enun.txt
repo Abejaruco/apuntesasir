@@ -1,0 +1,4 @@
+Hemos comprado las ips 25.10.0.0/16
+Queremos sacar 60 subredes.
+¿Como expandiriamos la máscara para crear las 60 subredes?
+¿Cuantos hosts hay en cada subred?

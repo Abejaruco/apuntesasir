@@ -1,0 +1,17 @@
+<!ELEMENT catalogo(producto+)>
+<!ELEMENT producto(nombre,referencia,marca?,tipo,precio*>
+<!ELEMENT nombre(#PCDATA)>
+<!ELEMENT referencia(#PCDATA)>
+<!ELEMENT marca(#PCDATA)>
+<!ELEMENT tipo EMPTY>
+<!ATTLIST tipo estado(usado|nuevo)>
+<!ELEMENT precio (#PCDATA)>
+<!-- HAY OTRAS OPCIONES EN LOS ATRIBUTOS.
+LO SIGUIENTE YA SON DISTINTAS OPCIONES -->
+<!--
+<!ATTLIST tipo estado CDATA #REQUIRED> Hay que escribirlo
+<!ATTLIST tipo estado CDATA #IMPLIED> Es opcional
+<!ATTLIST tipo estado CDATA (usado|nuevo) "usado"> solo uno de los dos valores. Si no se pone nada se usa el valor que va entre comillas.
+<!ATTLIST tipo estado CDATA #FIXED "si"> El valor es fijo y es siempre el que va entre comillas.
+<!ATTLIST tipo estado "si"> Por defecto pone lo que va entre comillas, pero podríamos poner lo que quisieramos.
+-->

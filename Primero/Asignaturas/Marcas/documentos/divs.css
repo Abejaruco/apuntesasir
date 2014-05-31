@@ -1,0 +1,63 @@
+body{
+	background-color: grey;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	}
+.clear{
+	clear: both;
+	}
+#fondo{
+	background-color: white;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	}
+#cabecera{
+	background-color: green;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	}
+#cuerpo{
+	background-color: grey;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	display: inline-block;
+	}
+#pie{
+	background-color: green;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	}
+#menus{
+	background-color: green;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	float: left;
+	width: 10%;
+	height: 100%;
+	}
+#menu1{
+	background-color: yellow;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	}
+#menu2{
+	background-color: blue;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	}
+#contenido{
+	background-color: #95E0CF;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	/*float: right;*/
+	height: 100%;
+	}

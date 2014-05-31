@@ -1,0 +1,7 @@
+#imagen{
+	float: left;
+	width: 200px;
+}
+.floatstop{
+	clear: both;
+	}

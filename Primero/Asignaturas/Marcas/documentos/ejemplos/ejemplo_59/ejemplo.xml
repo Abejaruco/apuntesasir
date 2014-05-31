@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ejemplo.css" type="text/css"?>
+<blog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="6_ejercicioRecetasBlog.xsd">
+	<articulo>
+		<referencia>3847</referencia>
+		<titulo>Bizcocho de chocolate</titulo>
+		<fecha>2013-01-10</fecha>
+		<publicado>true</publicado>
+		<clasificacion categoria="recetas de reposteria" />
+		<critica nota="5" > Un pastel muy tipico </critica>
+		<autor>Estibaliz Marcos</autor>
+	</articulo>
+	<articulo>
+		<referencia>2157</referencia>
+		<titulo>Tarta de manzana</titulo>
+		<fecha>2013-02-12</fecha>
+		<publicado>true</publicado>
+		<clasificacion categoria="recetas de reposteria" />
+		<critica nota="8" >Una receta tipica, pero riquisima </critica>
+		<autor>Aitor Aldekoa</autor>
+	</articulo>
+	<articulo>
+		<referencia>1512</referencia>
+		<titulo>Bakalao al pil-pil</titulo>
+		<fecha>2013-02-20</fecha>
+		<publicado>true</publicado>
+		<clasificacion categoria="recetas de pescado" />
+		<critica nota="10"> Excelente receta, para chuparse los dedos </critica>
+		<autor>Lucia Gomez</autor>
+	</articulo>
+	<articulo>
+		<referencia>4121</referencia>
+		<titulo>Pollo al chilindron</titulo>
+		<fecha>2013-03-07</fecha>
+		<publicado>false</publicado>
+		<clasificacion categoria="recetas de carne" />
+		<critica nota="6" > Casi mejor comprarlo hecho </critica>
+		<autor>Julen Garai</autor>
+	</articulo>
+</blog>

@@ -1,0 +1,16 @@
+Ejemplo:
+	select ename,job,deptno from scott.emp where deptno in (10,20,40);
+Devuelve:
+
+ENAME      JOB           DEPTNO
+---------- --------- ----------
+SMITH      CLERK             20
+JONES      MANAGER           20
+CLARK      MANAGER           10
+SCOTT      ANALYST           20
+KING       PRESIDENT         10
+ADAMS      CLERK             20
+FORD       ANALYST           20
+MILLER     CLERK             10
+
+8 filas seleccionadas.

@@ -1,0 +1,1 @@
+Dividir la red 19.128.0.0/10 en 6 subredes.

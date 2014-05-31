@@ -1,0 +1,116 @@
+enable
+conf term
+ip dhcp pool ventas
+network 191.168.1.0 255.255.255.0
+default-router 192.168.1.1
+exit
+ip dhcp pool almacen
+network 191.168.2.0 255.255.255.0
+default-router 192.168.2.1
+dns-server 192.168.0.2
+exit
+ip dhcp pool direccion
+network 191.168.3.0 255.255.255.0
+default-router 192.168.3.1
+dns-server 192.168.0.2
+exit
+
+
+configuramos interfaces virtuales
+
+int fa 0/0.1
+encapsulation dot1Q 2 (la vlan a la que va a pertenecer)
+ip address 192.168.1.1 255.255.255.0
+exit
+int fa 0/0.2
+encapsulation dot1Q 3 (la vlan a la que va a pertenecer)
+ip address 192.168.2.1 255.255.255.0
+exit
+int fa 0/0.3
+encapsulation dot1Q 4 (la vlan a la que va a pertenecer)
+ip address 192.168.3.1 255.255.255.0
+exit
+
+int fa 0/0
+no shutdown
+
+end
+
+write
+copy running-config startup-config
+
+
+
+
+
+
+-------------------------------------------------------------
+
+tengo varias vlan en la red, necesito que el servidor pueda hacer ping a todos los vlans, que puedo hacer?
+
+
+Pon tu switch en capa 3 con el comando IP ROUTING
+o bien configura inter vlan routing entre el router y el puerto trunk del switch
+
+
+
+-------------------------------------------------------------------------
+
+Configurar VTP
+
+En este post vamos a ver como configurar VTP. ¿Qué es VTP? Es un protocolo de Cisco que nos permite tener un switch donde creamos las Vlans y éste se encarga de propagarlas a los demás switch que están bajo su dominio. Es importante remarcar que solamente éste protocolo puede ser configurado en equipos de Cisco.
+
+Para que un switch pertenezca a un dominio debe cumplir con los siguientes items:
+
+i) Se debe configurar con el mismo dominio
+ii) Debe tener la misma version de VTP
+
+ii) Debe tener la misma contraseña VTP.
+
+Ademas cuenta con 3 modos posibles de configuracion:
+
+1)Switch Servidor: En él tendremos que configurar las Vlans para que se propaguen en el resto del dominio.
+
+2)Switch Cliente: Este tipo de switch serán los que reciban las Vlans y las podrán utilizar.
+
+3)Switch Transparente: Este tipo de switch no adopta las Vlans que le manda el servidor. En él podremos crear Vlans y usarlas localmente(solamente en este switch).
+
+
+
+
+
+
+
+
+
+configurar vtp  -server
+		-client
+		-transparent
+
+
+
+SW(config)#vtp domain cisco
+vtp version 2
+vtp password ciscopw
+vtp mode server
+end
+vtp status
+
+
+
+SW(config)#vtp domain cisco
+vtp version 2
+vtp password ciscopw
+vtp mode client
+end
+vtp status
+
+
+SW(config)#vtp domain cisco
+vtp version 2
+vtp password ciscopw
+vtp mode transparent
+end
+vtp status
+
+craer los enlaces troncales y las vlan en el eserver , luego con el comando sh vlan , veremso que se han transmitido a el resto de sw menos al transparente

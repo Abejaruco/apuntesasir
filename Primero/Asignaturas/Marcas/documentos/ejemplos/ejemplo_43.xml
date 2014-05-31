@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<matematicas>
+	<alumno>
+		<nombre>Luis</nombre>
+		<expediente>123456789</expediente>
+		<nota_examen>10</nota_examen>
+		<nota_examen>10</nota_examen>
+		<nota_examen>10</nota_examen>
+		<nota>10</nota>
+	</alumno>
+	<alumno>
+		<nombre>Andoni</nombre>
+		<expediente>123456790</expediente>
+		<nota_examen>0</nota_examen>
+		<nota_examen>0</nota_examen>
+		<nota_examen>0</nota_examen>
+		<nota>0</nota>
+	</alumno>
+</matematicas>

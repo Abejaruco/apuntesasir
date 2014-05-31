@@ -1,0 +1,21 @@
+Ejercicio 9 (17/04/2013) – articulosBlog + Css
+
+Aplicar Css al ejercicio de ArticulosBlog. Hacer uso también de Css3.
+
+Tener en cuenta que:
+
+	- Poner imagen de fondo a toda la página
+	- Mostrar en formato tabla cada etiqueta  <articulo>. Recordar usar table-row
+	 y table-cell.
+	- Las celdas irán con bordes redondeados, color de fondo, efectos de sombras, ..
+
+Usar selectores para: 
+
+	- Dar otro estilo a la primera letra del titulo del articulo.
+	- Dar un color de texto diferente en función del valor del atributo critica.
+	- Incluir “Tipo” antes del elemento “clasificación” y después el atributo 
+	“categoría”.
+	- Incluir “Nota” antes del elemento “critica” y después el atributo “nota”.
+
+
+

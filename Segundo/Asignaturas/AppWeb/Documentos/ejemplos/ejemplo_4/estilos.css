@@ -1,0 +1,112 @@
+﻿#contenedor{
+	min-height: 600px;
+	width: 90%;
+	margin: auto;
+	}
+#menu {
+	min-height: 600px;
+	width: 12%;
+	background-color: #dddddd;
+	/*position: relative;
+	left: 5px;*/
+	float: left;
+	margin: 5px;
+	padding: 1px;
+	border-radius: 10;
+	border: 1px solid red;
+}
+#menu ul{
+	margin: 1px;
+	padding: 1px;
+}
+#menu ul li{
+	list-style: none;
+	margin: 1px;
+	padding: 1px;
+}
+#contenido{
+	min-height: 600px;
+	width: 85%;
+	/*position: absolute;
+	left: 220px;*/
+	float: left;
+	margin: 5px;
+	border-radius: 10;
+	border: 1px solid blue;
+	background-color: #cfcfff;
+	}
+#contenido iframe{
+	margin: 5px;
+	min-height: 590px;
+	width: 98%;
+}
+#sesion{
+	text-align: right;
+}
+#sesion ul{
+	margin: 1px;
+	padding: 1px;
+}
+#sesion ul li{
+	list-style: none;
+	display: inline;
+	margin: 1px;
+	padding: 1px;
+}
+#menuAdministracion {
+	height: 40px;
+	width: 99%;
+	margin: 5px;
+	padding: 0px;
+	background-color: #dddddd;
+	border-radius: 10;
+	border: 1px solid red;
+}
+#menuAdministracion ul{
+	list-style: none;
+	height: 30px;
+	width: 99%;
+	float: left;
+	padding: 0px;
+	margin: 5px 5px 5px 5px;
+	}
+#menuAdministracion ul a li{
+	list-style: none;
+	float: left;
+	height: 30px;
+	min-width: 110px;
+	padding: 0px;
+	margin: 0px 1px 0px 1px;
+	border-radius: 10;
+	border: 1px solid #7f7fff;
+	background-color: #afafff;
+	text-align: center;
+	}
+#menuAdministracion ul a:hover li{
+	border-radius: 20 20 0 0;
+	border: 1px solid #afafff;
+	background-color: #dfdfff;
+	}
+#menuAdministracion ul a{
+	text-decoration: none;
+	text-align: center;
+	line-height: 30px;
+	margin: 5px;
+}
+
+#contenidoAdministracion{
+	min-height: 470px;
+	width: 99%;
+	margin: 5px;
+	left: 0px;
+	/*border-radius: 10;
+	border: 1px solid blue;*/
+	}
+#contenidoAdministracion  iframe{
+	margin: 0px 0px 0px 0px;
+	min-height: 470px;
+	width: 100%;
+	background-color: #afafff;
+	border-radius: 10;
+	border: 1px solid blue;
+}

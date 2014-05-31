@@ -1,0 +1,5 @@
+A partir del código HTML suministrado definir una clase para el título de la página 
+escrito en cursiva, sobre fondo de color amarillo (#ffff00) y con color de tinta 
+negro (#000000).
+
+El color de fondo de la página ha de ser gris (#eeeeee)

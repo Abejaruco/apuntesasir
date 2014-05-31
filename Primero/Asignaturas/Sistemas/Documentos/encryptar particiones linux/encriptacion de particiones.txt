@@ -1,0 +1,21 @@
+- Encriptamos la particion swap y /, boot y home no se encripta
+- se comenta el fichero /etc/crypttab
+- se copia el script en /etc/initramfs-tools/script/local-top
+- se genera un fichero para desencryptar:
+   dd if=/dev/urandom of=clave.key bs=1024 count=4
+- se asocia para cada particion encryptada el fichero generado:
+   crypsetup luksAddkey /dev/sda2 clave.key
+- se actualiza el initrd:
+    update-initramfs -u
+
+
+si hay problemas al iniciar nos aparece el prompt:
+initramfs>
+- blkid : muestra particiones, encryptadas y no
+- cryptseup luksOpen /dev/sda2 sda2_crypt 
+  abrimos la particion , nos pedira la clave de encryptacion, lo haremos para cada particion
+- exit
+ sigue arrancando el sistema
+podemos ver el contenido de initrd , copiandolo con extension gz, lo descomprimimos y lo desempaquetamos con cpio (mejor con el nautilus)
+
+

@@ -1,0 +1,5 @@
+Tengo esta IP de clase B:
+165.100.0.0
+Quiero hacer 1000 redes.
+¿Cuantos host habrá en cada red?
+Escribe la dirección de Broadcast.

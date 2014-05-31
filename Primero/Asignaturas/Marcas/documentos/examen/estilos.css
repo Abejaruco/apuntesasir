@@ -1,0 +1,266 @@
+body{
+	margin:0px;
+	background:#DEE2E4;
+	padding:0px;
+}
+#contenedor{
+	margin:0px;
+	width:1024px;
+	min-height:768px;
+	background:#BEC2C4;
+	min-width:1024px;
+	min-height:900px;
+}
+#titulo{
+	position: relative;
+	top: 20px;
+	width: 984px;
+	height: 90px;
+	background: linear-gradient(#000000, #7f7f7f);/*comun*/
+	background: -moz-linear-gradient(#000000, #7f7f7f);/*firefox*/
+	background: -webkit-linear-gradient(#000000, #7f7f7f);/*firefox*/
+/*	line-height: 50px;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;*/
+}
+#titulo_normal{
+	position: relative;
+	float: left;
+	top: -20px;
+	width: 482px;
+	height: 90px;
+	line-height: 50px;
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+	padding-right: 10px;
+}
+#titulo_rotado{
+	position: relative;
+	float: left;
+	top: -20px;
+	width: 482px;
+	height: 90px;
+	line-height: 50px;
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+	padding-right: 10px;
+	transform:scaleX(-1);
+	-ms-transform:scaleX(-1);
+	-webkit-transform:scaleX(-1);
+}
+#titulo_normal h1{
+	position: relative;
+	top: -30px;
+	color: white;
+	font-weight: bold;
+	font-size: 80px;
+}
+#titulo_rotado h1{
+	position: relative;
+	top: -30px;
+	color: white;
+	font-weight: bold;
+	font-size: 80px;
+}
+#barra_horizontal_azul{
+	float: left;
+	position: relative;
+	width: 50px;
+	height: 10px;
+	top: 10px;
+	left: 0px;
+	/*background-color: blue;*/
+	background: linear-gradient(to right, black, white);/*comun*/
+	background: -moz-linear-gradient(to right, black, white);/*firefox*/
+	background: -webkit-linear-gradient(to right, black, white);/*firefox*/
+}
+#barra_horizontal_verde{
+	float: right;
+	position: relative;
+	width: 954px;
+	height: 10px;
+	top: 10px;
+	right: 0px;
+	/*background-color: green;*/
+	background: linear-gradient(to left, black, white);/*comun*/
+	background: -moz-linear-gradient(to left, black, white);/*firefox*/
+	background: -webkit-linear-gradient(to left, black, white);/*firefox*/
+}
+#barra_vertical_azul{
+	float: left;
+	position: relative;
+	width: 10px;
+	height: 90px;
+	top: 20px;
+	left: 10px;
+	background-color: black;
+	background: linear-gradient(to bottom, black, white);/*comun*/
+	background: -moz-linear-gradient(to bottom, black, white);/*firefox*/
+	background: -webkit-linear-gradient(to bottom, black, white);/*firefox*/
+}
+#barra_vertical_verde{
+	float: right;
+	position: relative;
+	width: 10px;
+	height: 90px;
+	top: 20px;
+	right: 10px;
+	background-color: black;
+	background: linear-gradient(to bottom, black, white);/*comun*/
+	background: -moz-linear-gradient(to bottom, black, white);/*firefox*/
+	background: -webkit-linear-gradient(to bottom, black, white);/*firefox*/
+}
+#barra_horizontal2_verde{
+	float: right;
+	position: relative;
+	width: 50px;
+	height: 10px;
+	top: 100px;
+	right: 0px;
+	/*background-color: green;*/
+	background: linear-gradient(to left, white, black);/*comun*/
+	background: -moz-linear-gradient(to left, white, black);/*firefox*/
+	background: -webkit-linear-gradient(to left, white, black);/*firefox*/
+}
+#barra_horizontal2_azul{
+	float: left;
+	position: relative;
+	width: 954px;
+	height: 10px;
+	top: 100px;
+	left: 0px;
+	/*background-color: blue;*/
+	background: linear-gradient(to right, white, black);/*comun*/
+	background: -moz-linear-gradient(to right, white, black);/*firefox*/
+	background: -webkit-linear-gradient(to right, white, black);/*firefox*/
+}
+/**********************************************************************
+ * MENU
+ * *******************************************************************/
+ .clear{
+	clear: both;
+ }
+ #menu{
+		position: relative;
+		top: 50px;
+		width: 1004px;
+		background-color: white;
+		border-radius: 28px 28px 28px 28px;
+		-moz-border-radius: 28px 28px 28px 28px;
+		-webkit-border-radius: 28px 28px 28px 28px;
+		padding-top:1px;
+		padding-bottom:1px;
+		margin: 0px;
+		/*
+		background: linear-gradient(#000000, #bfbfbf);
+		background: -moz-linear-gradient(#000000, #bfbfbf);
+		background: -webkit-linear-gradient(#000000, #bfbfbf);
+		*/
+		z-index:900;
+ }
+ ul{
+		position: relative
+		top: 0px;
+		left: 100px;
+		width: 950px;
+		height: 70px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		/*Realizamos degradado lineal*/
+		background: linear-gradient(#000000, #7f7f7f);/*comun*/
+		background: -moz-linear-gradient(#000000, #7f7f7f);/*firefox*/
+		background: -webkit-linear-gradient(#000000, #7f7f7f);/*firefox*/
+		/*redondear bordes*/
+		border-radius: 28px 28px 28px 28px;
+		-moz-border-radius: 28px 28px 28px 28px;
+		-webkit-border-radius: 28px 28px 28px 28px;
+	}
+	ul li{
+		position: relative;
+		width: 290px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-left: 5px;
+		padding-right: 5px;
+		height: 60px;
+		background: white;
+		text-align: center;
+		line-height: 60px;
+		list-style: none;
+		float: left;
+		top: -14px;
+		margin-right: 10px;
+		border-radius: 28px 28px 28px 28px;
+		-moz-border-radius: 28px 28px 28px 28px;
+		-webkit-border-radius: 28px 28px 28px 28px;
+		transition: all 1s;
+		-webkit-transition: all 1s; /* Safari */
+		-moz-transition: all 1s;
+	}
+	ul li:hover{
+		transform: rotate(10deg);
+		-moz-transform: rotate(10deg);
+		-webkit-transform: rotate(10deg);
+		color: white;
+		background: black;
+
+	}
+	/*colocamos y ocultamos el sub-menu*/
+	ul li ul{
+		position: relative;
+		top: 0px;
+		left: 0px;
+		width: 160px;
+		height: 300px;
+		background: transparent;
+		padding: 0px;
+		display: none;/*ocultamos el menu*/
+
+	}
+	/*al pasar por el menu mostramos el submenu*/
+	/*ul li:hover ul{
+		display: block;
+	}
+	* */
+	ul li ul li{
+		/*ahora le damos estilo a los elementos del submenu*/
+		border: 1px solid black;
+		margin: 0px;
+		color: black;
+		display: none;
+	}
+	ul li ul li:hover{
+		transform: rotate(-10deg);
+		-moz-transform: rotate(-10deg);
+		-webkit-transform: rotate(-10deg);
+		background-color: blue;
+	}
+/*****
+ * fin Menu
+ * */
+#subtitulo{
+	position: relative;
+	top: 20px;
+	margin: 0px;
+}
+#subtitulo h2{
+	font-size: 60px;
+}
+iframe{
+	position:relative;
+	top: 10px;
+	width: 800px;
+	height: 500px;
+	/*background-color: blue;*/
+	transition: all 1s;
+	-webkit-transition: all 1s; /* Safari */
+	-moz-transition: all 1s;
+}
+iframe:hover{
+	transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+}

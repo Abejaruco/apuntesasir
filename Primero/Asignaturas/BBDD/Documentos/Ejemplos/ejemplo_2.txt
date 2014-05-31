@@ -1,0 +1,24 @@
+Ejemplo:
+	select ename || ' - ' || job || ' - ' || deptno as Empleado from scott.emp;
+Devuelve:
+EMPLEADO
+------------------------
+SMITH - CLERK - 20
+ALLEN - SALESMAN - 30
+WARD - SALESMAN - 30
+JONES - MANAGER - 20
+MARTIN - SALESMAN - 30
+BLAKE - MANAGER - 30
+CLARK - MANAGER - 10
+SCOTT - ANALYST - 20
+KING - PRESIDENT - 10
+TURNER - SALESMAN - 30
+ADAMS - CLERK - 20
+
+EMPLEADO
+------------------------
+JAMES - CLERK - 30
+FORD - ANALYST - 20
+MILLER - CLERK - 10
+
+14 filas seleccionadas.

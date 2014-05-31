@@ -1,0 +1,7 @@
+Considera la siguiente relación PERSONA-TIENE HIJOS-PERSONA.
+
+Una persona puede tener muchos hijos/as o ninguno. Una persona siempre es hijo/a de otra persona.
+
+Los atributos de la persona son dni, nombre, dirección y teléfono.
+
+Transformarlo al modelo relacional.

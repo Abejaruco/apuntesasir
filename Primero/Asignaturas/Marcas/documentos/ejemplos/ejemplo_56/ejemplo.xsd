@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="tipoPuesto"><!-- ala|ala-pivot|escolta|base|pivot -->
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="ala" />
+			<xsd:enumeration value="ala-pivot" />
+			<xsd:enumeration value="escolta" />
+			<xsd:enumeration value="base" />
+			<xsd:enumeration value="pivot" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="numeroDorsal"><!-- 0|1|2|3|4|5|6|7|8|9|10 -->
+		<xsd:restriction base="xsd:integer">
+			<xsd:enumeration value="0" />
+			<xsd:enumeration value="1" />
+			<xsd:enumeration value="2" />
+			<xsd:enumeration value="3" />
+			<xsd:enumeration value="4" />
+			<xsd:enumeration value="5" />
+			<xsd:enumeration value="6" />
+			<xsd:enumeration value="7" />
+			<xsd:enumeration value="8" />
+			<xsd:enumeration value="9" />
+			<xsd:enumeration value="10" />
+		</xsd:restriction>
+	<!--
+	<xsd:restriction base="xsd:string">
+		<xsd:minLenght value="3" />
+		<xsd:maxLenght value="25" />
+	</xsd:restriction>
+	-->
+	<!--
+	<xsd:restriction base="xsd:number">
+		<xsd:totalDigits value="5" />
+		<xsd:minExclusive value="1" /> El 1 no lo acepta
+		<xsd:maxExclusive value="10" /> El 100 no lo acepta
+		<xsd:minInclusive value="1" /> El 1 si lo acepta
+		<xsd:maxInclusive value="10" /> El 100 si lo acepta
+	</xsd:restriction>
+	-->
+	<!--
+	<xsd:restriction base="xsd:string">
+		<xsd:patern value="[0-9]{8}[A-Z]"/> Primer caracter tiene que ser un número del 0 al 9.
+	</xsd:restriction>						Se repite 8 veces el primer patrón, por lo que los primeros
+											8 caracteres tienen que ser números del 0 al 9.
+											El último caracter tiene que ser una letra
+	-->
+
+	</xsd:simpleType>
+	<xsd:element name="equipo">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="jugador" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="nombre" minOccurs="1" maxOccurs="1" type="xsd:string"/> 
+							<xsd:element name="equipo_anterior" minOccurs="1" maxOccurs="unbounded" type="xsd:string"/> 
+							<xsd:element name="origen" minOccurs="0" maxOccurs="1" type="xsd:string"/> 
+						</xsd:sequence>
+						<xsd:attribute name="puesto" type="tipoPuesto" /> <!--use="requiered"|"optional"|"prohibited" -->
+						<xsd:attribute name="dorsal" type="numeroDorsal" />
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
+<!--
+Para el siguiente caso se haría asi:
+<jugador puesto="pivot">Michael Jordan</jugador>
+
+<xsd:element name="jugador">
+	<xsd:complexType>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="puesto" type="tipoPuesto"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:element>
+
+
+-->

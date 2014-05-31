@@ -1,0 +1,7 @@
+<!DOCTYPE nombre_dtd[ 
+<!ELEMENT libro (capitulo+)>
+<!ELEMENT producto (referencia, seccion,pasillo,descipcion)>
+<!ELEMENT referencia (#PCDATA)>
+<!ELEMENT seccion (#PCDATA)>
+<!ELEMENT pasillo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>

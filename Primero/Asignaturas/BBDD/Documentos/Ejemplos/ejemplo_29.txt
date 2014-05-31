@@ -1,0 +1,48 @@
+select sal + nvl(comm,0) as SalarioFinal, nvl(comm,0) as comision,sal from scott.emp;
+
+Devuelve:
+
+
+SALARIOFINAL   COMISION        SAL
+------------ ---------- ----------
+         800          0        800
+        1900        300       1600
+        1750        500       1250
+        2975          0       2975
+        2650       1400       1250
+        2850          0       2850
+        2450          0       2450
+        3000          0       3000
+        5000          0       5000
+        1500          0       1500
+        1100          0       1100
+         950          0        950
+        3000          0       3000
+        1300          0       1300
+
+14 filas seleccionadas.
+
+********************************************
+select sal + nvl2(comm,100,9) as SalarioFinal, nvl2(comm,100,9) as comision,nvl(comm,0) as Comnula,sal from scott.emp;
+
+Devuelve:
+
+SALARIOFINAL   COMISION    COMNULA        SAL
+------------ ---------- ---------- ----------
+         809          9          0        800
+        1700        100        300       1600
+        1350        100        500       1250
+        2984          9          0       2975
+        1350        100       1400       1250
+        2859          9          0       2850
+        2459          9          0       2450
+        3009          9          0       3000
+        5009          9          0       5000
+        1600        100          0       1500
+        1109          9          0       1100
+         959          9          0        950
+        3009          9          0       3000
+        1309          9          0       1300
+
+14 filas seleccionadas.
+

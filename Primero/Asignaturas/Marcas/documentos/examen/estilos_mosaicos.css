@@ -1,0 +1,133 @@
+body{
+	margin:0px;
+	background:#DEE2E4;
+	padding:0px;
+}
+ #mosaico_windows{
+	position:relative;
+	top: -380px;
+	left:0px;
+	width: 800px;
+	height: 500px;
+	!background-color: #BEC2C4;
+	!background: white;
+	!z-index: 1;
+	display: none;
+ }
+ 
+ #imagen_windows{
+	position: absolute;
+	top: 0px;
+	left: 850px;
+	width: 260px;
+	height: 250px;
+	!z-index: -1;
+	display: block;
+ }
+  #imagen_linux{
+	position: absolute;
+	top: 0px;
+	left: 1120px;
+	width: 260px;
+	height: 250px;
+	!z-index: -1;
+	display: block;
+ }
+  #imagen_mac{
+	position: absolute;
+	top: 0px;
+	left: 1390px;
+	width: 260px;
+	height: 250px;
+	!z-index: -1;
+	display: block;
+ }
+ #mosaico_consolas{
+	position:relative;
+	top: -380px;
+	left:0px;
+	width: 800px;
+	height: 500px;
+	!background-color: #BEC2C4;
+	!background: white;
+	!z-index: 1;
+	display: none;
+ }
+ 
+ #imagen_nintendo{
+	position: absolute;
+	top: 0px;
+	left: 850px;
+	width: 195px;
+	height: 195px;
+	!z-index: -1;
+	display: block;
+ }
+  #imagen_sony{
+	position: absolute;
+	top: 0px;
+	left: 1120px;
+	width: 195px;
+	height: 195px;
+	!z-index: -1;
+	display: block;
+ }
+  #imagen_microsoft{
+	position: absolute;
+	top: 0px;
+	left: 1390px;
+	width: 195px;
+	height: 195px;
+	!z-index: -1;
+	display: block;
+ }
+ 
+#imagen_android{
+	position: absolute;
+	top: 0px;
+	left: 1390px;
+	width: 195px;
+	height: 195px;
+	!z-index: -1;
+	display: block;
+ }
+ #mosaico_moviles{
+	position:relative;
+	top: -380px;
+	left:0px;
+	width: 800px;
+	height: 500px;
+	!background-color: #BEC2C4;
+	!background: white;
+	!z-index: 1;
+	display: none;
+ }
+ 
+ #imagen_android_movil{
+	position: absolute;
+	top: 0px;
+	left: 850px;
+	width: 260px;
+	height: 250px;
+	!z-index: -1;
+	display: block;
+ }
+  #imagen_ios{
+	position: absolute;
+	top: 0px;
+	left: 1120px;
+	width: 260px;
+	height: 250px;
+	!z-index: -1;
+	display: block;
+ }
+  #imagen_windows_movil{
+	position: absolute;
+	top: 0px;
+	left: 1390px;
+	width: 260px;
+	height: 250px;
+	!z-index: -1;
+	display: block;
+ }
+ 

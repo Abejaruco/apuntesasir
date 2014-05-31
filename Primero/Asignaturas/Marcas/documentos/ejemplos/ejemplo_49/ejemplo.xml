@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--
+Ejercicio 2 (14/03/2013)
+
+Realizar xml y dtd (dentro del xml): Queremos pasar información sobre una biblioteca, que contiene varios libros. De cada libro disponemos de la siguiente información:
+-	Titulo
+-	Páginas del libro
+-	Autor (Algunos libros pueden estar escritos por más de un autor y otros en cambio son anónimos)
+o	 Disponemos también información sobre el origen de algunos de los autores.
+-	Editorial (Algunos libros no disponen de editorial, como pueden ser los anónimos)	
+-	Critica: Pudiendo tener solo uno de los tres valores siguientes  y siendo obligatorio.
+o	"malo" , "regular" , "bueno"
+Después de realizar el DTD prueba a validarlo (xmlvalidation) ycomprueba que las características descritas en el DTD funcionan:
+-	Crea un libro sin autor.
+-	Crea otro libro con dos autores, indicando el origen de solo uno de ellos.
+-	Prueba a introducir "muy bueno" como crítica.
+-	Etc"
+-->
+
+<!DOCTYPE biblioteca [
+<!ELEMENT biblioteca (libro+) >
+<!ELEMENT libro (titulo,paginas,autor*,editorial*) >
+<!ATTLIST libro critica (malo|regular|bueno) #REQUIRED>
+<!ELEMENT titulo (#PCDATA) >
+<!ELEMENT paginas (#PCDATA) >
+<!ELEMENT autor (#PCDATA) >
+<!ATTLIST autor origen CDATA #IMPLIED >
+<!ELEMENT editorial (#PCDATA) >
+]>
+<biblioteca>
+	<libro critica="bueno">
+		<titulo>Libro 1</titulo>
+		<paginas>100</paginas>
+	</libro>
+	<libro critica="regular">
+		<titulo>Libro 2</titulo>
+		<paginas>200</paginas>
+		<autor origen="Origen1">Nombre Autor1</autor>
+		<autor>Nombre Autor2</autor>
+		<editorial>Editorial 2</editorial>
+	</libro>
+	<libro critica="malo">
+		<titulo>Libro 3</titulo>
+		<paginas>300</paginas>
+		<autor>Nombre Autor1</autor>
+		<editorial>Editorial 3</editorial>
+	</libro>
+	<!--
+	<libro critica="muy bueno">
+		<titulo>Libro 4</titulo>
+		<paginas>400</paginas>
+		<autor>Alguien</autor>
+		<editorial>Editorial 4</editorial>
+	</libro>
+	-->
+</biblioteca>

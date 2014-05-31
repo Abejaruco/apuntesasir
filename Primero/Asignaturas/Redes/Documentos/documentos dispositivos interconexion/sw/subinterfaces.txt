@@ -1,0 +1,12 @@
+int fa0/0.1         //declaro subinterface1
+encapsulation dot1Q 10  //primero defino el tipo de encapsulado y la vlan a la que pertenece y luego la ip , sino error
+ip address 192.168.1.1 255.255.255.0
+exit
+
+int fa0/0.2        //declaro subinterface2
+encapsulation dot1Q 20    //encapsulado y vlan  a la que pertenece       
+ip address 192.168.2.1 255.255.255.0
+exit
+
+int fa 0/0      //levanto la interfaz fisica
+no sh

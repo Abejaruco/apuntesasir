@@ -1,0 +1,120 @@
+http://www.guia-ubuntu.com/index.php?title=Crear_una_Software_RAID
+http://elpuig.xeill.net/Members/vcarceler/articulos/mdadm-una-nueva-herramienta-para-la-gestion-de-raid-mediante-software-en-linux
+
+http://es.wikipedia.org/wiki/RAID
+
+Chuleta de MDADM (Raid Software)
+
+Posted by: leopoldomaestro In: Almacenamiento|Linux|RAID
+
+* instalar mdadm
+
+#apt-get install mdadm
+
+* muy importante actualizar initramfs (si no desaparece md0)
+#update-initramfs -u
+
+las particiones de los discos ponerlas en 0xfd (linux partition raid)
+fdisk /dev/sdb
+w
+n
+t
+fd
+
+
+Obtener información del RAID:
+
+# cat /proc/mdstat
+
+Detalles de las unidades RAID:
+
+# mdadm –query /dev/md0
+
+# mdadm –detail /dev/md0
+
+Detalles de las unidades físicas:
+
+# mdadm –query /dev/sdb1
+
+# mdadm –examine /dev/sdb1
+
+Administración de una RAID y sus discos
+
+* Establecer un disco como faulty/failed:
+
+$ sudo mdadm –fail /dev/md0 /dev/sdb1
+
+No utilizar en RAID0 ó RAID en modo linear. Pueden perderse los datos!--add
+
+* Quitar un disco fallido de una RAID:
+
+ $sudo mdadm –remove /dev/md0 /dev/sdb1
+tambien
+ #mdadm /dev/md0 --fail /dev/sdc1 --remove /dev/sdc1
+
+* Limpiar cualquier información previa de un disco RAID (Ej. al reutilizar un disco de otra raid antigua)
+
+$ sudo mdadm –zero-superblock /dev/sdb1
+
+* Añadir un disco a la RAID en caso de que no lo necesite lo pone como spare
+
+$ sudo mdadm –add /dev/md0 /dev/sdb1
+
+* Añadir soporte “bitmap” a un RAID
+
+$ sudo mdadm –grow /dev/mdX –bitmap=internal
+
+* Quitar el soporte de “bitmap” a un RAID
+
+$ sudo mdadm –grow /dev/mdX –bitmap=none
+
+* Crear un RAID
+
+mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/sda1 /dev/sdb2
+mdadm --create --verbose /dev/md0 -l1 -n2 /dev  /sda1 /dev/sdb2
+
+* Generar el mdadm.conf con la configuración actual
+
+mdadm --detail --scan >> /etc/mdadm/mdadm.conf
+
+si te falla creando el raid agreassemble ga –raid-devices=2
+cuando falla un disco al reiniciar:
+  - mdadm -S --scan   (paramos todos los raid)
+  - mdadm  --assemble --scan (reiniciamos los raid , si tenemos un spare lo pone)
+
+*eliminar el RAID usamos este comando:
+
+#mdadm --remove /dev/md0
+
+* eliminar raid definitivamente
+# mdadm --stop /dev/md1
+# mdadm --misc --zero-superblock /dev/sda2
+# mdadm --misc --zero-superblock /dev/sdb2
+
+* iniciar el raid
+#mdadm --asemble --scan 
+#mdadm --assemble /dev/md0
+
+
+* informacion de las particiones
+#lsblk
+#blkid
+--------------------------------------------------------------
+
+# mdadm --monitor --mail=sysadmin --delay=300 /dev/md0
+
+El modo Follow/Monitor también permite que los arrays compartan discos de repuesto, una caracteristica que ha faltado en el software RAID de Linux desde el principio. Esto significa que usted sólo tiene que proporcionar un disco de repuesto para cada grupo de arrays o para todos los asrrays. También significa que el administrador del sistema no tiene que intervenir de forma manual para mover los discos de repuesto cuando se produce un fallo en un array. Cuando se detecta una avería en un disco de un array sin un disco de repuesto, mdadm quitará un disco de repuesto disponible en otro array y lo insertará en el array con el disco averiado. Para facilitar este proceso, cada  línea ARRAY de /etc/mdadm.conf necesita tener un grupo de repuesto definido.
+
+DEVICE	/dev/sd*
+ARRAY 	/dev/md0 level=raid1 num-devices=3 spare-group=database	\
+   UUID=410a299e:4cdd535e:169d3df4:48b7144a
+ARRAY	/dev/md1 level=raid1 num-device=2 spare-group=database	\
+   UUID=59b6e564:739d4d28:ae0aa308:71147fe7
+
+
+ tanto /dev/md0 como /dev/md1 son parte del grupo de repuesto database. Suponiendo que /dev/md0 es un RAID-1 de dos discos con un solo disco de repuesto. Si mdadm está funcionando en modo monitor (como he mostrado antes), y un disco de /dev/md1 falla, mdadm quitará el disco de repuesto de /dev/md0 y lo insertará en /dev/md1.
+
+--------------------------------------------------------------------------------------
+-herramientas graficas para administrar RAID
+    . webmin
+    . palimpesest  (proyecto de gnome-disk utility)

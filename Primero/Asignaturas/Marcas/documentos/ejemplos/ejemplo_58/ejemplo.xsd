@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="tipoCombustible">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="diesel" />
+			<xsd:enumeration value="gasolina" />
+			<xsd:enumeration value="hibrido" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="numeroPlazas">
+		<xsd:restriction base="xsd:integer">
+			<xsd:enumeration value="2"/>
+			<xsd:enumeration value="4"/>
+			<xsd:enumeration value="5"/>
+			<xsd:enumeration value="7"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="taller">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="coche" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="marca" type="xsd:string"/>
+							<xsd:element name="modelo" type="xsd:string"/>
+							<xsd:element name="carroceria">
+								<xsd:complexType>
+									<xsd:attribute name="plazas" type="numeroPlazas" use="required"/>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="matricula" type="xsd:string"/>
+							<xsd:element name="persona-contacto" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="nombre" maxOccurs="unbounded" type="xsd:string"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="combustible">
+								<xsd:complexType>
+									<xsd:attribute name="tipo" type="tipoCombustible" default="diesel"/>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="diagnostico">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="averia" maxOccurs="unbounded" type="xsd:string"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
+

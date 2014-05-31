@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="tipoEstado">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="nuevo"/>
+			<xsd:enumeration value="usado" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="catalogo">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="producto" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="nombre" type="xsd:string" />
+							<xsd:element name="referencia" type="xsd:integer"/>
+							<xsd:element name="marca" type="xsd:string" />
+							<xsd:element name="estado" >
+								<xsd:complexType>
+									<xsd:attribute name="estado" type="tipoEstado" /> <!-- use=required | optional | prohibited
+																						default=" " fixed=" " -->
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="precio" type="xsd:decimal"/> <!--type= date|string|decimal|double|intege|boolean
+																		maxOccurs="unbounded" minOccurs="0" default="cosultar" fixed="20.30" -->
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,11 @@
+Ejercicio 3 (14/03/2013)
+
+Realizar un xml y un dtd (por separado) que incluya los datos de los tickets de un bar. Cada ticket debe incluir:
+
+-Nºticket, fecha, hora (opcional), producto y precio total.
+
+A su vez cada elemento productocontendría el "nombre del producto" y "precio".
+
+El precio total podría contener un atributo que fuera pagado (si/no), siendo su valor por defecto "si".
+
+Validarlo y hacer diferentes pruebas que muestren su estructura correcta.

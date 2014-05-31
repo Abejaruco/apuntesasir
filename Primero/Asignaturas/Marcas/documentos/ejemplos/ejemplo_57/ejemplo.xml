@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<blog
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ejemplo.xsd">
+	<articulo>
+		<referencia>123456</referencia>
+		<titulo>Pastel Virtual</titulo>
+		<fecha>2012-05-26</fecha>
+		<publicado>true</publicado>
+		<clasificacion categoria="reposteria"/>
+		<critica nota="3">muy sosa</critica>
+		<autor>Yo</autor>
+	</articulo>
+	<articulo>
+		<referencia>13579</referencia>
+		<titulo>Filete Virtual</titulo>
+		<fecha>2012-02-29</fecha>
+		<publicado>true</publicado>
+		<clasificacion categoria="carne"/>
+		<critica nota="10">excelente receta</critica>
+		<autor>Nai</autor>
+	</articulo>
+	<articulo>
+		<referencia>246810</referencia>
+		<titulo>Merluzo</titulo>
+		<fecha>2013-12-13</fecha>
+		<publicado>false</publicado>
+		<clasificacion categoria="pescado"/>
+		<critica nota="5">sosa</critica>
+		<autor>Alguien</autor>
+	</articulo>
+	<articulo>
+		<referencia>987654</referencia>
+		<titulo>Invisible</titulo>
+		<fecha>2000-06-25</fecha>
+		<publicado>true</publicado>
+		<clasificacion/>
+		<critica nota="1">No hay nada</critica>
+		<autor>Nadie</autor>
+	</articulo>
+</blog>

@@ -1,0 +1,9 @@
+TABLAS:
+
+Personas (DNI, Nombre, Apellidos, Direccion, poblacion, telerfono) Clave: DNI
+Persona_Vehiculo (DNI_persona, Matricula_Vehiculo) Claves: DNI_persona, Matricula_Vehiculo
+Vehiculos (Matricula, marca, modelo) Clave: DNI
+Accidente (ref, fecha, lugar, hora) Clave: ref
+Pesona_accidente (DNI_persona, ref_accidente) Claves: DNI_persona, ref_accidente
+Vehiculo_accidente(Matricula_vehiculo, codigo accidente) Claves: Matricula_vehiculo, codigo accidente
+Multas (codigo, fecha, hora, lugar, importe, DNI_Persona,Matricula_Vehiculo) Clave: importe

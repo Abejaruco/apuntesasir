@@ -1,0 +1,13 @@
+A partir del siguiente supuesto diseñar el modelo entidad-relación.
+
+“Se desea informatizar la gestión de un centro de enseñanza para llevar el control de los alumnos matriculados y los profesores que imparten clases en ese centro. De cada profesor y cada alumno se desea recoger el nombre, apellidos, dirección, población, dni, fecha de nacimiento, código postal y teléfono.
+
+Los alumnos se matriculan en una o más asignaturas, y de ellas se desea almacenar el código de asignatura, nombre y número de horas que se imparten a la semana. Un profesor del centro puede impartir varias asignaturas, pero una asignatura sólo es impartida por un único profesor. De cada una de las asignaturas se desea almacenartambién la nota que saca el alumno y las incidencias que puedan darse con él.
+
+Además, se desea llevar un control de los cursos que se imparten en el centro de enseñanza. De cada curso se guardará el código y el nombre. En un curso se imparten varias asignaturas, y una asignatura sólo puede ser impartida en un único curso.
+
+Las asignaturas se imparten en diferentes aulas del centro. De cada aula se quiere almacenar el código, piso del centro en el que se encuentra y número de pupitres de que dispone. Una asignatura se puede dar en diferentes aulas, y en un aula se pueden impartir varias asignaturas. Se desea llevar un registro de las asignaturas que se imparten en cada aula. Para ello se anotará el mes, día y hora en el que se imparten cada una de las asignaturas en las distintas aulas.
+
+La dirección del centro también designa a varios profesores como tutores en cada uno de los cursos. Un profesor es tutor tan sólo de un curso. Un curso tiene un único tutor. Se habrá de tener en cuenta que puede que haya profesores que no sean tutores de ningún curso”.
+
+Una vez construido el modelo E-R pasarlo al modelo relacional. Diseñar las tablas en Access, hacer las relaciones oportunas e insertar 5 registros en cada una de las tablas.

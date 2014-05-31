@@ -1,0 +1,142 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>sin título</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 0.21" />
+	<style type="text/css">
+	/*Primero posicionamos y le damos estilo al UL*/
+	ul{
+		position: relative
+		top: 100px;
+		left: 100px;
+		width: 700px;
+		height: 70px;
+		/*Realizamos degradado lineal*/
+		background: linear-gradient(#000000, #7f7f7f);/*comun*/
+		background: -moz-linear-gradient(#000000, #7f7f7f);/*firefox*/
+		background: -webkit-linear-gradient(#000000, #7f7f7f);/*firefox*/
+		/*redondear bordes*/
+		border-radius: 28px 0px;
+		-moz-border-radius: 28px 0px;
+		-webkit-border-radius: 28px 0px;
+	}
+	ul li{
+		position: relative;
+		width: 140px;
+		height: 60px;
+		background: white;
+		text-align: center;
+		line-height: 60px;
+		list-style: none;
+		float: left;
+		top: 5px;
+		margin-left: 10px;
+		border-radius: 28px 28px 28px 28px;
+		-moz-border-radius: 28px 28px 28px 28px;
+		-webkit-border-radius: 28px 28px 28px 28px;
+		
+	}
+	ul li:hover{
+		/*
+		transform: rotate(10deg);
+		-moz-transform: rotate(10deg);
+		-webkit-transform: rotate(10deg);
+		* */
+		color: white;
+		background: black;
+	}
+	/*colocamos y ocultamos el sub-menu*/
+	ul li ul{
+		position: relative;
+		top: 0px;
+		left: 0px;
+		width: 160px;
+		height: 300px;
+		background: transparent;
+		padding: 0px;
+		display: none;/*ocultamos el menu*/
+	}
+	/*al pasar por el menu mostramos el submenu*/
+	ul li:hover ul{
+		display: block;
+	}
+	
+	ul li ul li{
+		/*ahora le damos estilo a los elementos del submenu*/
+		border: 1px solid black;
+		margin: 0px;
+		color: black;
+	}
+	ul li ul #opcion11{
+		color: red;
+		font-size: 20px;
+	}
+	
+	
+	/*ahora colocamos el submenu 2*/
+	ul li ul li ul{
+		position: relative;
+		top: -60px;
+		left: 140px;
+		width: 160px;
+		height: 300px;
+		display: none;
+	}
+	ul li:hover ul li ul{
+		display: none;
+	}
+	ul li ul li:hover ul{
+		display: block;
+	}
+	ul li ul li ul li{
+		font-size: 8px;
+	}
+	
+	ul li ul li ul #opcion222{
+		font-size: 48px;
+	}
+	</style>
+</head>
+
+<body>
+	<ul>
+		<li>opcion1
+			<ul>
+				<li id="opcion11">opcion11
+					<ul>
+						<li>opcion1.1.1</li>
+						<li>opcion1.1.2</li>
+					</ul>
+				</li>
+				<li>opcion12
+					<ul>
+						<li>opcion1.2.1</li>
+						<li>opcion1.2.2</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>opcion2
+			<ul>
+				<li>opcion21
+					<ul>
+						<li>opcion2.1.1</li>
+						<li>opcion2.1.2</li>
+					</ul>
+				</li>
+				<li>opcion22
+					<ul>
+						<li>opcion2.2.1</li>
+						<li id="opcion222">opcion2.2.2</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+
+</html>

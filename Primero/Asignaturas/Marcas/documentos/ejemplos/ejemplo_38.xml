@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- lista de libros de una biblioteca -->
+<biblioteca>
+	<!-- lista de novelas -->
+	<novelas>
+		<terror>
+			<titulo critica="buena">El asesino de informáticos</titulo>
+			<fecha>04/05/2000</fecha>
+			<autor>Bill Gates</autor>
+		</terror>
+		<romantica>
+			<titulo critica="regular">Amor virtual</titulo>
+			<fecha>01/01/2005</fecha>
+			<autor>Carlos Lorenzo</autor>
+		</romantica>
+		<aventura>
+			<titulo critica="mala">En busca del bit perdido</titulo>
+			<fecha/>
+			<autor>Bit Erroneo</autor>
+		</aventura>
+	</novelas>
+	<!-- lista de manuales -->
+	<manuales>
+		<informatica>
+			<titulo critica="buena">Como enchufar un ordenador</titulo>
+			<fecha>01/03/2013</fecha>
+			<autor>Alex</autor>
+		</informatica>
+		<cocina>
+			<titulo critica="regular">Recetas virtuales</titulo>
+			<fecha>01/06/2078</fecha>
+			<autor>Futurman</autor>
+		</cocina>
+		<viajes>
+			<titulo critica="mala">Informáticos por el mundo</titulo>
+			<fecha/>
+			<autor>Canales Todos</autor>
+		</viajes>
+	</manuales>
+	<!-- lista de comics -->
+	<comics>
+		<super-heroes>
+			<titulo critica="buena">RAM-Man</titulo>
+			<fecha>16/8/2009</fecha>
+			<autor>Federico Fernandez</autor>
+		</super-heroes>
+		<manga>
+			<titulo critica="regular">CPU-li</titulo>
+			<fecha>04/6/1999</fecha>
+			<autor>Chai Ann</autor>
+		</manga>
+		<nacionales>
+			<titulo critica="mala">El Bit Vasco</titulo>
+			<fecha/>
+			<autor>Etxeberria</autor>
+		</nacionales>
+	</comics>
+</biblioteca>

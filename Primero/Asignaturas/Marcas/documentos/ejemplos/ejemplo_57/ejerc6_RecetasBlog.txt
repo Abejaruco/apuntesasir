@@ -1,0 +1,16 @@
+Ejercicio 6 (21/03/2013) – recetasArticulos (blog)
+
+Realizar xml y xsd sobre un blog que recoge diferentes artículos de recetas de cocina.
+Validarlo.
+
+Cada artículo contiene: referencia (números), titulo, fecha, publicado (boolean), 
+clasificación, crítica (número) y autor.
+
+Clasificación solo puede contener las siguientes categorías (como atributo)
+	- recetas de repostería  (será la que aparezca por defecto)
+	- recetas de carne
+	- recetas de pescado
+
+La crítica solo acepta puntuaciones o notas de 1 a 10 (como atributo).
+A su vez, además de atributo, tambien tiene contenido de tipo string con valoraciones
+del tipo “excelente receta”, “muy sosa”, ….

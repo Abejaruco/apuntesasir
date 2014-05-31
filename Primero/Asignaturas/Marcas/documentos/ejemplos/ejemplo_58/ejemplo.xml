@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet href="ejemplo.css" type="text/css"?>
+<taller 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="7_ejercicioTallerMecanico.xsd">
+	<coche>
+		<marca>Audi</marca>
+		<modelo>A1</modelo>
+		<carroceria plazas="4" /> <!-- Hay coches de 2, 4, 5 y 7 plazas Obligatorio--> 
+		<matricula>7856BNV</matricula>
+		<persona-contacto><!-- puede haber más de una persona de contacto -->
+			<nombre>Jon Bilbao</nombre>
+		</persona-contacto>
+		<combustible tipo="diesel" /> <!--Solo pueden ser diesel, gasolina o hibridos por defecto diesel-->
+		<diagnostico>
+			<averia>Frenos gastados</averia><!-- por lo menos una avería, pero puede tener varias -->
+			<averia>Turbo roto</averia>
+		</diagnostico>
+		
+	</coche>
+	<coche>
+		<marca>Seat</marca>
+		<modelo>Ibiza</modelo>
+		<carroceria plazas="5" /> <!-- Hay coches de 2, 4, 5 y 7 plazas --> 
+		<matricula>1156BPV</matricula>
+		<persona-contacto>
+			<nombre>Naiara Etxebarria</nombre>
+			<nombre>Iker Etxebarria </nombre>
+		</persona-contacto>
+		<combustible tipo="gasolina" /> <!--Solo pueden ser diesel, gasolina o hibridos y es obligatorio indicarlo -->
+		<diagnostico>
+			<averia>Lunas rotas</averia>
+			<averia>Embrague desgastado</averia>
+			<averia>Cambio aceite</averia>
+		</diagnostico>
+	</coche>
+	<coche>
+		<marca>Renault</marca>
+		<modelo>Megane</modelo>
+		<carroceria plazas="5" /> <!-- Hay coches de 2, 4, 5 y 7 plazas --> 
+		<matricula>2288DFS</matricula>
+		<persona-contacto>
+			<nombre>Ibai Garai</nombre>
+		</persona-contacto>
+		<combustible tipo="gasolina" /> <!--Solo pueden ser diesel, gasolina o hibridos y es obligatorio indicarlo -->
+		<diagnostico>
+			<averia>Lunas tintadas</averia>
+			<averia>Pintura roja metalizada</averia>
+			<averia>Equipo Musica Philips III y altavoces</averia>
+		</diagnostico>
+	</coche>
+</taller>

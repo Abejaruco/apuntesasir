@@ -1,0 +1,4 @@
+Necesitamos 9 bits para hosts para tener 500 IPs.
+Mascara Subred: 255.255.1111110.00000000 --> 255.255.254.0
+IP: 190.190.00000010.0 --> 190.190.190.2.0
+Broadcast: 190.190.00000011.255 --> 190.190.3.255

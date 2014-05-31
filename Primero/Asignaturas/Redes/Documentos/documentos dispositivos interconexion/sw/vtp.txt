@@ -1,0 +1,77 @@
+http://dc167.4shared.com/doc/5raRfiu_/preview.html
+
+
+
+
+Configurar VTP (virtual trunk protocol)
+
+ vamos a ver como configurar VTP. ¿Qué es VTP? Es un protocolo de Cisco que nos permite tener un switch donde creamos las Vlans y éste se encarga de propagarlas a los demás switch que están bajo su dominio. Es importante remarcar que solamente éste protocolo puede ser configurado en equipos de Cisco.
+
+Para que un switch pertenezca a un dominio debe cumplir con los siguientes items:
+
+i) Se debe configurar con el mismo dominio
+ii) Debe tener la misma version de VTP
+
+ii) Debe tener la misma contraseña VTP.
+
+Ademas cuenta con 3 modos posibles de configuracion:
+
+1)Switch Servidor: En él tendremos que configurar las Vlans para que se propaguen en el resto del dominio.
+
+2)Switch Cliente: Este tipo de switch serán los que reciban las Vlans y las podrán utilizar.
+
+3)Switch Transparente: Este tipo de switch no adopta las Vlans que le manda el servidor. En él podremos crear Vlans y usarlas localmente(solamente en este switch).
+
+
+1) se crean la vlan en el servidor 
+2) se crea una vlan para el trunk por ejemplo la 99
+3) se configura el vtp
+4) se configura el enlace trunk con el puerto en modo nativo
+
+
+
+
+
+
+
+configurar vtp  -server
+		-client
+		-transparent
+
+
+
+SW(config)#vtp domain cisco
+vtp mode server
+vtp version 2
+vtp password ciscopw
+
+end
+vtp status
+
+interface fastEthernet 0/1
+switchport mode trunk
+switchport trunk native vlan 99
+exit
+
+
+
+
+SW(config)#vtp domain cisco
+vtp mode client
+vtp version 2
+vtp password ciscopw
+
+end
+vtp status
+
+CONF TER
+
+
+SW(config)#vtp domain cisco
+vtp mode transparent
+vtp version 2
+vtp password ciscopw
+
+end
+show vlan brief
+

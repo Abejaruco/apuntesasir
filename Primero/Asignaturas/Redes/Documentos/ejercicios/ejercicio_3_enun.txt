@@ -1,0 +1,9 @@
+Atenuación:
+
+Señal:
+5 voltios = 1
+0 voltios = 0
+Atenuación por km del 5%
+Solo se recononce la señal entre 3 y 5 voltios.
+
+¿Cuantos km puede transmitirse?

@@ -1,0 +1,16 @@
+BackUp en Linux con Tar
+
+BackUp completa
+tar --exclude='Dropbox' --listed-incremental=completa -vczf backup-root-`date +%F_%H-%M`.tar.gz /root/
+
+BackUps Incrementales:
+    Primero:
+cp completa incremental
+tar --exclude='Dropbox' --listed-incremental=incremental -vczf backup-root-`date +%F_%H-%M`.tar.gz /root/
+   Otros:
+tar --exclude='Dropbox' --listed-incremental=incremental -vczf backup-root-`date +%F_%H-%M`.tar.gz /root/
+
+BackUps Diferenciales:
+  Todos:
+cp completa diferencial
+tar --exclude='Dropbox' --listed-incremental=diferencial -vczf backup-root-`date +%F_%H-%M`.tar.gz /root/

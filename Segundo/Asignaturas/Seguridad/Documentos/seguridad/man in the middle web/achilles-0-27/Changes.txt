@@ -1,0 +1,17 @@
+Changes From Releaes .16.b to Release .27
+
+1. Changed window from dialog box to window so it's now resizable.
+2. Much improved performance in intercept mode when Intercept Server Data is not checked.
+3. Added client log and server log windows. This may do away with the log to text file. In future
+    versions.
+4. Added a find button. 
+5. Currently defaults to system fonts, but added the ability to change this for the main edit window. Dont
+    want to get too bogged down with graphical interface at this time.
+
+Future Releases (roughly in order)
+1. Proxy Chaining. (Past Due, will be out very soon)
+2. Log Key elements to a Database. This will allow for querying, replaying and report generation.
+3. Automated Rules for changing data on the fly.
+4. Security Settings. Basically a host allow list.
+5. Check server certificates.
+6. New skin, prettiness in general.

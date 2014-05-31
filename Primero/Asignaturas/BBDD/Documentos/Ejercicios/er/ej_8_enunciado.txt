@@ -1,0 +1,3 @@
+Pasa el modelo entidad-relación del ejercicio 2 al modelo relacional.
+
+Diseña las tablas en Access, realiza las relaciones que consideres oportunas e inserta cinco registros en cada una de las tablas.

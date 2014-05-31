@@ -1,0 +1,6 @@
+Ejemplo:
+	select ename from scott.emp where ename like 'J_MES';
+Devuelve:
+ENAME
+----------
+JAMES

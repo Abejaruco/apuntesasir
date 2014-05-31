@@ -1,0 +1,8 @@
+dn: ou=People,dc=almi4,dc=com 
+objectclass: organizationalUnit
+ou: People 
+
+dn: ou=Group,dc=almi4,dc=com 
+objectclass: organizationalUnit
+ou: Group 
+

@@ -1,0 +1,78 @@
+.ejercicio{
+	background-color: #E9FBF9;
+}
+.solucion{
+	font-family:"freesans";
+	font-size:14px;
+	background-color: #FFFFDC;
+}
+pre{
+	font-family:"freesans";
+	font-size:14px;
+	background-color: #E9FBF9;
+}
+h1{
+	font-size: 50px;
+	text-align: center;
+}
+h2{
+	font-size: 40px;
+}
+h3{
+	font-size: 25px;
+}
+h4{
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+textarea{
+	font-family:"freesans";
+	font-size:14px;
+	color:#151504;
+	background-color:#FFFFDC;
+	width: 100%;
+}
+.ejercicios li{
+	font-weight: bold;
+}
+wbr {
+display: inline-block;
+}
+textarea{
+	font-family:"freesans";
+	font-size:14px;
+	color:#151504;
+	background-color:#FFFFDC;
+	width: 100%;
+}
+table.comparativa,tr.comparativa,th.comparativa,td.comparativa{
+	border: 1px solid black;
+	text-align: center;
+	}
+th.comparativa,td.comparativa{
+	padding: 10px;
+}
+table.grafico{
+	
+	}
+table.grafico tr td{
+	padding: 10px;
+}
+table.grafico tr th{
+	padding: 10px;
+	width:30%;
+}
+table.grafico tr th image{
+
+}
+.negrita{
+	font-weight: bold;
+}
+.ancho{
+	width: 100%;
+}
+.centrado{
+	width: 50%;
+	margin: auto;
+	}

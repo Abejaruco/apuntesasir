@@ -1,0 +1,23 @@
+2 servidores 24 horas 1 router 1 swits 20 puestos de trabajo 8 horas al dia
+150W hora pc escritorio, servidores 300W, swits->40W, router15W, pantallas pc60W/unidad
+8h20pantallas60W
+8h20pc150W
+24h2 servidores300W
+24h1 swith40W
+24h1 router15W
+Precio: 0,141824 kw/h
+Pantallas:60x8=480x20=9.600W
+PC:150x8=1200x20=24.000W
+24.000+9600=33600W33,6kwx200=6720kw/año. 6720x0,141824= 953,05728 €/año
+Servidores:300x24=7200x2=14.400W
+Swith:40x24=960W
+Router:15x24=360W
+14.400+960+360=15720W15,720kw x 365=5737,8kw/año. 5737,8x0,141824=813,7577472 €/año
+953,05728 + 813,7577472= 1766,8150272 €/año total.
+Mi pc
+Procesador 65 W + dvd 10W + hd 20W+ placa 10W+ tarhjeta grafica 55W=150Wx24h=3600W/dia
+Pantalla 40Wx24h=960W/dia
+Router 10Wx24h=240W/dia
+Total: 4800W/dia
+Precio: 0,17kw
+4,8kw/dia*0,17kw=0,816€/dia

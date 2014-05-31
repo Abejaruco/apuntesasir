@@ -1,0 +1,19 @@
+Ejercicio 4 (14/03/2013) – liga de fútbol
+
+Realizar un DTD y XML (incrustado) para representar los resultados de una liga de fútbol.
+La información que se quiere almacenar de cada partido es:
+
+el nombre del equipo local
+el nombre del equipo visitante
+los goles marcados por el equipo local
+los goles marcados por el equipo visitante
+
+Incluye  los siguientes resultados dentro del xml:
+Athletic de Bilbao: 1 - Real Sociedad: 1
+Osasuna: 3 - Alavés: 3
+Baskonia: 4 - Eibar: 2
+
+Realiza 3 documentos diferentes (xml+dtd) para cada uno de los siguientes casos:
+un DTD en el que no haya atributos, sino únicamente etiquetas
+un DTD en el que los goles sean atributos
+un DTD en el toda la información se guarde en forma de atributos

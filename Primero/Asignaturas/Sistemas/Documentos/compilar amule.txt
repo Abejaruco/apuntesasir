@@ -1,0 +1,8 @@
+g++
+zlib1g-dev
+libwxgtk2.8-dev
+libcrypto++-dev
+binutils-dev
+libupnp-dev
+gettext
+gettext-lint

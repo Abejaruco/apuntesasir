@@ -1,0 +1,9 @@
+select ROUND(sqrt(5),2) from dual;
+
+devuelve:
+
+ROUND(SQRT(5),2)
+----------------
+            2,24
+
+1 fila seleccionada.

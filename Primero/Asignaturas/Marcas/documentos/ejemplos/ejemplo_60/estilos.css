@@ -1,0 +1,93 @@
+body{
+	font-family: Arial,Georgia,Serif;
+	font-size: 20px;
+	margin:1px 5px 200px 5px;
+}
+
+ul.peliculas{
+	margin: 20px;
+}
+ul.peliculas li{
+	list-style-image:url('files/10_lista.png');
+}
+ul.actores li{
+	list-style-image:none;
+}
+.titulo{
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+table,tr{
+	width: 70%;
+}
+td.imagen{
+	width: 25%;
+	transition: all 2s;
+	-webkit-transition: all 2s; /* Safari */
+}
+td.imagen:hover{
+	/*width: 50%;*/
+	transform:scale(2) rotate(360deg) translate(100px);
+	-ms-transform:scale(2) rotate(360deg) translate(100px); /* IE 9 */
+	-webkit-transform:scale(2) rotate(360deg) translate(100px); /* Safari and Chrome */
+}
+td{
+	padding: 10px;
+}
+img{
+	width: 100%;
+}
+@keyframes agrandarImagen
+{
+from {height: 50px;}
+to {height: 900px;}
+}
+
+@-webkit-keyframes agrandarImagen /* Safari and Chrome */
+{
+from {height: 50px;}
+to {height: 900px;}
+}
+@keyframes rotarTitulo
+{
+from {
+	transform: rotate(0deg);
+	}
+to {	
+	transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes rotarTitulo /* Safari and Chrome */
+{
+from {
+	-webkit-transform: rotate(0deg); /* Safari and Chrome */
+	}
+to {	
+	-webkit-transform: rotate(360deg); /* Safari and Chrome */
+	}
+}
+h1 {
+	text-align: center;
+	font-size: 50px;
+	letter-spacing: 10px;
+	margin: 3px;
+	animation:rotarTitulo 3s linear 0s 1 normal;
+	-webkit-animation:rotarTitulo 3s linear 0s 1 normal; /* Safari and Chrome */
+	transform: rotate(0deg);
+	-ms-transform: rotate(0deg); /* IE 9 */
+	-webkit-transform: rotate(0deg); /* Safari and Chrome */
+}
+img.fondo{
+	width: 20%;
+	height: 900px;
+	float: right;
+	/*animation: name duration timing-function delay iteration-count direction;*/
+	animation:agrandarImagen 3s ease 0s infinite alternate;
+	-webkit-animation:agrandarImagen 3s ease 0s infinite alternate; /* Safari and Chrome */
+}
+p{
+	font-weight: bold;
+	font-size: 30;
+}

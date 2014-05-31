@@ -1,0 +1,51 @@
+#titulo{
+	font-size: 3em;
+	color: #008A8A
+}
+#subtitulo{
+	font-size: 2em;
+	color: #0000FF;
+}
+#especial{
+	color: #FF02FF;
+}
+p strong{
+	color: #FF0907
+}
+td strong{
+	color: #FFAA00
+}
+a{
+	color: #FF4055;
+}
+a em{
+	color: #236BFF;
+}
+caption{
+	color:#4A67FF;
+}
+th{
+	color: #FF060A;
+}
+td{
+	color: #5DA321
+}
+table,tr,th,td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.destacado{
+	color: #FFAB08;
+}
+.especial{
+	color: #FFAA00;
+}
+span.especial{
+	color: #9E36A7;
+}
+div p{
+	color: #949D39;
+}
+div p a{
+	color: #159315
+}

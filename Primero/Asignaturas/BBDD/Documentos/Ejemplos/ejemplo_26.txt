@@ -1,0 +1,9 @@
+select TRUNC(sqrt(5),3) from dual;
+
+devuelve:
+
+TRUNC(SQRT(5),3)
+----------------
+           2,236
+
+1 fila seleccionada.

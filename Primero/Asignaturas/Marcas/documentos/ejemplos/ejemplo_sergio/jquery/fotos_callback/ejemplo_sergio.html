@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Animación simple utilizando fadeIn y fadeOut de jQuery</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+
+
+	function animacion_simple() {
+		
+		// Mostramos la foto 1 fade in= Al entrar
+		$(".foto1").fadeIn(1000);//Foto 1 aparece
+
+		// Cuando pasen otros 3000 milisegundos, ocultamos la foto 1 y mostramos la foto 2
+		setTimeout(function() {
+			$(".foto1").fadeOut(1000);//Foto 1 desaparece
+			$(".foto2").fadeIn(1000);// Mostramos la foto 2
+		}, 3000);
+	
+		// Cuando pasen otros 3000 milisegundos, ocultamos la foto 2 y mostramos la foto 3
+		setTimeout(function() {
+			// Ocultamos la foto 2
+			$(".foto2").fadeOut(1000);
+			// Mostramos la foto 3
+			$(".foto3").fadeIn(1000);
+		}, 6000);
+	
+		// Cuando pasen otros 3000 milisegundos, ocultamos la foto 3 y volvemos a iniciar la animación
+		setTimeout(function() {
+			// Ocultamos la foto 3
+			$(".foto3").fadeOut(1000);
+			// Iniciamos otra vez la animación
+			animacion_simple();
+		}, 9000);
+
+	}
+	
+	//Empezamos la animación a los 200 milisegundos
+	setTimeout(function() {
+		animacion_simple();
+	}, 1000);
+	
+});
+</script>
+<style type="text/css">
+
+.html, body {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+
+.clear {
+	clear:both;
+}
+
+.animacion {
+	float:left;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+.animacion_img {
+	float:left;
+	width:600px;
+	height:450px;
+	padding:0px;
+	margin:0px;
+	border:1px solid #999;
+	overflow:hidden;
+	position:relative;
+}
+
+.animacion_img img {
+	float:left;
+	position:absolute;
+	left:0px;
+	top:0px;
+	display:none;
+}
+
+</style>
+</head>
+<body>
+<div class="animacion">
+Animación simple utilizando fadeIn y fadeOut de jQuery.
+<br /><br />
+<div class="animacion_img">
+<img src="foto1.jpg" width="600" height="450" class="foto1" />
+<img src="foto2.jpg" width="600" height="450" class="foto2" />
+<img src="foto3.jpg" width="600" height="450" class="foto3" />
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+taller{
+	background-image: url("./car-logos.jpg");
+	}
+coche{
+	display: block;
+	border: 3px solid black;
+	background-color: grey;
+	color: black;
+	font-family:"Times New Roman", Times, serif;
+	font-size: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	padding: auto;
+	width: 70%;
+	opacity: 0.8;
+	filter: "alpha(opacity=80)"; /* para IE8*/
+	filter: alpha(opacity=80); /* para IE8*/
+	-webkit-opacity: 0.8; /* para safari y chrome */
+	-moz-opacity: 0.8; /* para mozilla y firefox */
+	behavior: url(ie-css3.htc); /* Obliga a IE a interpretar adecuadamente las etiquetas de css3*/
+	-o-opacity: 0.8; /* para opera*/
+	-ms-opacity: 0.8; /* para IE */
+	}
+marca{
+	color: red;
+	display: block;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 5px;
+}
+modelo{
+	display: inline-block;
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 50px;
+}
+carroceria:before{
+	content:"Carrocería de " attr(plazas);
+}
+carroceria:after{
+	content: " plazas";
+}
+carroceria[plazas="4"]{
+	background-color: red;
+}
+carroceria[plazas="5"]{
+	background-color: green;
+}
+carroceria{
+	display: inline-block;
+	font-size: 25px;
+}
+matricula{
+	display: inline-block;
+	font-size: 25px;
+}
+persona-contacto:first-letter{
+	font-size: 50px;
+	color: green;
+}
+persona-contacto{
+	display: block;
+	color: blue;
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 50px;
+}
+combustible{
+	display: block;
+	font-size: 40px;
+}
+diagnostico{
+	display: list;
+	font-size: 40px;
+}
+averia{
+	display: list-item;
+	font-size: 20px;
+	margin-left: 100px;
+	list-style: square;
+}

@@ -1,0 +1,6 @@
+Switch(config)#interface FastEthernet ( Acá va el numero de la interface ej 0/1)
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#switchport trunk allowed vlan (Aca va el tag de las Vlan que permitiremos que pasen por el Trunk Ej : Si queremos que pasen solo las vlan 50 y 100 el comando completo seria “switchport trunk allowed vlan 50 ,100 ”  Si es necesario permitir todas las vlan creadas en el Switch el comando seria de la siguiente forma “switchport trunk allowed vlan all ” ) 
+Switch(config-if)#switchport trunk native vlan vlan-id
+Switch(config-if)#no shutdown
+Switch(config-if)#exit

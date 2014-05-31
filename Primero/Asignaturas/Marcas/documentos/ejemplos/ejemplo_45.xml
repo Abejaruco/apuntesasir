@@ -1,0 +1,10 @@
+<!DOCTYPE nombre_dtd[ 
+<!ELEMENT tikets (tiket+)>
+<!ELEMENT tiket (numero,fecha,hora,producto+,importe)>
+<!ELEMENT producto (nombre,precio)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>

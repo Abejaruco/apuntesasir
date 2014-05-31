@@ -1,0 +1,72 @@
+<!--
+   sin título.html
+   
+   Copyright 2013 smr1-hodei <ALMI4\smr1-hodei@hodei-system-product-name>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>JQUERY -1</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 0.21" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		//Comienzo del jquery del cebollero//
+	
+		$(document).ready(function(){
+			$("#jose").css("width","100px");//Primera forma de acceder a una propiedad//
+			$("#jose").height("100px");//Segunda forma de acceder a una propiedad//
+			$("#jose").css({"background":"green","color":"white"});//Acceder a varias propiedades a la vez
+			$("#jose").animate({"width":"10px","opacity":"0.2"},2000);
+			//Animacion que hace mas pequeño que  ala vez disminuye el ancho y la opacidad
+			$("#jose").animate({"width":"100px","opacity":"1"},2000).animate({"margin-top":"300px"},
+			2000).animate({"margin-left":"400px"},1000).animate({"margin-top":"0px",
+			"margin-left":"0px","opacity":"0"},3000);
+			//TRansicion de entrada
+			$("#jose").animate({"opacity":"1"},10);
+			$("#jose").fadeIn(2000);
+
+			
+		//Fin del jquery//	
+		});
+		
+	</script>
+	<style type="text/css">
+	#jose{
+		background:red;
+	}
+	
+	
+	
+	</style>
+	
+	
+	
+</head>
+
+<body>
+	<div id="jose">hola</div>
+	
+</body>
+
+</html>

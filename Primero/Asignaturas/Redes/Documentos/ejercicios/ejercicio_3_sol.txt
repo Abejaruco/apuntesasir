@@ -1,0 +1,2 @@
+Cada km se pierde 0.25 v/km
+Como mucho pueden perderse 2 v --> 2 v /0.25 v/km --> 8km

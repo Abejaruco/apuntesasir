@@ -1,0 +1,15 @@
+aptitude install likewise-open (likewise-open5-gui)
+Primer paso cambiar nombre de equipo editar hostname.
+
+almi4-cpuxxx.
+
+Instalar en todos los equipos gdm.(aptitude install gdm).
+
+Ejecutar sudo domainjoin-cli join dominio.com linux
+Contraseña Almi123
+
+reiniciar iniciar sesion con.:. dominio.com\usuario
+contraseña:.Almi123
+
+
+-----------------------------

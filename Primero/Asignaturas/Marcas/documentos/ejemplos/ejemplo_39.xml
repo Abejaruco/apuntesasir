@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<libro>
+	<titulo>Manual ........C/C++</titulo>
+	<isbn>978841526143</isbn>
+	<autor>Miguel Angel García</autor>
+	<paginas>416</paginas>
+	<editorial>Anaya M</editorial>
+</libro>
+<libro>
+	<titulo>Redes locales.</titulo>
+	<isbn>9788441519800</isbn>
+	<autor>Jim Doherty</autor>
+	<autor>Neal Anderson</autor>
+	<paginas>544</paginas>
+	<editorial>Anaya Multimedia</editorial>
+</libro>
+

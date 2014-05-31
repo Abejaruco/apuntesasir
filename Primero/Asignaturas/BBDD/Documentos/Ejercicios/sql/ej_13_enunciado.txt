@@ -1,0 +1,30 @@
+1. Crear la tabla Multas:
+Tabla Multas
+CodMulta Number(8) Primary key
+Fecha date
+Hora varchar2(4)
+Lugar Varchar2(50)
+Importe Number(8)
+
+2. Modificar la tabla Multas para que el campo  importe tenga 2 decimales
+
+3. Crear una secuencia para el campo cod_multa con valor minino 1 e incremento 1.
+
+4.Insertar en la tabla los siguientes registros-valores
+codMulta	|	Fecha		|	Hora	|	Lugar		|	Importe	
+Correlativo	|	02/02/2012	|	0912	|	P.KM 312	|	40,50
+Correlativo	|	12/10/2012	|	1227	|	P. KM 90	|	125,00
+Correlativo	|	12/03/2012	|	1809	|	P.KM 33		|	52,36
+Correlativo	|	21/05/2011	|	2315	|	P.KM 77		|	22,22
+
+5. Modificar la tabla Multas para que incluya el campo DescripcionAcc, que será un varchar2 de 500 posiciones
+6. Introducir en el campo  DescripcionAcc de todos los registros el valor ‘Escriba descripción’
+7. Para el primer registro modificar el campo DescripcionAcc con el valor ‘ Atropello’
+8. Modificar el campo Importe del segundo registro con el valor 250
+9.Confirmar los cambios
+10. Mostrar los registros de la tabla cuyo importe sea menor que 50
+11. Mostrar los registros de la tabla cuyo importe sea menor que 50 o mayor que 100
+12. Mostrar los registros de la tabla ordenados por fecha.
+13. Eliminar los registros del año 2011
+14. Recuperar los cambios realizados.
+

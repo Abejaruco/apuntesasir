@@ -1,0 +1,13 @@
+	Ejercicio 5 (20/03/2013) – baloncesto     
+
+Crear un xml y un dtd (incrustado) y, por otro lado, un xml y un xsd (schema) que recoja los siguientes datos:
+
+Equipo que contiene  a todos sus jugadores.
+
+Cada jugador tiene: nombre del jugador, equipos en los que ha jugado, puesto que ocupa, origen y dorsal.
+
+Los puestos pueden ser ”ala, ala-pivot, escolta, base, pivot” y es obligatorio indicarlo.
+
+Origen es un elemento opcional.
+
+El dorsal solo puede tener un valor de 0 a 10.

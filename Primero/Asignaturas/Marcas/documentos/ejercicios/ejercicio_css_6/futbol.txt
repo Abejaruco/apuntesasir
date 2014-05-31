@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>EJERCICIO</title>
+		<link rel="stylesheet" type="text/css" href="MiEstilo/estilos.css">
+	</head>
+	<body>
+		<h1>Ejemplo de Estilos CSS</h1>
+		<p>
+		<p>
+		<p>El centro del campo cuenta con el jugador de moda en Rusia, Dennís Glushakov, de 24 años, un todoterreno que tanto corta, como remata y da asistencias de gol, lo que le ha valido la llamada del seleccionador, Dick Advocaat. Sus compañeros son Torbinsky, un pequeño fajador con mucho carácter y no pocas dosis de mal genio, y el estilista español Alberto Zapater, que está viviendo una segunda juventud en el equipo ruso.</p>
+		
+		<table border=1>
+			<tr>
+				<th>Jugadores</th><th>Equipo</th>
+			</tr>
+			<tr>
+				<td>Llorente</td><td>Athletic Club</td>
+			</tr>
+			<tr>
+				<td>Villa</td><td>F.C. Barcelona</td>
+			</tr>
+			<tr>
+				<td>Soldado</td><td>Valencia</td>
+			</tr>
+		</table>
+		<p>
+		<ol>
+			<li>Barcelona</li>
+			<li>Real Madrid</li>
+			<li>Sevilla</li>
+			<li>Athletic</li>
+		</ol>
+	<body>
+</html>

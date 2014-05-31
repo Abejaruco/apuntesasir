@@ -1,0 +1,47 @@
+Ejercicio Union:
+Una clínica almacena los datos de los médicos en una tabla llamada "medicos" y los datos de los pacientes en otra denominada "pacientes".
+1- Eliminamos ambas tablas:
+ drop table medicos;
+ drop table pacientes;
+2- Creamos las tablas:
+ create table medicos(
+  legajo number(3),
+  documento varchar2(8) not null,
+  nombre varchar2(30),
+  domicilio varchar2(30),
+  especialidad varchar2(30),
+  primary key(legajo)
+ );
+
+ create table pacientes(
+  documento varchar2(8) not null,
+  nombre varchar2(30),
+  domicilio varchar2(30),
+  obrasocial varchar2(20),
+  primary key(documento)
+ );
+3- Ingresamos algunos registros:
+ insert into medicos values(1,'20111222','Ana Acosta','Avellaneda 111','clinica');
+ insert into medicos values(2,'21222333','Betina Bustos','Bulnes 222','clinica');
+ insert into medicos values(3,'22333444','Carlos Caseros','Colon 333','pediatria');
+ insert into medicos values(4,'23444555','Daniel Duarte','Duarte Quiros 444','oculista');
+ insert into medicos values(5,'24555666','Estela Esper','Esmeralda 555','alergia');
+
+ insert into pacientes values('24555666','Estela Esper','Esmeralda 555','IPAM');
+ insert into pacientes values('23444555','Daniel Duarte','Duarte Quiros 444','OSDOP');
+ insert into pacientes values('30111222','Fabiana Fuentes','Famatina 666','PAMI');
+ insert into pacientes values('31222333','Gaston Gonzalez','Guemes 777','PAMI');
+4- La clínica necesita el nombre y domicilio de médicos y pacientes para enviarles una tarjeta de invitación a la inauguración de un nuevo establecimiento. Emplee el operador "union" para obtener dicha información de ambas tablas (7 registros)
+Note que existen dos médicos que también están presentes en la tabla "pacientes"; tales registros aparecen una sola vez en el resultado de "union".
+5- Realice la misma consulta anterior pero esta vez, incluya los registros duplicados. Emplee "union all" (9 registros)
+6- Realice la misma consulta anterior y esta vez ordene el resultado por nombre (9 registros)
+7- Agregue una columna extra a la consulta con el encabezado "condicion" en la que aparezca el literal "médico" o "paciente" según si la persona es uno u otro (9 registros)
+
+
+
+
+8- La clínica necesita el nombre y domicilio de los pacientes que también son médicos para enviarles una tarjeta de descuento para ciertas prácticas. Emplee el operador "intersect" para obtener dicha información de ambas tablas
+
+9- La clínica necesita los nombres de los pacientes que no son médicos. Realice una operación de resta.
+10- Se necesitan los registros que no coinciden en ambas tablas. Realice la operación necesaria.
+

@@ -1,0 +1,9 @@
+Una agencia de viajes desea informatizar toda la gestión de los viajeros que acuden a la agencia y los viajes que estos realizan. Tras ponernos en contacto con la agencia, ésta nos proporciona la siguiente información.
+
+“La agencia desea guardar la siguiente información de los viajeros: dni, nombre, dirección y teléfono.
+
+De cada uno de los viajes que maneja la agencia interesa guardar el código de viaje, número de plazas, fecha en la que se realiza el viaje y otros datos. Un viajero puede realizar tantos viajes como desee con la agencia. Un viaje determinado sólo puede ser cubierto por un viajero.
+
+Cada viaje realizado tiene un destino y un lugar de origen. De cada uno de ellos se quiere almacenar el código, nombre y otros datos que puedan ser de interés. Un viaje tiene un único lugar de destino y un único lugar de origen”.
+
+Realizar el modelo E-R y pasarlo al modelo de datos relacional. Diseñar las tablas en Access, realizar las oportunas relaciones entre tablas e introducir cinco registros en cada una de las tablas.

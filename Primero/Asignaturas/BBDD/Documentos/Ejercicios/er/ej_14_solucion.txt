@@ -1,0 +1,6 @@
+﻿Autor(Codigo, Nombre) Clave: Codigo
+Libro(Codigo, titulo, isbn, editorial, npag) Clave:Codigo
+Escribe (Codigo-Autor, Codigo-Libro) Claves: Codigo-Autor, Codigo-Libro
+Ejemplar (Codigo, localizacion, codig-libro) Clave: Codigo
+Usuario (Codigo, nombre, dirección, telefono) Clave: Codigo
+Saca (Codigo-ejemplar, codigo_usuario, fecha_prestamo, fecha devolucion) Claves: Codigo-ejemplar, codigo_usuario, fecha_prestamo

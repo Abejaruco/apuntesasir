@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!--
+Ejercicio 4 (14/03/2013)  liga de fútbol
+
+Realizar un DTD y XML (incrustado) para representar los resultados de una liga de fútbol.
+La información que se quiere almacenar de cada partido es:
+
+el nombre del equipo local
+el nombre del equipo visitante
+los goles marcados por el equipo local
+los goles marcados por el equipo visitante
+
+Incluye  los siguientes resultados dentro del xml:
+Athletic de Bilbao: 1  Real Sociedad: 1
+Osasuna: 3 - Alavés: 3
+Baskonia: 4 - Eibar: 2
+
+Realiza 3 documentos diferentes (xml+dtd) para cada uno de los siguientes casos:
+un DTD en el que no haya atributos, sino únicamente etiquetas
+un DTD en el que los goles sean atributos
+xxxxxxxun DTD en el toda la información se guarde en forma de atributos
+-->
+<!DOCTYPE ligaBBV [
+<!ELEMENT ligaBBV (jornada+) >
+<!ELEMENT jornada (partido+) >
+<!ELEMENT partido (equipo+) >
+<!ELEMENT equipo EMPTY >
+<!ATTLIST equipo tipo CDATA #REQUIRED >
+<!ATTLIST equipo nombre CDATA #REQUIRED >
+<!ATTLIST equipo goles CDATA #REQUIRED >
+]>
+<ligaBBV>
+	<jornada>
+		<partido>
+			<equipo tipo="local" nombre="Athletic de Bilbao" goles="2" />
+			<equipo tipo="Visitante" nombre="Real Sociedad" goles="1" />
+		</partido>
+		<partido>
+			<equipo tipo="Local" nombre="Osasuna" goles="3" />
+			<equipo tipo="Visitante" nombre="Alavés" goles="3" />
+		</partido>
+		<partido>
+			<equipo tipo="Local" nombre="Baskonia" goles="4" />
+			<equipo tipo="Visitante" nombre="Eibar" goles="2" />
+		</partido>
+	</jornada>
+</ligaBBV>

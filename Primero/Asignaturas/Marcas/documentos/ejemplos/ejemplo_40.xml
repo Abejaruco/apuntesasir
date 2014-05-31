@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogo>
+	<producto>
+		<nombre>Mesa THYO</nombre>
+		<ref>3948</ref>
+		<stock>3</stock>
+		<precio>360</precio>
+	</producto>
+	<producto>
+		<nombre>Silla THYO</nombre>
+		<ref>5343</ref>
+		<stock>8</stock>
+		<precio>90</precio>
+	</producto>
+</catalogo>

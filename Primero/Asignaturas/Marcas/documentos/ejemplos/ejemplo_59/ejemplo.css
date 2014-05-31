@@ -1,0 +1,95 @@
+blog{
+	background-image: url("./tarta.jpg");
+	}
+articulo{
+	display: table;
+	border: 3px solid red;
+	border-spacing: 10px;
+	border-radius: 25px;
+	box-shadow: 5px 5px 15px red;
+	background-color: black;
+	color: black;
+	font-family:"Times New Roman", Times, serif;
+	font-size: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	padding: auto;
+	width: 70%;
+	transition: all 1s;
+	-webkit-transition: all 1s; /* Safari */
+	}
+articulo:hover{
+	transform: scale(1.4,1.4);
+	-ms-transform: scale(1.4,1.4); /* IE 9 */
+	-webkit-transform: scale(1.4,1.4); /* Safari and Chrome */
+}
+articulo:active{
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg); /* IE 9 */
+	-webkit-transform: rotate(30deg); /* Safari and Chrome */
+}
+referencia{
+	display: table-row;
+	color: white;
+	font-weight: bold;
+	font-size: 40px;
+	text-shadow: -8px -8px 10px white;
+	transition: all 1s;
+	-webkit-transition: all 1s; /* Safari */
+	}
+referencia:hover{
+	transform: translate(500px);
+	-ms-transform: translate(500px); /* IE 9 */
+	-webkit-transform: translate(500px);/* Safari and Chrome */
+}
+titulo,fecha,publicado,clasificacion,critica,autor{
+	display: table-cell;
+	color: red;
+	font-size: 18px;
+	border: 3px solid white;
+	border-radius: 25px;
+	padding: 5px;
+	text-align: center;
+	transition: all 1s;
+	-webkit-transition: all 1s; /* Safari */
+	}
+titulo:hover,fecha:hover,publicado:hover,clasificacion:hover,critica:hover,autor:hover{
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg); /* IE 9 */
+	-webkit-transform: rotate(30deg); /* Safari and Chrome */
+}
+titulo:first-letter{
+	font-size: 40px;
+}
+publicado{
+	display: none;
+	
+	}
+clasificacion:before{
+	content: "Tipo: ";
+	color: blue;
+}
+clasificacion:after{
+	content: "( " attr(categoria) ")";
+}
+critica:before{
+	content: "Nota: ";
+	color: blue;
+}
+critica:after{
+	content: "--> "attr(nota);
+	color: red;
+}
+critica[nota="5"]{
+	color: #00DFEA;
+	}
+critica[nota="6"]{
+	color: orange;
+	}
+critica[nota="8"]{
+	color: yellow;
+	}
+critica[nota="10"]{
+	color: green;
+	}

@@ -1,0 +1,7 @@
+Ejemplo:
+	select ename,job,sal from scott.emp where sal < 1000 and job='CLERK';
+Devuleve:
+	ENAME      JOB              SAL
+---------- --------- ----------
+SMITH      CLERK            800
+JAMES      CLERK            950

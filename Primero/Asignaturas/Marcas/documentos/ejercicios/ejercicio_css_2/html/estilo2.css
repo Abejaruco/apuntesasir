@@ -1,0 +1,40 @@
+@CHARSET "ISO-8859-1";
+/*La siguiente regla CSS es necesaria para ver
+	los bordes de la tabla */
+table, tr, th, td { border: 1px solid #000; border-collapse: collapse; }
+
+/* Los colores propuestos para este ejercicio son: teal, red, 
+ 	blue, orange, purple, olive, fuchsia y green */
+
+h1#titulo { color: teal; }
+
+h2#subtitulo { color: blue; }
+
+table { color: green; }
+
+caption { color: blue; }
+
+th { color: red; }
+
+th.especial { color: orange; }
+
+td strong { color: orange; }
+
+div#adicional p { color: olive; }
+
+div#adicional a { color: green; }
+
+div#adicional span#especial { color: fuchsia; }
+
+a { color: red; }
+
+a em { color: blue; }
+
+strong { color: red; }
+
+span.destacado { color: orange; }
+
+span.especial { color: purple; }
+
+
+

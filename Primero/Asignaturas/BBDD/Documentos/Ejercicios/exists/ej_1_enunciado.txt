@@ -1,0 +1,40 @@
+Un comercio que vende artículos de librería y papelería almacena la información de sus ventas en una tabla llamada "facturas" y otra "detalles".
+Eliminamos las tablas:
+ drop table detalles;
+ drop table facturas;
+Las creamos con las siguientes estructuras:
+ create table facturas(
+  numero number(5) not null,
+  fecha date,
+  cliente varchar2(30),
+  primary key(numero)
+ );
+
+ create table detalles(
+  numerofactura number(5) not null,
+  numeroitem number(4) not null, 
+  articulo varchar2(30),
+  precio number(5,2),
+  cantidad number(3),
+  primary key(numerofactura,numeroitem),
+  constraint FK_detalles_numerofactura
+   foreign key (numerofactura)
+   references facturas(numero)
+   on delete cascade
+ );
+Ingresamos algunos registros:
+ insert into facturas values(1200,'15/01/2007','Juan Lopez');
+ insert into facturas values(1201,'15/01/2007','Luis Torres');
+ insert into facturas values(1202,'15/01/2007','Ana Garcia');
+ insert into facturas values(1300,'20/01/2007','Juan Lopez');
+
+ insert into detalles values(1200,1,'lapiz',1,100);
+ insert into detalles values(1200,2,'goma',0.5,150);
+ insert into detalles values(1201,1,'regla',1.5,80);
+ insert into detalles values(1201,2,'goma',0.5,200);
+ insert into detalles values(1201,3,'cuaderno',4,90);
+ insert into detalles values(1202,1,'lapiz',1,200);
+ insert into detalles values(1202,2,'escuadra',2,100);
+ insert into detalles values(1300,1,'lapiz',1,300);
+Empleamos una subconsulta correlacionada con un operador "exists" en la cláusula "where" para devolver la lista de clientes que compraron el artículo "lapiz":
+Buscamos los clientes que NO han comprado el artículo "lapiz":

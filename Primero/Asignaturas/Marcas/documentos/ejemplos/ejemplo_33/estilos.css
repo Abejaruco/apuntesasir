@@ -1,0 +1,17 @@
+.boxIzq{
+	width: 400px;
+	background-color: grey;
+	float: left;
+	height: 400px;
+	border: 1px solid black;
+}
+.boxDch{
+	width: 400px;
+	background-color: grey;
+	float: right;
+	height: 400px;
+	border: 1px solid black;
+}
+.clear{
+	clear: both;
+	}

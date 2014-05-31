@@ -1,0 +1,10 @@
+1. Mostrar el apellido del empleado con el sueldo mayor
+2. Mostrar el apellido del empleado con el sueldo menor
+3. Mostrar el apellido, el trabajo y número de departamento de aquellos empleados que trabajan en el mismo departamento que King
+4. Mostrar el apellido y el salario de aquellos empleados que ganan más de la media del salario de la empresa
+5. Mostrar el apellido y el salario de aquellos empleados que ganen menos que 'CLARKE'
+6. Mostrar el apellido y el salario de aquellos empleados cuya comisión sea nula
+7. Mostrar el apellido y el manager de aquellos empleados que tengan el mismo jefe que CLARKE
+8. Mostrar el apellido y el trabajo de aquellos empleados que trabajan en 'DALLAS' o en 'CHICAGO'
+9. Obtener el departamento y salario de los empleados que tiene el mismo puesto y salario que JONES
+

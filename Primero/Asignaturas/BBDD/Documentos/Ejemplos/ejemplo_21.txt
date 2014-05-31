@@ -1,0 +1,9 @@
+select sqrt(5) from dual;
+
+devuelve:
+
+   SQRT(5)
+----------
+2,23606798
+
+1 fila seleccionada.

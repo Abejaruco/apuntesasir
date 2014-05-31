@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalogo>
+	<producto>
+		<nombre>mesa</nombre>
+		<referencia>1102</referencia>
+		<tipo estado="usado"></tipo>
+		<precio>90.20</precio>
+	</producto>
+	<producto>
+		<nombre>silla</nombre>
+		<referencia>8272</referencia>
+		<marca>xxx</marca>
+		<tipo estado="nuevo"></tipo>
+		<precio>70.10</precio>
+	</producto>
+</catalogo>

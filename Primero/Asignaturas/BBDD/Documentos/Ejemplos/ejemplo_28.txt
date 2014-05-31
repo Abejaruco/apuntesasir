@@ -1,0 +1,92 @@
+drop table PruebasTexto;
+create table PruebasTexto(codigo varchar2(3), descripcion varchar2(10));
+insert into PruebasTexto values ('001','Descrip1');
+insert into PruebasTexto values ('002','Descrip2');
+insert into PruebasTexto values ('003','Descrip3');
+insert into PruebasTexto values ('004','Descrip4');
+insert into PruebasTexto values ('005','Descrip5');
+select * from PruebasTexto;
+
+Devuelve: 
+
+Tabla creada.
+
+
+1 fila creada.
+
+
+1 fila creada.
+
+
+1 fila creada.
+
+
+1 fila creada.
+
+
+1 fila creada.
+
+
+COD DESCRIPCIO
+--- ----------
+001 Descrip1
+002 Descrip2
+003 Descrip3
+004 Descrip4
+005 Descrip5
+
+5 filas seleccionadas.
+***********************************************************
+
+select * from pruebastexto where codigo=lpad('1',3,'0');
+alter table pruebastexto add valor number(3);
+desc pruebastexto;
+update pruebastexto set valor=1;
+select * from PruebasTexto;
+select valor,descripcion from pruebastexto where lpad(valor,5,'0') = '00001';
+
+Devuelve: 
+
+COD DESCRIPCIO
+--- ----------
+001 Descrip1
+
+1 fila seleccionada.
+
+
+Tabla modificada.
+
+ Nombre                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ¿Nulo?   Tipo
+
+ CODIGO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   VARCHAR2(3)
+ DESCRIPCION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              VARCHAR2(10)
+ VALOR                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    NUMBER(3)
+
+
+5 filas actualizadas.
+
+
+COD DESCRIPCIO      VALOR
+--- ---------- ----------
+001 Descrip1            1
+002 Descrip2            1
+003 Descrip3            1
+004 Descrip4            1
+005 Descrip5            1
+
+5 filas seleccionadas.
+
+
+ninguna fila seleccionada
+
+
+     VALOR DESCRIPCIO
+---------- ----------
+         1 Descrip1
+         1 Descrip2
+         1 Descrip3
+         1 Descrip4
+         1 Descrip5
+
+5 filas seleccionadas.
+

@@ -1,0 +1,30 @@
+Trabajamos con la tablas "libros" y "editoriales" de una librería.
+
+Eliminamos las tablas.
+Creamos las tablas:
+editoriales(codigo numero(3)(es clave primaria), nombre texto(30))
+libros(titulo texto(40), editorial numero(3) (es una clave externa que hace referencia al campo codigo de la tabla editoriales), autor texto(30), precio numero(4))
+Modificamos el campo precio para que tome valores de 6 dígitos incluyendo 2 decimales y acepte valores nulos.
+Verificamos el cambio viendo la estructura de la tabla.
+Ingresamos algunos registros:
+En la tabla editoriales --> codigo = 1, nombre = 'Emece'
+En la tabla libros --> titulo = 'Uno', editorial = 1, autor = 'Richard Bach', precio = 24.6
+Intentamos modificar el campo "precio" a "varchar(8)".
+No lo permite, porque existe un registro con un valor numérico en tal campo.
+Intentamos modificar el campo "codigo" de "editoriales" a "varchar2(3)".
+No lo permite porque tal campo es referenciado por una clave externa.
+Modificamos un atributo del campo "codigo" de "editoriales".
+Oracle permite el cambio pues no afecta a la restricción.
+Intentamos redefinir como no nulo el campo "codigo" de "editoriales".
+No aparece mensaje de error, pero si verificamos la estructura de la tabla veremos que continua siendo "not null", ya que es clave primaria.
+Redefinimos el campo "precio" como number(6,2), con un valor por defecto 0.
+Oracle permite modificar el campo "precio" a "char(8)". Si luego ingresamos un registro sin valor para "precio", guardará el valor por defecto (0) convertido a cadena ('0')
+Redefinimos el valor por defecto del campo "precio" (que ahora es de tipo char) a "cero"
+No permite modificar el campo "precio" a "number(8,2)" porque si luego ingresamos un registro sin valor para tal campo, el valor por defecto ('cero') no podrá convertirse a número.
+Mensaje de error.
+Modificamos el valor por defecto para que luego pueda ser convertido.
+Vaciamos la tabla.
+Oracle permite modificar el campo "precio" a "number(8,2)" porque si luego ingresamos un registro sin valor para tal campo, el valor por defecto ('0') podrá convertirse a número (0).
+Oracle permite modificar el campo "precio" a "char(8)". Si luego ingresamos un registro sin valor para "precio", guardará el valor por defecto (0) convertido a cadena ('0').
+Isertamos un registro en la tabla libros: titulo = El aleph, editorial = 1, autor = Borges, precio = default.
+Ver los resultados.

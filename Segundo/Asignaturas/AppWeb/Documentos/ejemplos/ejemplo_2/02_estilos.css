@@ -1,0 +1,24 @@
+#contenedor{
+	height: 900px;
+	width: 1000px;
+	}
+#menu {
+	height: 800px;
+	width: 200px;
+	background-color: #dddddd;
+	position: absolute;
+	left: 5px;
+	border-radius: 10;
+	border: 1px solid red;
+}
+#menu ul li{
+	list-style: none;
+	}
+#contenido{
+	height: 800px;
+	width: 800px;
+	position: absolute;
+	left: 220px;
+	border-radius: 10;
+	border: 1px solid blue;
+	}

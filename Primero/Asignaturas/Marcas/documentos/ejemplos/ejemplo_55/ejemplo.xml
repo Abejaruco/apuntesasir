@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE equipo [
+<!ELEMENT equipo (jugador+) >
+<!ELEMENT jugador (nombre,equipo_anterior+,origen?) >
+<!ATTLIST jugador puesto (ala|ala-pivot|escolta|base|pivot) #REQUIRED >
+<!ATTLIST jugador dorsal (0|1|2|3|4|5|6|7|8|9|10) #REQUIRED >
+<!ELEMENT nombre (#PCDATA) >
+<!ELEMENT equipo_anterior (#PCDATA) >
+<!ELEMENT origen (#PCDATA) >
+<!ELEMENT dorsal (#PCDATA) >
+]>
+<equipo>
+	<jugador puesto="base" dorsal="1">
+		<nombre>Pedro</nombre>
+		<equipo_anterior>barcelona</equipo_anterior>
+		<equipo_anterior>real madrid</equipo_anterior>
+		<origen>ni idea</origen>
+	</jugador>
+	<jugador puesto="escolta" dorsal="0">
+		<nombre>Pablo</nombre>
+		<equipo_anterior>Athletic</equipo_anterior>
+	</jugador>
+	<jugador puesto="ala" dorsal="5">
+		<nombre>Vilma</nombre>
+		<equipo_anterior>Real Sociedad</equipo_anterior>
+	</jugador>
+</equipo>

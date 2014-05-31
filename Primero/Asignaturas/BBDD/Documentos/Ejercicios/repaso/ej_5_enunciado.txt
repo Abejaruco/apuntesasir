@@ -1,0 +1,16 @@
+Ejercicio Base de datos:
+
+Una empresa informática se dedica al desarrollo de software, el desarrollo del mismo se agrupa en proyectos.
+De cada proyecto queremos saber su Código, Nombre, Descripción, Fecha Inicio y Fecha fin.
+Todos los proyectos pertenecen a un tipo de proyecto, por ejemplo, proyectos a medida, de mantenimiento, de consultoría, et… De cada Tipo de proyecto queremos conocer su código y Descripción.
+A cada proyecto se la asignan unos Profesionales, de cada profesional queremos saber su Código, Nombre, Apellidos.
+Cada profesional tiene una categoría laboral, por ejemplo Analista, Programador, etc..., de cada categoría queremos saber su código, descripción y salario base.
+1. Crear el modelo entidad.-relación si teniendo en cuenta lo siguiente:
+Un proyecto solo puede pertenecer a un tipo de proyectos
+Para cada tipo de proyecto existirán varios proyectos.
+En cada proyecto intervienen varios profesionales
+Un profesional puede intervenir en varios proyectos
+Un profesional solo tiene una categoría laboral
+Por cada categoría laboral existirán varios profesionales
+2. Obtener las tablas resultantes
+

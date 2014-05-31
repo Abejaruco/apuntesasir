@@ -1,0 +1,80 @@
+<form name="prueba" action="procesar.php" method=GET target="_blank">
+<table width=80%>
+	<tr>
+		<th width=20% align=right>Nombre:</th>
+		<td width=60%><input type=text name="nombre" placeholder="Tu nombre" size=60% maxlength=9></td>
+	</tr>
+	<tr>
+		<th align=right>Apellidos:</th>
+		<td><input type=text name="apellidos" placeholder="Tus apellidos" size=60%></td>
+	</tr>
+	<tr>
+		<th align=right>Dirección:</th>
+		<td><input type=text name="dirección" placeholder="Tu dirección" size=60%></td>
+	</tr>
+	<tr>
+		<th align=right>E-mail:</th>
+		<td><input type=text name="email" placeholder="tu@email.com" size=60%></td>
+	</tr>
+	<tr>
+		<th align=right>Contraseña:</th>
+		<td><input type=password name="clave" placeholder="********"  size=60%></td>
+	</tr>
+	<tr>
+		<th align=right>Sexo:</th>
+		<td><input type=radio name=sexo value="Hombre">Hombre
+			<input type=radio name=sexo value="Mujer">Mujer
+		</td>
+	</tr>
+	<tr>
+		<th align=right>Aficiones:</th>
+		<td><input type=checkbox name=deporte[] value="ciclismo">Bici
+			<input type=checkbox name=deporte[] value="Motocicleta">Moto
+			<input type=checkbox name=deporte[] value="Automovilismo">Coche
+			<input type=checkbox name=deporte[] value="Deportes de fronton">Fronton
+		</td>
+	</tr>
+	<tr><th colspan=2 align=center>Permiso de conducir</th></tr>
+	<tr><th align=right>¿Tienes Permiso de conducir?</th>
+		<td><select name="permiso">
+				<option value="Si">Sí</option>
+				<option value="No" selected>No</option>
+			</select>
+		</td>
+	</tr>
+	<tr><th align=right>¿Que permisos tienees</th>
+		<td><select name="permisos[]" size=7 multiple>
+				<option value="A" selected>A</option>
+				<option value="B">B</option>
+				<option value="C1" selected>C1</option>
+				<option value="C">C</option>
+				<option value="D1" selected>D1</option>
+				<option value="D">D</option>
+				<option value="E">E</option>
+			</select>
+		</td>
+	</tr>
+	<tr><th colspan=2 align=center>Formación</th></tr>
+	<tr>
+		<td align=right>Selecciona toda la formación que tengas manteniendo pulsado el botón
+		control al seleccionar</td>
+		<td>
+			<select name="Estudios[]" size=6 multiple>
+				<optgroup label="Ciclos formativos">
+					<option value="Asir">Asir</option>
+					<option value="Dam">Dam</option>
+				</optgroup>
+				<optgroup label="Licenciaturas">
+					<option value="DAE">Dirección y administración de empresas</option>
+					<option value="Eco">Economicas</option>
+				</optgroup>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 align=center>
+			<input type=submit value="Enviar"><input type=reset value="Limpiar">
+		</td>
+	</tr>
+</table>
+</form>

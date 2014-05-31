@@ -1,0 +1,8 @@
+body{
+	background-color: #eeeeee;
+}
+.resaltado{
+	background-color: #ffff00;
+	color: #000000;
+	font-style: italic;
+}

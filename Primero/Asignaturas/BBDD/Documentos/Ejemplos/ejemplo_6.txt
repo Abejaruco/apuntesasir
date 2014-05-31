@@ -1,0 +1,17 @@
+Ejemplo:
+	select ename,job,sal from scott.emp where not job='CLERK';
+Devuelve:
+	ENAME      JOB              SAL
+---------- --------- ----------
+ALLEN      SALESMAN        1600
+WARD       SALESMAN        1250
+JONES      MANAGER         2975
+MARTIN     SALESMAN        1250
+BLAKE      MANAGER         2850
+CLARK      MANAGER         2450
+SCOTT      ANALYST         3000
+KING       PRESIDENT       5000
+TURNER     SALESMAN        1500
+FORD       ANALYST         3000
+
+10 filas seleccionadas.

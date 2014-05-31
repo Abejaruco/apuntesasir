@@ -1,0 +1,108 @@
+Crear las siguientes tablas:
+Empleado:
+    CodEmp Number(5) not null  primary key
+    NombreEmp Varchar2(20)
+    ApellidosEmp Varchar2(20)
+    SalarioBruro Number(8,2)
+    CodDpto number(3) foreign key
+
+Departamento
+    CodDpto Number(3) not null primary key
+    NombreDpto Varchar2(2) 
+        NombreResp  varchar2(20)
+    
+1. Crear las siguientes tablas y  restricciones
+2. Modificar el tamaño del campo ApellidosEmp de la tabla Empleados, para que tenga el tamaño de 60 posiciones
+3. Modificar el tamaño de campo NombreDpto de la taba Departamento para que tenga el tamaño de 40 posiciones
+4. Crear un campo nuevo en la tabla Departamento llamado Localidad de tipo varchar2 y longitud 60
+5. Crear un nuevo campo  en la tabla departamento llamado SedeCentral de tipo numérico de 1 posición, solo debe admitir los valores 1 y 0
+6. Eliminar el campo NombreResp de la taba departamento
+7. Modificar el campo Localidad de la tabla departamento , ahora debe llamarse CodLocalidad y debe ser numérico con longitud 3
+8. Crear un nuevo campo en la tabla Empleado llamado Retencion debe ser un numero de 2 posiciones
+9. Modificar el campo Retencion de la tabla Empleado, debe ser un campo de tipo numérico con 2 posiciones enteras y 2 decimales.
+10. Crear la tabla Localidad con los siguientes campos
+a. CodLoc Number(3) not null unique primary key
+b. NomLoc Varchar2(60) not null
+c. CodProv Number(2)
+11. Crear la tabla Provincia con los siguientes campos
+a. CodProv Number(3) not null unique primary key
+b. NomProv Varchar2(60) not null
+12. Añadir el campo CodProv number(3) en la tabala Departamnetos
+
+13. Establecer las claves que consideréis que faltan
+
+
+Insertar – modificar – Borrar
+1. Insertar los siguientes datos
+
+Provincia:
+    CodProv     NomProv
+    1           Alava
+    48          Bizkaia
+    20          Gipuzkoa
+
+Localidad:
+    CodLoc  NomLoc                      CodProv
+    20      Bilbao                      20
+    1       Gasteiz                     1
+    53      Donostia – San Sebastian    20
+    13      Barakaldo                   48
+    53      Laukiz                      48
+
+Departemento:
+    CodDpto     NomDpto             Codloc  CodProv SedeCentral
+    1000        Desarrollo          20      48          1
+    1001        Recursos Humanos    20      48          0
+    2000        Producción          53      20          0
+    2005        I+D+d               53      20          1
+    3000        Dirección           1       1           1
+
+Empleados:
+    CodEmp      NombreEmp       ApellidosEmp    SalarioBruto    Retencion   CodDpto
+    1001        Juan            Lopez           24000           18,00       1000
+    1002        Felipe          Garcia          21000           15,37       1000
+    2001        Maria           Etxebarria      18000           12,03       2000
+    2002        Iñaki           Gomez           23000           16,33       2000
+    2003        Mikel           Susaeta         22000           16.,12      2000
+    2101        Nerea           Legorreta       36000           19,00       2005
+    2102        Antonio         Marquez         36000           21,00       2005
+    3001        Pilar           Ibarroa         60000           23,00       3000
+    1101        Sonia           Martinez        15000           12,50       1001
+    1102        Gorka           Aristondo       15000           12,50       1001
+
+1. Validar las inserciones hechas hasta ahora
+2. Modificar el campo NomProv de la tabla Provincia para el código 1 debe apararecer “Araba”
+3. Modificar el campo NomLoc de la tabla localidad para:
+a. Codigo localidad 20  - “Bilbo – Bilbao”
+b. Codigo Localidad 1 – “ Vitoria - Gasteiz”
+4. Modificar la Locaidad del departamento de RecursosHumanos, Tabla Departamentos, pasa a ser la localidad 53 de la provincia 20.
+5. Modificar el SalarioBruto de todos los empleado, añadir al salario actual un 0,75%
+6. Añadir un nuevo departamento con los siguientes valores
+
+CodDpto NomDpto     Codloc  CodProv SedeCentral
+1002    I + D + I   20      48      0
+
+7. Asignar los empleados del departamento 2005  qa departamento 1002
+8. Eliminar el departamento 205
+9. Deshacer la elimnación de departamento 2005
+10. Comprobar que os cambios anteriores se han realizado en la base de datos
+11. Añadir un nuevo departamento con los siguientes valores
+
+CodDpto NomDpto     Codloc  CodProv SedeCentral
+2006    Comercial   53      20      0
+
+12. Añadir los siguientes empleados
+
+CodEmp  NombreEmp   ApellidosEmp    SalarioBruto    Retencion   CodDpto
+2201    Jon         Lopez           24000           18,00       2006
+2202    Urko        Imaz            23000           16,00       2006
+
+13. Añadir un campo  llamado “”Bonificacion” en la tabla Empleado Numero de 8 posiciones con 2 decimales
+14. Modificar el campo Bonificacion de la tabla empleado poner 1000,50 a aquellos empleados de departamento 2006, cuyo salario sea superior a 23000 euros
+15. Modificar el campo Bonificacion de la tabla empleado poner2000,00 a aquellos empleados que ganen más de 30000 euros y no pertenezcan al departamento de “Direccion”
+16. Modificar el campo Bonificacion de la tabla empleado poner 500,88 a aquellos empleados que ganen menos de 20000 euros y no sean de la provincia de Bizkaia.
+17. Eliminar el departamento 2006 y todos sus empleados.
+18. Confirmar los cambios
+19. Eliminar a todos os empleados de la provincia de Bizkaia que ganen entre 20000 y 25000
+20. Recuperar los registros borrados.
+

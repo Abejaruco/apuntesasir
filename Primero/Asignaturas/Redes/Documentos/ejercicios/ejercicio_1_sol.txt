@@ -1,0 +1,4 @@
+Lo primero es saber cuantos bits vamos a enviar en cada uno de esos estados.
+
+2^x = 16 --> 4 bits en cada estado
+Vt = Vm. 4 = 80 bps

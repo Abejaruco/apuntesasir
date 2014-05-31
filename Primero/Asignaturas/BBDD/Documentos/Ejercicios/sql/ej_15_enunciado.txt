@@ -1,0 +1,57 @@
+Una empresa de aparatos electrónicos desea informatizar sus datos.
+
+Escribir el diagrama ER que responda a la siguiente especificación 
+
+Cada aparato electrónico viene determinado por un código único y una descripción. Además cada aparato corresponde a un tipo de electrodomésticos (a lo sumo).
+Cada tipo de electrodoméstico (televisor, mp3, lavadora, etc) tiene un nombre y unas características (un campo de texto). Se supone que no hay dos tipos con el mismo nombre y características. 
+Los componentes son las pieza que forman el aparato. Vienen dados por un nombre (por ejemplo transformador) y unas especificaciones (un campo de texto).
+También nos interesa conocer datos de los fabricantes de componentes:su CIF (_único) y su domicilio social. Cada aparato puede llevar cualquier cantidad de componentes. Interesa saber para cada aparato que componentes lleva y que fabricante suministra cada componente. Un aparato puede llevar muchas unidades de un mismo componente (interesa saber cuantas), pero en este caso todas estarán suministradas por el mismo fabricante y con un mismo precio.
+
+Repaso Create/Alter/Drop Table
+
+Crear las siguientes tablas 
+Tabla Autobus
+	Campos:
+		CodBus number(4)
+		Marca Varchar2(40)
+		NPlazas Varchar(2)
+		Modelo Varchar2(50)
+	Restricciones
+		Clave Principal : CodBus
+		Campos no nulos: Marca y Nplazas
+
+Tabla Recorridos
+	Campos:
+CodRecorrido Number(4)
+		DescRecorrido Varchar(10)
+             	 	Festivo Number(1)
+Restricciones
+		Clave Principal : CodRecorrido
+		Check El campo festivo solo debe aceptar los valores 0 o 1.
+		Festivo debe tener el valor 0 por defecto
+		
+
+Tabla RecorridoBus
+	Campos
+		CodRecorrido Number(4)
+		CodBus Number(4)
+	Restricciones
+		Clave Principal: CodRecorrido,CodBus
+		Claves Foraneas:  CodRecorrido con la tabla Recorrido
+					Cod Bus con la tabla CodBus
+
+1. Eliminar el campo modelo de la tabla Autobus
+2. Modificar el campo Nplazas de la tabla autobus para que se un Number(2)
+3. Modicficar el campos DescRecorrido de la tabla recorrdos para que se un varchar(50)
+4. Insertar un registro en la tabla Recorrido con los valores 
+a. CodRecorrido:1
+b. DescRecorrido:”Bilbao-Vitoria”
+c. Festivo:2
+5. ¿Por qué ha fallado?
+6. Eliminar la restricción check de de la tabla Recorridos
+7. Insertar el registro anterior
+8. Añadir el campo Vuelta Varcahr2(2) en la Recorrido
+9. Añadir una restricción de tipo check en la tabla recorrido  par el campo vuelta, este campo solo puede tomar los valores SI o NO.
+10. Cambiar  el nombre de la tabla RecorridoBus a RecorBus
+11. Eliminar la tabla Autobus, si no es posible eliminar las restricciones que no permiten su borrado y eliminarla
+		

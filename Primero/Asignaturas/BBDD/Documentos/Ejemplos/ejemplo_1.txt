@@ -1,0 +1,24 @@
+Ejemplo:
+		select ename as Nombre, sal as Salario, sal*0.5 as Aumento,sal*0.5+sal as Final from scott.emp;
+Resultado:
+NOMBRE        SALARIO    AUMENTO      FINAL
+---------- ---------- ---------- ----------
+SMITH             800        400       1200
+ALLEN            1600        800       2400
+WARD             1250        625       1875
+JONES            2975     1487,5     4462,5
+MARTIN           1250        625       1875
+BLAKE            2850       1425       4275
+CLARK            2450       1225       3675
+SCOTT            3000       1500       4500
+KING             5000       2500       7500
+TURNER           1500        750       2250
+ADAMS            1100        550       1650
+
+NOMBRE        SALARIO    AUMENTO      FINAL
+---------- ---------- ---------- ----------
+JAMES             950        475       1425
+FORD             3000       1500       4500
+MILLER           1300        650       1950
+
+14 filas seleccionadas.	

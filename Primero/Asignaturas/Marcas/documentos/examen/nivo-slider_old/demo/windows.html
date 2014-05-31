@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html lang="en">
+<head>
+    <title>Nivo Slider Demo</title>
+    <link rel="stylesheet" href="../themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../themes/dark/dark.css" type="text/css" media="screen" />
+    <!--<link rel="stylesheet" href="../themes/bar/bar.css" type="text/css" media="screen" />-->
+    <link rel="stylesheet" href="../nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style_windows.css" type="text/css" media="screen" />
+</head>
+<body style="background: transparent">
+    <div id="wrapper">
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/windows_1.jpg" data-thumb="" alt="WarGame" title="WarGame"/>
+                <img src="images/windows_2.jpg" data-thumb="" alt="Port Royale 3 " title="Port Royale 3 "/>
+                <img src="images/windows_3.jpg" data-thumb="" alt="Baldurs Gate" title="Baldurs Gate"/>
+                <img src="images/windows_4.jpg" data-thumb="" alt="Grid2" title="Grid2"/>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="../jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</body>
+</html>

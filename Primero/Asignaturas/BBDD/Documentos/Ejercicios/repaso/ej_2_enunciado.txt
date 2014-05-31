@@ -1,0 +1,11 @@
+Crear el siguiente modelo entidad-relacion.
+Una  empresa dedicada a la fabricación  de artículos informáticos posee las siguiente entidades
+Proveedores de los que queremos conocer su Código , nombre, categoría y ciudad
+Componentes de los que queremos conocer Código, nombre, color, peso, ciudad .
+Articulos: Código, nombre y ciudad
+
+Crear el modelo entidad-relación tenuendo en cuenta que
+Un proveedor puede enviar varios componentes
+Un componente puede ser enviado por varios porveedores
+Un componente puede formar parte de varios artículos
+Un articulo estará compuesto por varios componentes

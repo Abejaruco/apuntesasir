@@ -1,0 +1,64 @@
+<HTML>
+	<HEAD>
+		<TITLE>FORMULARIO</TITLE>
+	</HEAD>
+	
+	<BODY>
+		<H3>Ejemplo de un formulario incorporado en una tabla</H3>
+		<FORM NAME="REGISTRO" METHOD="POST"	ACTION="mailto:antxonzorrozua@gmail.com" enctype="text/plain" AUTOMPLETE="ON">
+			<table width="70%" border="0"  cellpadding="3" cellspacing="3">
+				  <tr>
+					<td width="10%" align="right">Nombre</td>
+					<td width="10%"><input name="nombre" type="text" size="40"></td>
+				  </tr>
+				  <tr>
+					<td width="10%" align="right">Apellidos</td>
+					<td width="10%"><input name="nombre" type="text" size="40"></td>
+				  </tr>
+				  <tr>
+					<td width="10%" align="right">Sexo</td>
+					<td width="10%">
+							Hombre
+							<INPUT TYPE="RADIO" NAME="Sexo" VALUE="Hombre">
+							Mujer
+							<INPUT TYPE="RADIO" NAME="Sexo" VALUE="Mujer" CHECKED></td>
+				  </tr>
+				  <tr>
+					<td width="10%" align="right">E-mail</td>
+					<td width="10%"><input name="email" type="text" size="40"></td>
+				  </tr>
+			  </table>
+			  <p>
+			  <table width="70%" border="0"  cellpadding="3" cellspacing="3">
+				  <tr>
+					<td width="10%" align="right">Usuario</td>
+					<td width="10%"><input name="usuario
+					" type="text" size="40"></td>
+				  </tr>
+				   <tr>
+					<td width="10%" align="right">Contraseña</td>
+					<td width="10%"><input name="contra" size="40" type="password"></td>
+				  </tr>
+			</table> 
+			<p>
+			<table width="70%" border="0"  cellpadding="3" cellspacing="3">
+				  <tr>
+				    <td width="10%" align="right">Matricula</td>
+					<td width="10%"><SELECT NAME="lista1_carnet">
+									<OPTION>DAM
+									<OPTION>ASIR
+									<OPTION>SMR
+									<OPTION>DAI
+					</SELECT></td>
+			</table>
+			<p>
+			
+			<DIV style="position:absolute;Top:9cm;left:11cm;">
+					<CENTER>
+						<INPUT TYPE="SUBMIT" VALUE="Enviar">
+						<INPUT TYPE="RESET" VALUE="Limpiar">						
+					</CENTER>
+			</DIV>
+		</form>
+	</BODY>
+</HTML>

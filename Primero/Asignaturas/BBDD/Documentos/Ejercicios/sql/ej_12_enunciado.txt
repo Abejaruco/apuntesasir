@@ -1,0 +1,7 @@
+1. Mostrar el Ename de aquellos que tengan el camp MGR a nulo.
+2. Mostar el apellido (ename), trabajo(job) y salario(sal) de aquellos empleados que sean 'SALESMAN' y su salario sea superior a 1500.
+3. Mostrar el apellido (ename), trabajo(job) , salario(sal) y comision de aquellos empleados que su comision no sea nula y pertenezcan al departamento 30.
+4. Mostrar el apellido (ename), trabajo(job) de aquellos empleados cuyo tabajo sea CLERK o ANALYST.
+5. Mostrar el apellido (ename) y la fecha de ingreso (hiredate) mostrandio los alias 'Apellido', 'Fecha ingreso', para todos los empleados que ingresaron en diciembre de 1981.
+6. Mostrar el apellido (ename) y la fecha de ingreso (hiredate) mostrandio los alias 'Apellido', 'Fecha ingreso', para todos los empleados que ingresaron en 1981 o en 1987.
+7. Mostrar el apellido (ename) y la trabajo para aquellos empleados que no son 'ANALYST'.

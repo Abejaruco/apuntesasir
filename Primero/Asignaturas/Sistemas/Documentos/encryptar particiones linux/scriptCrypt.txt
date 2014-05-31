@@ -1,0 +1,28 @@
+#/bin/sh
+case $1 in
+prereqs)
+	exit 0
+	;;
+esac
+. /scripts/functions
+wait_for_udev
+/bin/sleep 3
+log_begin_msg "Desencriptando sda2"
+/sbin/cryptsetup luksOpen /dev/sda2 sda2_crypt --key-file /scripts/local-top/clave.key
+log_end_msg
+log_begin_msg "Desencriptando sda2"
+/sbin/cryptsetup luksOpen /dev/sda3 sda3_crypt --key-file /scripts/local-top/clave.key
+log_end_msg
+if [ ! -b /dev/mapper/sda2_crypt ]
+then
+	panic "
+No se encuentra /dev/mapper/sda2_crypt
+"
+fi
+if [ ! -b /dev/mapper/sda3_crypt ]
+then
+	panic "
+No se encuentra /dev/mapper/sda3_crypt
+"
+fi
+exit 0

@@ -1,0 +1,5 @@
+Transforma el modelo entidad-relación del ejercicio 4 al modelo relacional.
+
+Diseña las tablas en Access, realiza las relaciones que consideres oportunas e inserta cinco registros en cada una de las tablas.
+
+Si un cliente sólo puede comprar un coche en el concesionario, y un coche sólo puede ser comprado por un cliente, ¿cómo quedaría el modelo relacional?

@@ -1,0 +1,37 @@
+Crear las siguientes tablas
+empleados 
+    id_empleado number(3) PRIMARY KEY
+    nombre VARCHAR2(64),
+    id_funcion number(3)
+    id_sector number(3)
+    id_localidad number(3)
+
+funciones (
+    id_funcion number(3)  PRIMARY KEY,
+    nombre VARCHAR2(128)
+
+sectores (
+    id_sector number(3)  PRIMARY KEY,
+    nombre VARCHAR2(128)
+
+       
+localidades (
+    id_localidad number(3)  PRIMARY KEY,
+    nombre VARCHAR2(128)
+);
+INSERT INTO empleados VALUES ( 1, 'Marcos Aguirre', 1, 1 , 3);
+INSERT INTO empleados VALUES ( 2, 'Esteban Quito', 2, 4 , 2);
+INSERT INTO empleados VALUES ( 3, 'Daniel Perez', 1, 2 , 1);
+INSERT INTO empleados VALUES ( 4, 'Carlos Molina', 1, 1 , 3);
+INSERT INTO empleados VALUES ( 5, 'Marcos Aguirre', 4, 1 , 1);
+INSERT INTO sectores VALUES ( 1, 'Mantenimiento' );
+INSERT INTO sectores VALUES ( 2, 'Ingenieria' );
+INSERT INTO sectores VALUES ( 3, 'Costos' );
+INSERT INTO funciones VALUES ( 1, 'Programador' );
+INSERT INTO funciones VALUES ( 2, 'Analista funcional' );
+INSERT INTO funciones VALUES ( 3, 'Administración' );
+INSERT INTO localidades VALUES ( 1, 'Maldonado' );
+INSERT INTO localidades VALUES ( 2, 'Salto' );
+INSERT INTO localidades VALUES ( 3, 'Federación' );
+
+Hacer una select que para cada empleado me devuelva su id_empleado, nombre, id_funcion y nombre funcion

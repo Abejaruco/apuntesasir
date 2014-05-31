@@ -1,0 +1,5 @@
+Pasa el modelo entidad-relación del ejercicio 3 al modelo relacional.
+
+Diseña las tablas en Access, realiza las relaciones que consideres oportunas e inserta cinco registros en cada una de las tablas.
+
+¿Cómo quedaría el modelo relacional suponiendo que cada profesor sólo imparte un módulo y cada módulo es impartido por sólo un profesor?

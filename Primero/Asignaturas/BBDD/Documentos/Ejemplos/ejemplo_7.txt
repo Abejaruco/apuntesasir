@@ -1,0 +1,13 @@
+Ejemplo:
+	select ename,job, sal from scott.emp where sal between 1000 and 2000;
+Devuelve:
+ENAME      JOB              SAL
+---------- --------- ----------
+ALLEN      SALESMAN        1600
+WARD       SALESMAN        1250
+MARTIN     SALESMAN        1250
+TURNER     SALESMAN        1500
+ADAMS      CLERK           1100
+MILLER     CLERK           1300
+
+6 filas seleccionadas.

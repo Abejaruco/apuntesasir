@@ -1,0 +1,33 @@
+enable
+
+configure terminal
+
+hostname sw2
+
+line console 0
+
+pass cisco
+
+login
+
+exit
+
+line vty 0 4
+
+pass cisco
+
+login
+
+exit
+
+int vlan1
+
+ip address 192.168.1.101 255.255.255.0
+
+no shut
+
+exit
+
+wr
+
+copy run start
