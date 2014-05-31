@@ -7,13 +7,6 @@
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="generator" content="Geany 0.21" />
 	<LINK REL=StyleSheet HREF="estilos/menu_principal.css" TYPE="text/css">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script src="js/jquery.cookieConsent.js"></script>
-	<script>
-	  $(function () {
-	    $.cookieConsent();
-	  });
-	</script>
 </head>
 <body>
 	<div class="menus">
