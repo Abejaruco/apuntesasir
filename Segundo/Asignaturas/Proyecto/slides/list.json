@@ -1,0 +1,17 @@
+[
+    "titulo.html",
+    [
+        "situacion-inicial.html",
+        "problematica.html"
+    ],
+    [
+        "propuesta.html",
+        "propuesta-requisitos.html",
+        "propuesta-ventajas.html",
+        "propuesta-inconvenientes.html"
+    ],
+    [
+    	"servidorvms-hardware.html",
+    	"servidorvms-software.html"
+    ]
+]
