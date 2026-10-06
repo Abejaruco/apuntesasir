@@ -1,7 +1,7 @@
 <?php include ("php/scripts.php");?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
-
+asdfasdfasf
 <head>
 	<title>Administración de Sistemas Informáticos en Red</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
