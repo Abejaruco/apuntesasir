@@ -3,6 +3,10 @@
 //$ejemplo = 0;
 $total_ejercicios=0;
 $total_ejemplos=0;
+
+//adding a typo
+$typo:=true;
+
 function paypal(){
 	$code = '<li>
 	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
